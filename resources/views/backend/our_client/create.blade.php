@@ -4,47 +4,37 @@
 
 @section('content')
 
-<script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script> -->
 
-    <form action="{{route('admin.post.store')}}" method="post" enctype="multipart/form-data" >
+    <form action="{{route('admin.our_client.store')}}" method="post" enctype="multipart/form-data" >
         {{csrf_field()}}
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-body">
-                        
-                        <div class="form-group">
-                            <label>Title <span style="color:red">*</span></label>
-                            <input type="text" id="title" class="form-control" name="title" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Slug <span style="color:red">*<span></label>
-                            <input type="text" class="form-control" name="slug" id="slug" required>
-                        </div>
-
+                    <div class="card-body">                        
+                       
                         <div class="form-group">
                             <label>Category <span style="color:red">*<span></label>
                             <select class="form-control" name="category" required>
-                                @foreach($categories as $category)
-                                    <option value="{{ $category->id }}">{{ $category->name }}</option>                    
+                                @foreach($our_client_category as $key => $our_client_cat)
+                                    <option value="{{ $our_client_cat->id }}">{{ $our_client_cat->title }}</option>                    
                                 @endforeach             
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label>Description <span style="color:red">*</span></label>
-                            <textarea class="form-control" id="editor" name="description" rows="4"></textarea>
+                            <label>Description</label>
+                            <textarea class="form-control" name="description" rows="3"></textarea>
                         </div>
                         
                         <div class="form-group">
-                            <label>Feature Image <span style="color:red">*<span></label>
+                            <label>Image <span style="color:red">*<span></label>
                             <div class="input-group" data-toggle="aizuploader" data-type="image">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text bg-soft-secondary font-weight-medium">Browse</div>
                                 </div>
                                 <div class="form-control file-amount">Choose File</div>
-                                <input type="hidden" name="feature_image" class="selected-files" >
+                                <input type="hidden" name="image" class="selected-files" >
                             </div>
                             <div class="file-preview box sm">
                             </div>
@@ -65,7 +55,11 @@
                         
                     </div>
                 </div>
-                <input type="submit" class="btn btn-success pull-right" value="Create New" /><br>
+
+                <div class="text-right">
+                    <input type="submit" class="btn rounded-pill text-light px-4 py-2 ml-2 ms-2 btn-success" value="Create New" /><br>
+                </div>
+
             </div><br>       
             
         </div>
@@ -75,27 +69,6 @@
 
 <br><br>
 
-<script>
-	$("#title").keyup(function(){
-    	var str = $(this).val();
-    	var trims = $.trim(str)
-    	var slug = trims.replace(/[^a-z0-9]/gi, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
-    	$("#slug").val(slug.toLowerCase()) 
-	});    
-</script>
-
-<script>
-	ClassicEditor
-		.create( document.querySelector( '#editor' ), {
-			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
-		} )
-		.then( editor => {
-			window.editor = editor;
-		} )
-		.catch( err => {
-			console.error( err.stack );
-		} );    
-</script>
 
 
 

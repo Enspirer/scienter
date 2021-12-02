@@ -11,6 +11,40 @@ Breadcrumbs::for('admin.module.index', function ($trail) {
 require __DIR__.'/auth.php';
 require __DIR__.'/log-viewer.php';
 
+
+
+Breadcrumbs::for('admin.our_client_category.index', function ($trail) {
+    $trail->push('Our Client Category', route('admin.our_client_category.index'));
+});
+Breadcrumbs::for('admin.our_client_category.edit', function ($trail) {
+    $trail->push('Our Client Category Edit', route('admin.our_client_category.edit',1));
+});
+
+Breadcrumbs::for('admin.our_client.index', function ($trail) {
+    $trail->push('Our Client', route('admin.our_client.index'));
+});
+Breadcrumbs::for('admin.our_client.create', function ($trail) {
+    $trail->push('Create New', route('admin.our_client.create'));
+});
+Breadcrumbs::for('admin.our_client.edit', function ($trail) {
+    $trail->push('Our Client Edit', route('admin.our_client.edit',1));
+});
+
+Breadcrumbs::for('admin.solutions.index', function ($trail) {
+    $trail->push('Solutions', route('admin.solutions.index'));
+});
+Breadcrumbs::for('admin.solutions.create', function ($trail) {
+    $trail->push('Create New', route('admin.solutions.create'));
+});
+Breadcrumbs::for('admin.solutions.edit', function ($trail) {
+    $trail->push('Solutions Edit', route('admin.solutions.edit',1));
+});
+
+
+
+
+
+
 Breadcrumbs::for('admin.file_manager.index', function ($trail) {
     $trail->push('File Manager', route('admin.file_manager.index'));
 });

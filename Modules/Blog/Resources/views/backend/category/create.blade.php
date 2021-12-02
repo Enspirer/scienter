@@ -4,8 +4,6 @@
 
 @section('content')
 
-<link rel="stylesheet" href="{{url('css/vendors.css')}}">
-
     <form action="{{route('admin.category.store')}}" method="post" enctype="multipart/form-data">
         {{csrf_field()}}
         <div class="row">

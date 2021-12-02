@@ -21,7 +21,7 @@ class CreatePostsTable extends Migration
             $table->text('description');
             $table->text('feature_image');
             $table->text('status');
-            $table->text('order');
+            $table->integer('order');
             $table->timestamps();
         });
     }

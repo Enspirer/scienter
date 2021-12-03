@@ -40,8 +40,22 @@ Breadcrumbs::for('admin.solutions.edit', function ($trail) {
     $trail->push('Solutions Edit', route('admin.solutions.edit',1));
 });
 
+Breadcrumbs::for('admin.s_inquire.index', function ($trail) {
+    $trail->push('Solution Inquire', route('admin.s_inquire.index'));
+});
+Breadcrumbs::for('admin.s_inquire.edit', function ($trail) {
+    $trail->push('Status', route('admin.s_inquire.edit',1));
+});
 
-
+Breadcrumbs::for('admin.milestone.index', function ($trail) {
+    $trail->push('Milestones', route('admin.milestone.index'));
+});
+Breadcrumbs::for('admin.milestone.create', function ($trail) {
+    $trail->push('Create Milestones', route('admin.milestone.create'));
+});
+Breadcrumbs::for('admin.milestone.edit', function ($trail) {
+    $trail->push('Edit Milestones', route('admin.milestone.edit',1));
+});
 
 
 

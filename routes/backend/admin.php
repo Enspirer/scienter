@@ -7,10 +7,20 @@ use App\Http\Controllers\Backend\ModuleExplorerController;
 use App\Http\Controllers\Backend\OurClientController;
 use App\Http\Controllers\Backend\OurClientCategoryController;
 use App\Http\Controllers\Backend\SolutionsController;
+use App\Http\Controllers\Backend\SolutionsInquireController;
+use App\Http\Controllers\Backend\MilestoneController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('milestone', 'MilestoneController@index')->name('milestone.index');
+Route::get('milestone/create', 'MilestoneController@create')->name('milestone.create');
+Route::post('milestone/store', 'MilestoneController@store')->name('milestone.store');
+Route::get('milestone/getdetails', 'MilestoneController@getdetails')->name('milestone.getdetails');
+Route::get('milestone/edit/{id}', 'MilestoneController@edit')->name('milestone.edit');
+Route::post('milestone/update', 'MilestoneController@update')->name('milestone.update');
+Route::get('milestone/delete/{id}', 'MilestoneController@destroy')->name('milestone.destroy');
 
 Route::get('solutions', 'SolutionsController@index')->name('solutions.index');
 Route::get('solutions/create', 'SolutionsController@create')->name('solutions.create');
@@ -19,6 +29,12 @@ Route::get('solutions/getdetails', 'SolutionsController@getdetails')->name('solu
 Route::get('solutions/edit/{id}', 'SolutionsController@edit')->name('solutions.edit');
 Route::post('solutions/update', 'SolutionsController@update')->name('solutions.update');
 Route::get('solutions/delete/{id}', 'SolutionsController@destroy')->name('solutions.destroy');
+
+Route::get('s_inquire', 'SolutionsInquireController@index')->name('s_inquire.index');
+Route::get('s_inquire/getdetails', 'SolutionsInquireController@getdetails')->name('s_inquire.getdetails');
+Route::get('s_inquire/edit/{id}', 'SolutionsInquireController@edit')->name('s_inquire.edit');
+Route::post('s_inquire/update', 'SolutionsInquireController@update')->name('s_inquire.update');
+Route::get('s_inquire/delete/{id}', 'SolutionsInquireController@destroy')->name('s_inquire.destroy');
 
 Route::get('our_client_category', 'OurClientCategoryController@index')->name('our_client_category.index');
 Route::post('our_client_category/store', 'OurClientCategoryController@store')->name('our_client_category.store');

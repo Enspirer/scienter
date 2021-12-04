@@ -1,0 +1,108 @@
+.excellence {
+    background-image: url('../img/frontend/about/about-bg-one.png');
+    justify-content: end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10vh;
+}
+
+.excellence-right {
+    margin-right: 45px;
+}
+
+.excellence-right h2 {
+    margin-bottom: 30px;
+}
+
+.main-heading {
+    margin-bottom: 30px;
+}
+
+.main-text-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-half-box {
+    width: 50%; 
+    background: #fff;
+    height: 250px;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 52px;
+    text-align: center;
+    position: relative;
+}
+
+.about-left-half-box {
+    margin-left: auto;
+}
+
+.about-right-half-box {
+    margin-right: auto;
+}
+
+
+.about-full-height-area {
+    padding: 10vh;
+    justify-content: center;
+}
+
+svg#mission,  span.box-top-logo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -20px;
+    display: block;
+    left: 50px;
+}
+
+svg#Vission {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -15px;
+    display: block;
+    left: 50px;
+}
+
+.grey-text {
+    color: #9F9F9F;
+}
+/*timeline bar*/
+
+#progressbar {
+	position: fixed;
+	width: 8px;
+	z-index: 99;
+	
+	top: 0;
+	left: 0;
+	bottom: calc( 100% );
+	
+	background-color: #F50057;
+	
+	transition: bottom .5s linear 0s;
+}
+
+.line-height-30 {
+    line-height: 30px;
+}
+
+/*milestone styles*/
+.milestone-row {
+    display: flex;
+}
+
+.milestone-line {
+    display: flex;
+    width: 5px;
+    background-color: red;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.milestone-img {
+    width: 100%;
+}

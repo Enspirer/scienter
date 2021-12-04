@@ -1,0 +1,49 @@
+.client-list {
+    display: flex;
+}
+
+.client-logo-area {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+
+.client-logo-box {
+    width: 150px;
+    text-align: center;
+    height: 100%;  
+    padding: 5px;
+}
+
+.client-logo-inner-box {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.filter-list {
+    list-style: none;
+}
+
+.filter-list li {
+    margin: 25px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.client-logo-row {
+    display: flex;
+}
+
+.client-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    padding: 100px !important;
+}
+
+.filter-area {
+    padding: 30px;
+}
+
+.client-logo-img {
+    width: 80%;
+}

@@ -1,0 +1,24 @@
+.contact-main-banner-wrapper img {
+    width: 100%;
+}
+
+.contact-main-section {
+    padding-top: 15vh;
+}
+
+.contact-main-banner-wrapper {
+    display: flex;
+    position: relative;
+    height: 90%;
+}
+
+.contact-banner-text-wrapper {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    padding: 30px;
+}
+
+.our-locations-wrapper {
+    height: 10%;
+}

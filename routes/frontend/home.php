@@ -6,11 +6,25 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
-
+use App\Http\Controllers\Frontend\AboutController;
+use App\Http\Controllers\Frontend\NewsController;
+use App\Http\Controllers\Frontend\OurClientController;
+use App\Http\Controllers\Frontend\ContactUsController;
+use App\Http\Controllers\Frontend\SolutionsController;
+use App\Http\Controllers\Frontend\PortfolioController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
  */
+
+
+Route::get('about', [AboutController::class, 'index'])->name('about');
+Route::get('news', [NewsController::class, 'index'])->name('news');
+Route::get('ourclient', [OurClientController::class, 'index'])->name('ourclient');
+Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
+Route::get('solutions', [SolutionsController::class, 'index'])->name('solutions');
+Route::get('portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');

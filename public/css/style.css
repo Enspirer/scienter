@@ -1,0 +1,315 @@
+/*web fonts*/
+@font-face {
+    font-family: 'TT-Interfaces-Light';
+    src: url("../fonts/TTInterfaces-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Segoe-UI-Bold';
+    src: url("../fonts/Segoe-UI-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'TT-Interfaces-ExtraLight';
+    src: url("../fonts/TTInterfaces-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: 'TT-Interfaces-DemiBold';
+    src: url("../fonts/TTInterfaces-DemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'TT-Interfaces-Medium';
+    src: url("../fonts/TTInterfaces-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'TT-Interfaces-Bold';
+    src: url("../fonts/TTInterfaces-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'TT-Interfaces-Regular';
+    src: url("../fonts/TTInterfaces-Regular.ttf");
+}
+
+a.nav-link {
+    font-family: Segoe-UI-Bold, sans-serif;
+    font-size: 18px;
+}
+
+.segoe-ui-bold {
+    font-family: Segoe-UI-Bold, sans-serif;
+}
+
+.TT-Light {
+    font-family: 'TT-Interfaces-Light', sans-serif;
+}
+
+.TT-ExtraLight {
+    font-family: 'TT-Interfaces-ExtraLight', sans-serif;
+}
+
+.TT-DemiBold {
+    font-family: 'TT-Interfaces-DemiBold', sans-serif;
+}
+
+.TT-Medium {
+    font-family: 'TT-Interfaces-Medium', sans-serif;
+}
+
+.TT-Bold {
+    font-family: 'TT-Interfaces-Bold', sans-serif;
+}
+
+.TT-Regular {
+    font-family: 'TT-Interfaces-Regular', sans-serif;
+}
+
+.small-heading {
+    font-size: 0.9rem;
+}
+
+.home-btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+.full {
+    display: flex;
+    align-items: stretch;
+}
+
+.main {
+    margin-left: 6%;
+    width: 100%;
+}
+
+
+
+#navigation {
+    position: fixed;
+    z-index: 100;
+    width: 94%;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.navbar-nav {
+    gap: 1vw;
+}
+
+a.nav-link.active {
+    color: #F1663C !important;
+    width: auto;
+    position: relative;
+}
+
+a.nav-link.active::before {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 0px;
+    height: 25px;
+    width: 70%;
+    border-bottom: 2px solid #F1663C;
+    margin-top: 1.2rem;
+}
+
+
+
+
+.sidenav {
+    background-color: #F1663C;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 6%;
+}
+
+
+
+.side-top {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-title-wrapper {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    color: #fff;
+    font-size: 19px;
+}
+
+
+.side-middle {
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.side-middle-icon {
+    display: block;
+    transform: scale(0.7);
+}
+
+.side-bottom {
+    flex: 25%;
+}
+
+.siderbar-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+li.nav-item {
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+}
+
+.full-height-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.half-img {
+    width: 100%;
+}
+
+/*footer*/
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-list li span {
+    margin-right: 25px;
+}
+
+.footer-list li {
+    font-size: 0.9rem;
+}
+
+.contact-text {
+    display: inline-flex;
+    margin-right: 0 !important;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-main {
+    background-color: #565656;
+}
+
+.footer-main-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.footer-main-container h3 {
+    font-size: 1.2rem;
+}
+
+.footer-main-container p {
+    font-size: 0.9rem;
+}
+
+.footer-form {
+    display: flex;
+    background: #fff;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.footer-form-input {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 0;
+    padding-left: 15px;
+}
+
+.col-md-4.footer-main-text {
+    padding-right: 30px;
+}
+
+input.footer-form-submit {
+    background: #F1663C;
+    position: relative;
+    right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 25px;
+    color: #fff;
+    border: 0;
+    padding: 5px 25px;
+}
+
+.footer-top-logo-area {
+    background-color: #ECECEC;
+}
+
+.main-full-width {
+    padding-left: -15px;
+    padding-right: -15px;
+}
+
+.full-height-area {
+    display: flex;
+    position: relative;
+    padding: 10vh;
+    height: 100vh;
+    flex-direction: column;
+}
+ 
+
+h1.main-heading {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.client-topic-wrapper {
+    width: 250px;
+    margin-bottom: 45px;
+}
+
+.line-wrapper {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: end;
+}
+
+.line-area {
+    display: flex;
+    justify-content: end;
+}
+
+
+.topic-line {
+    width: 100%;
+    background-color: #000;
+    height: 1px;
+    display: flex;
+}
+
+i.fas.fa-circle {
+    font-size: 0.6rem;
+}

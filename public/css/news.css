@@ -1,0 +1,27 @@
+.news-inner-box {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 11px;
+    padding: 30px;
+}
+
+img.news-box-img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-box h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.news-subheading {
+    font-size: 1.5rem;
+}
+
+.mb-45 {
+    margin-bottom: 45px;
+}

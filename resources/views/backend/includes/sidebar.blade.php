@@ -14,6 +14,70 @@
             </li>
 
 
+            <li class="nav-item nav-dropdown ">
+                <a class="nav-link nav-dropdown-toggle " href="#">
+                    <i class="nav-icon fas fa-handshake"></i>
+                    Our Clients
+                </a>
+                
+                <ul class="nav-dropdown-items">
+
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/our_client_category'))}}" href="{{ route('admin.our_client_category.index') }}">                            
+                            Category
+                        </a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/our_client'))}}" href="{{ route('admin.our_client.index') }}">                            
+                            Our Clients
+                        </a>
+                    </li>  
+
+                </ul>
+            </li> 
+
+            <li class="nav-item nav-dropdown ">
+                <a class="nav-link nav-dropdown-toggle " href="#">
+                    <i class="nav-icon fas fa-tasks"></i>
+                    Solutions
+                </a>
+                
+                <ul class="nav-dropdown-items">
+
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/solutions'))}}" href="{{ route('admin.solutions.index') }}">                            
+                            Solutions
+                        </a>
+                    </li>  
+
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/s_inquire'))}}" href="{{ route('admin.s_inquire.index') }}">                            
+                            Inquire
+                        </a>
+                    </li>  
+
+                </ul>
+            </li> 
+
+            <li class="nav-item nav-dropdown ">
+                <a class="nav-link nav-dropdown-toggle " href="#">
+                    <i class="nav-icon fas fa-bullseye"></i>
+                    About
+                </a>
+                
+                <ul class="nav-dropdown-items">
+
+                    <li class="nav-item">
+                        <a class="nav-link {{active_class(Route::is('admin/milestone'))}}" href="{{ route('admin.milestone.index') }}">                            
+                            Milestone
+                        </a>
+                    </li> 
+
+                </ul>
+            </li> 
+
+           
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Route::is('admin/module-explorer'))}}" href="{{ route('admin.module.index') }}">
                     <i class="nav-icon fa fa-box"></i>
@@ -26,7 +90,8 @@
                 <i class="nav-icon fas fa-folder-open"></i>
                     File Manager
                 </a>
-            </li>
+            </li>         
+           
 
             @if(Module::has('Blog'))
                 @if(Module::find('Blog')->isStatus(1))

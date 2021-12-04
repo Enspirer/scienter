@@ -19,7 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->text('description')->nullable();
             $table->text('image')->nullable();
             $table->text('slug')->nullable();
-            $table->text('order');
+            $table->integer('order');
             $table->text('status');
             $table->timestamps();
         });

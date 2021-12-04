@@ -4,8 +4,6 @@
 
 @section('content')
 
-<link rel="stylesheet" href="{{url('css/vendors.css')}}">
-
 <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
 
     <form action="{{route('admin.post.update')}}" method="post" enctype="multipart/form-data">

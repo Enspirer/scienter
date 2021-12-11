@@ -90,7 +90,14 @@
                 <i class="nav-icon fas fa-folder-open"></i>
                     File Manager
                 </a>
-            </li>         
+            </li>   
+
+            <li class="nav-item">
+                <a class="nav-link {{active_class(Route::is('admin/the_journey'))}}" href="{{ route('admin.the_journey.index') }}">
+                <i class="nav-icon fas fa-arrows-alt"></i>
+                    The Journey
+                </a>
+            </li>        
            
 
             @if(Module::has('Blog'))

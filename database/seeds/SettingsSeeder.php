@@ -180,6 +180,61 @@ class SettingsSeeder extends Seeder
             'user_id' => 1,
             ]
         );  
-        
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'our_story_title',
+            'value' => 'Our Story', 
+            'user_id' => 1,
+            ]
+        );  
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'our_story_description',
+            'value' => 'Since it’s inception in 1995, SCIENTER TECHNOLOGIES has provided Sri Lankan and global industries with a multitude of comprehensive inte - grated software solutions. Renowned for its ‘cutting edge’ in increasing efficiency, profitability and its modernity keeping in line with continuous innovation witnessed and experienced technologically over the years, the company has become the solutions prefered provider for many corporate entities.', 
+            'user_id' => 1,
+            ]
+        );  
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'our_story_image',
+            'value' => 'world.png', 
+            'user_id' => 1,
+            ]
+        );          
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'excellence_text',
+            'value' => 'Passion for', 
+            'user_id' => 1,
+            ]
+        );  
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'excellence_title',
+            'value' => 'Excellence', 
+            'user_id' => 1,
+            ]
+        );  
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'excellence_description',
+            'value' => 'Our team comprises some of the most sought after and recognized individuals in their chosen field of expertise who are passionate and committed to provide our clients with cutting edge solutions. We are passionate about serving, and providing you with the best in what we possess, leaving no stone unturned to carve out exactly what you require from us. We take pride in ourselves in having been able to transcend the barrier of being a service provider, rather we are trained to think in terms of ‘solutions’ and providing solutions to suit your business needs is our passion. Our commitment to excellence is unparalleled, and our passion to perform is driven by our desire to give out the best of what we possess.', 
+            'user_id' => 1,
+            ]
+        ); 
+        DB::table('settings')
+        ->insert(
+            [             
+            'key' => 'excellence_image',
+            'value' => 'excellence.png', 
+            'user_id' => 1,
+            ]
+        );  
     }
 }

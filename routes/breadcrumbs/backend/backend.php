@@ -57,6 +57,16 @@ Breadcrumbs::for('admin.milestone.edit', function ($trail) {
     $trail->push('Edit Milestones', route('admin.milestone.edit',1));
 });
 
+Breadcrumbs::for('admin.the_journey.index', function ($trail) {
+    $trail->push('The Journey', route('admin.the_journey.index'));
+});
+Breadcrumbs::for('admin.the_journey.create', function ($trail) {
+    $trail->push('Create The Journey', route('admin.the_journey.create'));
+});
+Breadcrumbs::for('admin.the_journey.edit', function ($trail) {
+    $trail->push('Edit The Journey', route('admin.the_journey.edit',1));
+});
+
 
 
 Breadcrumbs::for('admin.file_manager.index', function ($trail) {

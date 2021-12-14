@@ -9,6 +9,7 @@ use App\Http\Controllers\Backend\OurClientCategoryController;
 use App\Http\Controllers\Backend\SolutionsController;
 use App\Http\Controllers\Backend\SolutionsInquireController;
 use App\Http\Controllers\Backend\MilestoneController;
+use App\Http\Controllers\Backend\TheJourneyController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -67,9 +68,6 @@ Route::post('module-explorer/uninstall/', [ModuleExplorerController::class, 'uni
 Route::get('settings', [SettingsController::class, 'index'])->name('settings.index');
 Route::post('settings/update', [SettingsController::class, 'settings_update'])->name('settings_update');
 
-Route::get('about_us', [SettingsController::class, 'about_us'])->name('about_us');
-Route::post('about_us/update', [SettingsController::class, 'about_us_update'])->name('about_us_update');
-
 Route::get('privacy_policy', [SettingsController::class, 'privacy_policy'])->name('privacy_policy');
 Route::post('privacy_policy/update', [SettingsController::class, 'privacy_policy_update'])->name('privacy_policy_update');
 
@@ -79,4 +77,16 @@ Route::post('terms_and_conditions_update/update', [SettingsController::class, 't
 Route::get('contactus_thanks', [SettingsController::class, 'contactus_thanks'])->name('contactus_thanks');
 Route::post('contactus_thanks_update/update', [SettingsController::class, 'contactus_thanks_update'])->name('contactus_thanks_update');
 
+Route::get('about_us', [SettingsController::class, 'about_us'])->name('about_us');
+Route::post('about_us/update', [SettingsController::class, 'about_us_update'])->name('about_us_update');
+Route::post('excellence/update', [SettingsController::class, 'excellence_update'])->name('excellence_update');
 
+
+
+Route::get('the_journey', 'TheJourneyController@index')->name('the_journey.index');
+Route::get('the_journey/create', 'TheJourneyController@create')->name('the_journey.create');
+Route::post('the_journey/store', 'TheJourneyController@store')->name('the_journey.store');
+Route::get('the_journey/getdetails', 'TheJourneyController@getdetails')->name('the_journey.getdetails');
+Route::get('the_journey/edit/{id}', 'TheJourneyController@edit')->name('the_journey.edit');
+Route::post('the_journey/update', 'TheJourneyController@update')->name('the_journey.update');
+Route::get('the_journey/delete/{id}', 'TheJourneyController@destroy')->name('the_journey.destroy');

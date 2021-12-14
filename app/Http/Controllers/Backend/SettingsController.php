@@ -100,24 +100,82 @@ class SettingsController extends Controller
     }
 
 
-
     public function about_us()
     {
-        $about_us = Settings::where('key','=','about_us_content')->first();
+        $our_story_title = Settings::where('key','=','our_story_title')->first();
+        $our_story_description = Settings::where('key','=','our_story_description')->first();
+        $our_story_image = Settings::where('key','=','our_story_image')->first();
+
+        $excellence_text = Settings::where('key','=','excellence_text')->first();
+        $excellence_title = Settings::where('key','=','excellence_title')->first();
+        $excellence_description = Settings::where('key','=','excellence_description')->first();
+        $excellence_image = Settings::where('key','=','excellence_image')->first();
 
         return view('backend.settings.about_us',[
-            'about_us' => $about_us
+            'our_story_title' => $our_story_title,
+            'our_story_description' => $our_story_description,
+            'our_story_image' => $our_story_image,
+            'excellence_text' => $excellence_text,
+            'excellence_title' => $excellence_title,
+            'excellence_description' => $excellence_description,
+            'excellence_image' => $excellence_image,
         ]);
     }
 
     public function about_us_update(Request $request)
     {            
+        if($request->file('our_story_image'))
+        {            
+            $preview_fileName = time().'_'.rand(1000,10000).'.'.$request->our_story_image->getClientOriginalExtension();
+            $fullURLsPreviewFile = $request->our_story_image->move(public_path('files/about_us'), $preview_fileName);
+            $image_url = $preview_fileName;
+        }else{
+            $detail = Settings::where('key','=','our_story_image')->first();
+            $image_url = $detail->value;  
+        } 
+
         $update = new Settings;
 
-        $update->value=$request->about_us;
+        $update->value=$image_url;
+        Settings::where('key','=','our_story_image')->update($update->toArray());
+
+        $update->value=$request->our_story_title;
+        Settings::where('key','=','our_story_title')->update($update->toArray());
+
+        $update->value=$request->our_story_description;        
+        Settings::where('key','=','our_story_description')->update($update->toArray());
+
+        return back()->withFlashSuccess('Updated Successfully');
         
-        Settings::where('key','=','about_us_content')->update($update->toArray());
-        return back()->withFlashSuccess('Updated Successfully');                
+    }
+
+    public function excellence_update(Request $request)
+    {            
+        if($request->file('excellence_image'))
+        {            
+            $preview_fileName = time().'_'.rand(1000,10000).'.'.$request->excellence_image->getClientOriginalExtension();
+            $fullURLsPreviewFile = $request->excellence_image->move(public_path('files/about_us'), $preview_fileName);
+            $image_url = $preview_fileName;
+        }else{
+            $detail = Settings::where('key','=','excellence_image')->first();
+            $image_url = $detail->value;
+        } 
+
+        $update = new Settings;
+
+        $update->value=$image_url;
+        Settings::where('key','=','excellence_image')->update($update->toArray());
+
+        $update->value=$request->excellence_text;
+        Settings::where('key','=','excellence_text')->update($update->toArray());
+
+        $update->value=$request->excellence_title;
+        Settings::where('key','=','excellence_title')->update($update->toArray());
+
+        $update->value=$request->excellence_description;        
+        Settings::where('key','=','excellence_description')->update($update->toArray());
+
+        return back()->withFlashSuccess('Updated Successfully');            
 
     }
 

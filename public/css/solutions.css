@@ -3,3 +3,17 @@
     color: #fff;
     border-radius: 0px;
 }
+
+
+.solution-line-area {
+    width: 85%;
+    margin-left: auto;
+    color: #ebebeb;
+}
+
+.solution-topic-line {
+    width: 100%;
+    background-color: #ebebeb;;
+    height: 2px;
+    display: flex;
+}

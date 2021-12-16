@@ -25,3 +25,9 @@ img.news-box-img {
 .mb-45 {
     margin-bottom: 45px;
 }
+
+.main-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

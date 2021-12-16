@@ -116,6 +116,34 @@
                         </div>  
                     </div>
                 <!-- </div> -->
+
+                <!-- <div class="client-logo-row"> -->
+                <div class="client-logo-box">
+                        <div class="client-logo-inner-box">
+                            <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}" alt="Anantaya logo">
+                        </div>  
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box">
+                            <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}" alt="Anantaya logo">
+                        </div>  
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box">
+                            <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}" alt="Anantaya logo">
+                        </div>  
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box">
+                            <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}" alt="Anantaya logo">
+                        </div>  
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box">
+                            <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}" alt="Anantaya logo">
+                        </div>  
+                    </div>
+                <!-- </div> -->
                 
             </div>
         </div>

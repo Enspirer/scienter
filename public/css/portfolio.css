@@ -30,15 +30,15 @@
 }
 
 .portfolio-full {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 0;
+    padding-right: 0;
     position: relative;
 }
 
 /*portfolio main section*/
 section.portfolio-main {
     display: flex;
-    width: 100%;
+    width: 99%;
     flex-direction: row;
     padding: 10vh 0;
 }
@@ -613,8 +613,8 @@ canvas{
   
   #particles-js{
     width: 100%;
-    height: 100%;
-    background-color: #b61924;
+    height: 100vh;
+    background-color: #7e7e7e;
     background-image: url('');
     background-size: cover;
     background-position: 50% 50%;

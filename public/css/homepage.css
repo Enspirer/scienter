@@ -25,6 +25,16 @@
     border-radius: 0;
 }
 
+.home-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.home-btn:active {
+    transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+
+
 .home-box-pms-img-area {
     background-image: url(../img/frontend/homepage/destinity-pms.png);
     height: 65vh;
@@ -72,8 +82,7 @@
     right: 10vh;
     top: 27vh;
     height: 45vh;
-    background: #fff;
-    opacity: 0.5 !important;
+    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     text-align: center;
     padding: 30px;
@@ -114,6 +123,7 @@
     width: 250px;
     position: absolute;
     right: 45px;
+    background-color: #F1903C;
 }
 
 .grey-line {
@@ -133,19 +143,24 @@
     font-size: 52px;
 }
 
+.journey-area {
+    justify-content: center;
+}
+
 .journey-box p {
     font-size: 0.8rem;
+    padding-left: 60px;
 }
 
 .journey-box-wrapper {
     position: relative;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .journey-box-wrapper:before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 0;
     height: 82%;
     width: 3px;
@@ -160,7 +175,8 @@
 
 .topic-point {
     position: absolute;
-    left: -38px;
+    left: 5px;
+    top: -5px;
 }
 
 .topic-point i.fas.fa-circle {
@@ -178,6 +194,7 @@
 
 .topic-and-point-wrapper h3 {
     font-size: 1.3rem;
+    padding-left: 60px;
 }
 
 .journey-box h4 {
@@ -462,7 +479,7 @@
 .swiper-slide-active .topic-and-point-wrapper h3:before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 60px;
     top: -15px;
     height: 1px;
     width: 15%;
@@ -472,6 +489,7 @@
 .swiper {
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 
   .swiper-slide {
@@ -527,5 +545,11 @@
       height: 100%;
   }
 
-  /*image slider*/
+  .home-content-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
 

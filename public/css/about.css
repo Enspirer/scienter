@@ -315,3 +315,7 @@ span.vertical-line-animated {
         opacity: 0;
     }
 }
+
+.vision-text-wrapper {
+    margin-top: 10px;
+}

@@ -86,7 +86,6 @@ function prevSlide() {
 
     
 
-    console.log(i);
 
 
   //----------left side content animation and everything 

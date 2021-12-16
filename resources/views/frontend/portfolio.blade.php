@@ -4,13 +4,14 @@
 
 @push('after-styles')
 <link href="{{ url('css/portfolio.css') }}" rel="stylesheet">
+<link href="{{ url('css/ourclient.css') }}" rel="stylesheet">
 @endpush
 
 
 <!-- news page content -->
 @section('content')
-<!-- id="particles-js"  -->
-<div class="container-fluid portfolio-full">
+<!--   -->
+<div id="particles-js" class="container-fluid portfolio-full">
         <!-- <section class="portfolio-main">
             <div class="row">
                 <div class="col-md-6 portfolio-main-left-content">
@@ -32,7 +33,7 @@
     <section class="portfolio-main">
     <!-- portfolio leftside -->
     <div class="portfolio-leftside-wrapper">
-        <h1>Pootfolio</h1>
+        <h1>Portfolio</h1>
         <div class="portfolio-content-box">
             <p>We start with a get-things-done attitude</p>
             <h2 id="portTitleOne">Topic 1</h2>
@@ -71,6 +72,170 @@
 </section>
 </div>
 
+<section id="clients" class="home-other-sections client-section">
+    <div data-aos="zoom-in" data-aos-duration="1000" class="container">
+        <div class="client-topic-wrapper">
+            <h2 class="TT-Light">Our Clients</h2>
+            <div class="line-area">
+                <span class="line-wrapper"><i class="fas fa-circle"></i><span class="topic-line"></span></span>
+            </div>
+        </div>
+
+
+        <div class="client-list">
+            <div class="filter-area">
+                <ul class="filter-list">
+                    <li><b>All</b></li>
+                    <li>Hotel</li>
+                    <li>Restaurants & Clubs</li>
+                    <li>Finance & Leasing</li>
+                </ul>
+            </div>
+            <div class="client-logo-area">
+                <!-- <div class="client-logo-row"> -->
+
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/KFC.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+
+
+                <!-- </div> -->
+
+                <!-- <div class="client-logo-row"> -->
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <!-- <div class="client-logo-row"> -->
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                 <!-- <div class="client-logo-row"> -->
+                 <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <!-- </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <a href="#expertise" class="scroll-down-sub-btn" address="true"></a>
+</section>
+
 
 @endsection
 <!-- end of news page -->
@@ -84,7 +249,7 @@
 <script src="{{ url('js/portfolio/app.js')}}"></script>
 <script src="{{ url('js/portfolio/lib/stats.js') }}" ></script>
 
-<script>
+<!-- <script>
       var count_particles, stats, update;
   stats = new Stats;
   stats.setMode(0);
@@ -102,6 +267,6 @@
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
-</script>
+</script> -->
 
 @endpush

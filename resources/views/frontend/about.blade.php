@@ -62,9 +62,11 @@
                         </svg>
 
                     </span>
-                    <h2 class="TT-Light">Our Vision</h2>
-                    <p class="grey-text TT-Light">To lead the industry as the preferred Information Technology partner.
-                    </p>
+                    <div class="vision-text-wrapper">
+                        <h2 class="TT-Light">Our Vision</h2>
+                        <p class="grey-text TT-Light">To lead the industry as the preferred Information Technology partner.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -85,9 +87,11 @@
                         </svg>
 
                     </span>
-                    <h2 class="TT-Light">Our Mission</h2>
-                    <p class="grey-text TT-Light">We empower organizations not just technology solutions. We Value our
-                        team not just provide employment. We build relationships not just customer portfolio</p>
+                    <div class="vision-text-wrapper">
+                        <h2 class="TT-Light">Our Mission</h2>
+                        <p class="grey-text TT-Light">We empower organizations not just technology solutions. We Value our
+                            team not just provide employment. We build relationships not just customer portfolio</p>
+                    </div>
                 </div>
             </div>
         </div>

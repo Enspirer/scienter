@@ -1,24 +1,178 @@
-.contact-main-banner-wrapper img {
+.contact-main-banner-wrapper {
     width: 100%;
+    height: 100%;
+    background-image: url('../img/frontend/contact-us/banner-one.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    background-color: rgba(255,255,255,0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(20px);
+}
+
+.text-area {
+    position: absolute;
+    padding: 10% 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-main-section {
     padding-top: 15vh;
+    padding-bottom: 1vh;
 }
 
 .contact-main-banner-wrapper {
     display: flex;
     position: relative;
-    height: 90%;
+    height: 65vh;
+    justify-content: flex-end;
 }
 
 .contact-banner-text-wrapper {
-    position: absolute;
-    right: 0;
+    position: relative;
     width: 30%;
-    padding: 30px;
+    height: 100%;
+}
+
+.contact-banner-text-wrapper h3 {
+    font-size: 1.5rem;
+}
+
+.contact-banner-text-wrapper h4 {
+    font-size: 1.2rem;
+}
+
+.contact-banner-text-wrapper p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
 }
 
 .our-locations-wrapper {
-    height: 10%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-area {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contact-area h3 {
+    font-size: 2rem;
+}
+
+.contact-area p {
+    color:#f1663c;
+    font-size: 0.8rem;
+}
+
+.contact-area-btns {
+    cursor: pointer;
+    display: flex;
+}
+
+.contact-area-btns:hover {
+    transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+}
+
+.contact-area-btns:active {
+    transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+
+span.location-wrapper {
+    display: block;
+    width: 200px;
+}
+
+
+.submit-wrapper {
+    display: flex;
+    align-items: end;
+}
+
+.contact-form-row {
+    display: flex;
+}
+
+.last-row-content-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+input[type="submit"] {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+.contact-form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+
+.contact-form-last-row {
+    margin-top: 30px;
+}
+
+.contact-form input[type="text"] {
+    border: 0;
+    border-bottom: 1.5px solid #000;
+}
+
+
+
+form.contact-form {
+    width: 50vw;
+}
+
+.inputline {
+    display: none;
+    background-color: red;
+    width: 5%;
+    transition: width 5s;
+    height: 2px;
+}
+
+.contact-form input[type="text"]:focus {
+    border-bottom: 0;
+}
+
+.contact-form input[type="text"]:focus ~ .inputline {
+    display: block;
+    width: 100%;
+}
+
+.last-row-content-wrapper p {
+    margin: 0;
+}
+
+path#Polygon_2-2, path#Polygon_1-2 {
+    fill: #eee;
 }

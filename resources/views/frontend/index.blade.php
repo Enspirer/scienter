@@ -28,20 +28,27 @@
 <section id="home-second" class="home-other-sections">
     <div data-aos="zoom-in-right" data-aos-duration="1000" class="home-box-pms-img-area"></div>
     <div data-aos="zoom-in-left" data-aos-duration="1000" class="home-content-box">
-        <h2 class="TT-Light">Destinity PMS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
-        <button class="btn home-btn">View Project</button>
+        <div class="home-content-text-wrapper">
+            <h2 class="TT-Light">Destinity PMS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+            <button class="btn home-btn">View Project</button>
+        </div>
+
     </div>
     <a href="#pos" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
 <section id="pos" class="home-other-sections right-side-img-section">
     <div data-aos="zoom-in-right" data-aos-duration="1000" class="home-content-box left-side-box">
-        <h2 class="TT-Light">Destinity POS</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
-        <button class="btn home-btn">View Project</button>
+        <div class="home-content-text-wrapper">
+            <h2 class="TT-Light">Destinity POS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+            <button class="btn home-btn">View Project</button>
+        </div>
     </div>
     <div data-aos="zoom-in-left" data-aos-duration="1000" class="home-box-pos-img-area"></div>
     <a href="#eFinancial" class="scroll-down-sub-btn" address="true"></a>
@@ -50,10 +57,13 @@
 <section id="eFinancial" class="home-other-sections">
     <div data-aos="zoom-in-left" data-aos-duration="1000" class="home-box-efinancial-img-area"></div>
     <div data-aos="zoom-in-right" data-aos-duration="1000" class="home-content-box">
-        <h2 class="TT-Light">eFinancials</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua.</p>
-        <button class="btn home-btn">View Project</button>
+        <div class="home-content-text-wrapper">
+            <h2 class="TT-Light">eFinancials</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+            <button class="btn home-btn">View Project</button>
+        </div>
     </div>
     <a href="#journey" class="scroll-down-sub-btn" address="true"></a>
 </section>
@@ -126,112 +136,113 @@
 </section> -->
 
 
-<section id="journey" class="journey-area">
+<section id="journey" class="journey-area home-other-sections">
     <div class="journey-section-wrapper">
-    <div class="row swipperr-row">
-        <div class="col-md-6 tourism-left-content">
-            <div class="tourism-topic-wrapper">
-                <h2 class="TT-Light">The Journey of</h2>
-                <div class="line-area">
-                    <span class="line-wrapper"><i class="fas fa-circle"></i><span class="grey-line"></span></span>
-                </div>
-                <h2>Decades</h2>
-            </div>
-
-            
-
-
-            <img id="demo" class="tourism-box-img" src="{{url('img/frontend/homepage/tourism.png') }}" alt="tourism logo"> 
-            <p id="demo-text">Slide number</p>
-            <!-- Swiper -->
-            
-
-
-
-        </div>
-        <div class="col-md-6">
-            <div class="swipper-wrapper journey-box-wrapper">
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <!-- slide one -->
-                        <div id="slideOne" class="slideOne swiper-slide">
-                            <div class="journey-box">
-                                <div class="topic-and-point-wrapper">
-                                    <span class="topic-point">
-                                        <i class="fas fa-circle" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="TT-Light">Slide One</h3>
-                                </div>
-                                <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                    management
-                                    solution </p>
-                                <h4 class="TT-Light">NBQSA 2009</h4>
-                            </div>
-                        </div>
-
-                        <!-- slide two -->
-                        <div id="slide-two" class="slideTwo swiper-slide">
-                            <div class="journey-box">
-                                <div class="topic-and-point-wrapper">
-                                    <span class="topic-point">
-                                        <i class="fas fa-circle" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="TT-Light">Slide 2</h3>
-                                </div>
-                                <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                    management
-                                    solution </p>
-                                <h4 class="TT-Light">NBQSA 2009</h4>
-                            </div>
-                        </div>
-
-                        <!-- slide three -->
-                          <div id="slide-three" class="slideThree swiper-slide">
-                            <div class="journey-box">
-                                <div class="topic-and-point-wrapper">
-                                    <span class="topic-point">
-                                        <i class="fas fa-circle" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="TT-Light">Slide Three</h3>
-                                </div>
-                                <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                    management
-                                    solution </p>
-                                <h4 class="TT-Light">NBQSA 2009</h4>
-                            </div>
-                        </div>
-
-                         <!-- slide two -->
-                        <div id="slide-four" class="slideFour swiper-slide">
-                            <div class="journey-box">
-                                <div class="topic-and-point-wrapper">
-                                    <span class="topic-point">
-                                        <i class="fas fa-circle" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="TT-Light">Slide Four</h3>
-                                </div>
-                                <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                    management
-                                    solution </p>
-                                <h4 class="TT-Light">NBQSA 2009</h4>
-                            </div>
-                        </div>
-
-
-
-
-
+        <div class="row swipperr-row">
+            <div class="col-md-6 tourism-left-content">
+                <div class="tourism-topic-wrapper">
+                    <h2 class="TT-Light">The Journey of</h2>
+                    <div class="line-area">
+                        <span class="line-wrapper"><i class="fas fa-circle"></i><span class="grey-line"></span></span>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <h2>Decades</h2>
                 </div>
+
+
+
+
+                <img id="journey-img" class="tourism-box-img"
+                    src="{{url('img/frontend/homepage/journey-slides/image-one.png') }}" alt="tourism logo">
+               
+                <!-- Swiper -->
+
+
+
+
             </div>
+            <div class="col-md-6">
+                <div class="swipper-wrapper journey-box-wrapper">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- slide one -->
+                            <div id="slideOne" class="slideOne swiper-slide">
+                                <div class="journey-box">
+                                    <div class="topic-and-point-wrapper">
+                                        <span class="topic-point">
+                                            <i class="fas fa-circle" aria-hidden="true"></i>
+                                        </span>
+                                        <h3 class="TT-Light">Slide One</h3>
+                                    </div>
+                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
+                                        management
+                                        solution </p>
+                                    <h4 class="TT-Light">NBQSA 2009</h4>
+                                </div>
+                            </div>
+
+                            <!-- slide two -->
+                            <div id="slide-two" class="slideTwo swiper-slide">
+                                <div class="journey-box">
+                                    <div class="topic-and-point-wrapper">
+                                        <span class="topic-point">
+                                            <i class="fas fa-circle" aria-hidden="true"></i>
+                                        </span>
+                                        <h3 class="TT-Light">Slide 2</h3>
+                                    </div>
+                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
+                                        management
+                                        solution </p>
+                                    <h4 class="TT-Light">NBQSA 2009</h4>
+                                </div>
+                            </div>
+
+                            <!-- slide three -->
+                            <div id="slide-three" class="slideThree swiper-slide">
+                                <div class="journey-box">
+                                    <div class="topic-and-point-wrapper">
+                                        <span class="topic-point">
+                                            <i class="fas fa-circle" aria-hidden="true"></i>
+                                        </span>
+                                        <h3 class="TT-Light">Slide Three</h3>
+                                    </div>
+                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
+                                        management
+                                        solution </p>
+                                    <h4 class="TT-Light">NBQSA 2009</h4>
+                                </div>
+                            </div>
+
+                            <!-- slide two -->
+                            <div id="slide-four" class="slideFour swiper-slide">
+                                <div class="journey-box">
+                                    <div class="topic-and-point-wrapper">
+                                        <span class="topic-point">
+                                            <i class="fas fa-circle" aria-hidden="true"></i>
+                                        </span>
+                                        <h3 class="TT-Light">Slide Four</h3>
+                                    </div>
+                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
+                                        management
+                                        solution </p>
+                                    <h4 class="TT-Light">NBQSA 2009</h4>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+               
+            </div>
+            
         </div>
     </div>
-    </div>
-    
-
-
+    <a href="#clients" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
 
@@ -290,6 +301,39 @@
                 </div>
 
 
+                <!-- </div> -->
+
+                <!-- <div class="client-logo-row"> -->
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
+                <div class="client-logo-box">
+                    <div class="client-logo-inner-box">
+                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
+                            alt="Anantaya logo">
+                    </div>
+                </div>
                 <!-- </div> -->
 
                 <!-- <div class="client-logo-row"> -->
@@ -453,50 +497,20 @@
 @push('after-scripts')
 <!-- journey animation -->
 <!-- active slide for display image -->
-<script>
-// $(document).ready(function(){
-//     $(".slideOne.swiper-slide.swiper-slide-active").show(function() {
-//     	document.getElementById("demo").innerHTML = "One is active";
-//     });
-//      $(".slideTwo.swiper-slide.swiper-slide-active").show(function() {
-//     	document.getElementById("demo").innerHTML = "Second is active";
-//     });
-//      $(".slideThree.swiper-slide.swiper-slide-active").show(function() {
-//     	document.getElementById("demo").innerHTML = "Third is active";
-//     });
-   
-// });
-
-
-$(".swipper-wrapper").mouseover(function() {
-    $(".slideOne.swiper-slide.swiper-slide-active").show(function() {
-    	document.getElementById("demo").src = "{{url('img/frontend/homepage/tourism.png') }}";
-        document.getElementById("demo-text").innerHTML = "One";
-    });
-     $(".slideTwo.swiper-slide.swiper-slide-active").show(function() {
-    	document.getElementById("demo").src = "{{url('img/frontend/homepage/destinity-pms.png') }}";
-        document.getElementById("demo-text").innerHTML = "Two";
-    });
-     $(".slideThree.swiper-slide.swiper-slide-active").show(function() {
-    	document.getElementById("demo").src = "{{url('img/frontend/homepage/destinity-pos.png') }}";
-        document.getElementById("demo-text").innerHTML = "Three";
-    });
-    $(".slideFour.swiper-slide.swiper-slide-active").show(function() {
-    	document.getElementById("demo").src = "{{url('img/frontend/homepage/eFinancials.png') }}";
-        document.getElementById("demo-text").innerHTML = "Four";
-    });
-})
 
 
 
-</script>
+
+
+
+
 
 
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
- <!-- Initialize Swiper -->
+<!-- Initialize Swiper -->
 
 
 
@@ -513,12 +527,52 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true
     },
-    // autoplay: {
-    //     delay: 1000,
-    // }
+    autoplay: {
+        delay: 2000,
+    },
 });
-</script> 
+
+
+
+//slide change event catch to make image changer
+swiper.on('slideChange', function() {
+
+    //image holder array 
+    const journeySlideImg = ["http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-one.png",
+        "http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-two.png",
+        "http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-three.png",
+        "http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-four.png"
+    ];
+
+    //querySelectors
+    const oneActive = document.querySelector('.slideOne.swiper-slide.swiper-slide-active');
+    const twoActive = document.querySelector('.slideTwo.swiper-slide.swiper-slide-active');
+    const threeActive = document.querySelector('.slideThree.swiper-slide.swiper-slide-active');
+    const fourActive = document.querySelector('.slideFour.swiper-slide.swiper-slide-active');
+
+    if (oneActive) {
+        document.getElementById("journey-img").src = journeySlideImg[1];
+    } else if (twoActive) {
+        document.getElementById("journey-img").src = journeySlideImg[2];
+    } else if (threeActive) {
+        document.getElementById("journey-img").src = journeySlideImg[3];
+    } else if (fourActive) {
+        document.getElementById("journey-img").src = journeySlideImg[0];
+    }
+
+
+});
+</script>
+
+
+
+
+
+
+
 <!-- expertise circle script -->
+
+
 <script>
 $.fn.isOnScreen = function() {
     var win = $(window);

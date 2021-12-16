@@ -5,9 +5,19 @@
 @push('after-styles')
 <link href="{{ url('css/ourclient.css') }}" rel="stylesheet">
 <link href="{{ url('css/homepage.css')}}" rel="stylesheet">
+<script src="{{ url('js/scrollmagic/highlight.pack.js')}}"></script>
+<script src="{{ url('js/scrollmagic/modernizr.custom.min.js')}}"></script>
+<script src="{{ url('js/scrollmagic/examples.js')}}"></script>
+
+<script src="{{ url('js/scrollmagic/gsap.min.js')}}"></script>
+<script src="{{ url('js/scrollmagic/ScrollMagic.js')}}"></script>
+<script src="{{ url('js/scrollmagic/animation.gsap.js')}}"></script>
+<script src="{{ url('js/scrollmagic/debug.addIndicators.js')}}"></script>
+
 @endpush
 
 @section('content')
+
 <section class="home-main full-height-section">
     <div class="home-main-text">
         <h1 class="TT-Light">Specialty</h1>
@@ -25,9 +35,10 @@
     </a>
 </section>
 
+
 <section id="home-second" class="home-other-sections">
-    <div data-aos="zoom-in-right" data-aos-duration="1000" class="home-box-pms-img-area"></div>
-    <div data-aos="zoom-in-left" data-aos-duration="1000" class="home-content-box">
+    <div class="home-box-pms-img-area"></div>
+    <div class="home-content-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Destinity PMS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -38,10 +49,38 @@
 
     </div>
     <a href="#pos" class="scroll-down-sub-btn" address="true"></a>
+
 </section>
 
+<section>
+<div class="spacer"></div>
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+        console.log(controller);
+    </script>		
+
+    <div>
+        <div id="imgTrigger"></div>
+        <img id="animationImg" src="{{url('img/frontend/homepage/homepage-logo.png') }}" alt="" style="width: 350px;">
+
+        <script>
+            var scene = new ScrollMagic.Scene({
+                triggerElement: "#imgTrigger"
+            })
+            .setTween("#animationImg", 0.2, {scale:2.5})
+            .addIndicators({name: "1 (duration: 0)"})
+            .addTo(controller);
+            ;
+
+            console.log(scene);
+        </script>
+    </div>
+</section>
+
+
 <section id="pos" class="home-other-sections right-side-img-section">
-    <div data-aos="zoom-in-right" data-aos-duration="1000" class="home-content-box left-side-box">
+    <div class="home-content-box left-side-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Destinity POS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -50,13 +89,13 @@
             <button class="btn home-btn">View Project</button>
         </div>
     </div>
-    <div data-aos="zoom-in-left" data-aos-duration="1000" class="home-box-pos-img-area"></div>
+    <div id="animate1" class="home-box-pos-img-area"></div>
     <a href="#eFinancial" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
 <section id="eFinancial" class="home-other-sections">
-    <div data-aos="zoom-in-left" data-aos-duration="1000" class="home-box-efinancial-img-area"></div>
-    <div data-aos="zoom-in-right" data-aos-duration="1000" class="home-content-box">
+    <div class="home-box-efinancial-img-area"></div>
+    <div class="home-content-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">eFinancials</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -153,7 +192,7 @@
 
                 <img id="journey-img" class="tourism-box-img"
                     src="{{url('img/frontend/homepage/journey-slides/image-one.png') }}" alt="tourism logo">
-               
+
                 <!-- Swiper -->
 
 
@@ -237,9 +276,9 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-               
+
             </div>
-            
+
         </div>
     </div>
     <a href="#clients" class="scroll-down-sub-btn" address="true"></a>
@@ -619,5 +658,5 @@ $(window).scroll(function() {
         });
     }
 });
-</script>
+</script> 
 @endpush

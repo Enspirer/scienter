@@ -29,9 +29,11 @@
     <!-- Otherwise apply the normal LTR layouts -->
     {{ style(mix('css/frontend.css')) }}
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     @stack('after-styles')
+    
+  
 </head>
 
 <body>
@@ -60,14 +62,14 @@
     {!! script(mix('js/frontend.js')) !!}
 
     <!-- external scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/aa4e69f91b.js" crossorigin="anonymous"></script>
-   
+   <script src="{{ url('js/main.js') }}"></script>
 
     @stack('after-scripts')
 

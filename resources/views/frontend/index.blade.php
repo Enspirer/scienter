@@ -52,7 +52,7 @@
 
 </section>
 
-<section>
+<!-- <section>
 <div class="spacer"></div>
     <script>
         // init controller
@@ -76,7 +76,7 @@
             console.log(scene);
         </script>
     </div>
-</section>
+</section> -->
 
 
 <section id="pos" class="home-other-sections right-side-img-section">

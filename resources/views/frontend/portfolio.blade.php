@@ -243,7 +243,12 @@
 
 @push('after-scripts')
 
+<script>
+    var imgMainUrl = "{{ url('/img/frontend/portfolio/') }}";
+</script>
+
 <script src="{{ url('js/portfolio/portfolio.js') }}"></script>
+
 <!-- particles scripts -->
 <script src="{{ url('js/portfolio/particles.js') }}"></script>
 <script src="{{ url('js/portfolio/app.js')}}"></script>

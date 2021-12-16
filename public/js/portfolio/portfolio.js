@@ -1,5 +1,7 @@
+// var imgMainUrl = "http://127.0.0.1:8000/img/frontend/portfolio/";
+
 //images array
-const img = ["http://127.0.0.1:8000/img/frontend/portfolio/one.png", "http://127.0.0.1:8000/img/frontend/portfolio/two.png", "http://127.0.0.1:8000/img/frontend/portfolio/three.png", "http://127.0.0.1:8000/img/frontend/portfolio/four.png", "http://127.0.0.1:8000/img/frontend/portfolio/five.png" ];
+const img = [imgMainUrl + "/one.png", imgMainUrl + "/two.png", imgMainUrl +"/three.png", imgMainUrl +"/four.png", imgMainUrl +"/five.png" ];
 
 
 //topic one array

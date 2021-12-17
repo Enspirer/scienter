@@ -13,11 +13,11 @@ $(document).ready(function() {
   
             //showing when scroll down
             if (currentScroll > previousScroll) {
-                window.setTimeout(hidenav, 300); 
+                window.setTimeout(hidenav, 10); 
             } 
             //show when scrolling value 0
             else if(currentScroll == 0) {
-                window.setTimeout(showNav, 300);
+                window.setTimeout(showNav, 10);
             }
 
         //scrolling down

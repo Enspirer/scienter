@@ -15,7 +15,7 @@
             <li class="nav-item"><a href="{{route('frontend.about')}}" class="nav-link {{ active_class(Route::is('frontend.about')) }}">About</a></li>
             <li class="nav-item"><a href="{{route('frontend.solutions')}}" class="nav-link {{ active_class(Route::is('frontend.solutions')) }}">Solution</a></li>
             <li class="nav-item"><a href="{{route('frontend.portfolio')}}" class="nav-link {{ active_class(Route::is('frontend.portfolio')) }}">Portfolio</a></li>
-            <li class="nav-item"><a href="{{route('frontend.ourclient')}}" class="nav-link {{ active_class(Route::is('frontend.ourclient')) }}">Client</a></li>
+            <li class="nav-item"><a href="{{route('frontend.our-client')}}" class="nav-link {{ active_class(Route::is('frontend.our-client')) }}">Client</a></li>
             <li class="nav-item"><a href="{{route('frontend.news')}}" class="nav-link {{ active_class(Route::is('frontend.news')) }}">News</a></li>
             <li class="nav-item"><a href="{{route('frontend.contact-us')}}" class="nav-link {{ active_class(Route::is('frontend.contact-us')) }}">Contact Us</a></li>
         </ul>

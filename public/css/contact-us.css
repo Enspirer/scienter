@@ -148,9 +148,12 @@ input[type="submit"] {
 
 
 
-form.contact-form {
-    width: 50vw;
+form.contact-form, .contact-txt {
+    width: 60vw;
+    margin-left: 5vw;
 }
+
+
 
 .inputline {
     display: none;

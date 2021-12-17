@@ -34,9 +34,10 @@
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
         </div>
+        <a href="#software-development" class="scroll-down-sub-btn" address="true"></a>
     </section>
 
-    <section class="full-height-area ">
+    <section id="software-development" class="full-height-area">
         <div class="row">
         <div class="col-md-5 col-xs-12 main-text-box">
                 <div class="solutions-topic-wrapper">
@@ -56,9 +57,10 @@
                 <img src="{{ url('/img/frontend/solution/solution-one.png') }}" alt="man" class="half-img">
             </div> 
         </div>
+        <a href="#web-application" class="scroll-down-sub-btn" address="true"></a>
     </section>
 
-    <section class="full-height-area ">
+    <section id="web-application" class="full-height-area ">
         <div class="row">
             <div class="col-md-7 col-xs-12">
                 <img src="{{ url('/img/frontend/solution/solution-two.png') }}" alt="man" class="half-img">
@@ -78,10 +80,11 @@
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
         </div>
+        <a href="#mobie-application" class="scroll-down-sub-btn" address="true"></a>
     </section>
 
 
-    <section class="full-height-area ">
+    <section id="mobie-application" class="full-height-area ">
         <div class="row">
         <div class="col-md-5 col-xs-12 main-text-box">
                 <div class="solutions-topic-wrapper">

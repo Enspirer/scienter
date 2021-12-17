@@ -33,208 +33,49 @@
     <section class="portfolio-main">
     <!-- portfolio leftside -->
     <div class="portfolio-leftside-wrapper">
-        <h1>Portfolio</h1>
+        <h1 class="main-title">Portfolio</h1>
         <div class="portfolio-content-box">
-            <p>We start with a get-things-done attitude</p>
-            <h2 id="portTitleOne">Topic 1</h2>
-            <h2 id="portTitleTwo">Management</h2>
-            <div class="portfolio-nav-wrapper">
-                <button onclick="prevSlide()">Previous Slide</button>
-                <button onclick="nextSlide()">Next Slide</button>
+            <div class="portfolio-content-inner-wrapper">
+                <p class="orange-txt" >We start with a get-things-done attitude</p>
+                <h2 id="portTitleOne" class="portfolio-sub-title">Hotel Management</h2>
+                <div class="portfolio-nav-wrapper">
+                    <button class="portfolio-btn" onclick="prevSlide()">Previous</button>
+                    <button class="portfolio-btn" onclick="nextSlide()">Next</button>
+                </div>
             </div>
         </div>
     </div>
     <!-- portfolio rightside -->
     <div class="portfolio-rightside-wrapper">
-        <div class="myslider-wrapper">
-            <!-- <div class="next-to-next-wrapper">
-                <button class="far-dot-btn"></button>
-            </div> -->
-            <div class="next-wrapper ">
-                <button id="next" onclick="nextSlide()" class="dot-btn nextbtnin nextbtnoutmove" ></button>
-                <button id="next-ghost" class="next-clone nextbtnThrow"></button>
-            </div>
-            <div class="active-wrapper nextmove prevmove">
-                <div class="circle-image-wrapper">
-                    <img id="active-port-img" src="{{url('img/frontend/portfolio/one.png')}}" alt="">
+    <div class="myslider-wrapper">
+                <!-- <div class="next-to-next-wrapper">
+                    <button class="far-dot-btn"></button>
+                </div> -->
+                <div class="next-wrapper ">
+                    <button id="next" onclick="nextSlide()" class="dot-btn nextbtnin nextbtnoutmove" >
+                        <img id="next-img" class="btn-img" src="{{  url('img/frontend/portfolio/2-contact-center.jpg')}}" alt="">
+                    </button>
+                    <button id="next-ghost" class="next-clone nextbtnThrow"></button>
                 </div>
+                <div class="active-wrapper nextmove prevmove">
+                    <div class="circle-image-wrapper">
+                        <img id="active-port-img" src="{{  url('img/frontend/portfolio/1-hotel-mgt.jpg')}}" alt="">
+                    </div>
+                </div>
+                <div class="prev-warapper">
+                    <button id="prev" onclick="prevSlide()" class="dot-btn prebtnin prevbtnoutmove" >
+                        <img id="prev-img" class="btn-img" src="{{  url('img/frontend/portfolio/16-container-yard-mgt.jpg')}}" alt="">
+                    </button>
+                    <button id="prev-ghost" class="prev-clone prevbtnThrow"></button>
+                </div>
+                <!-- <div class="prev-to-prev-wrapper">
+                    <button class="far-dot-btn"></button>
+                </div> -->
             </div>
-            <div class="prev-warapper">
-                <button id="prev" onclick="prevSlide()" class="dot-btn prebtnin prevbtnoutmove " ></button>
-                <button id="prev-ghost" class="prev-clone prevbtnThrow"></button>
-            </div>
-            <!-- <div class="prev-to-prev-wrapper">
-                <button class="far-dot-btn"></button>
-            </div> -->
-        </div>
         
     </div>
 </section>
 </div>
-
-<section id="clients" class="home-other-sections client-section">
-    <div data-aos="zoom-in" data-aos-duration="1000" class="container">
-        <div class="client-topic-wrapper">
-            <h2 class="TT-Light">Our Clients</h2>
-            <div class="line-area">
-                <span class="line-wrapper"><i class="fas fa-circle"></i><span class="topic-line"></span></span>
-            </div>
-        </div>
-
-
-        <div class="client-list">
-            <div class="filter-area">
-                <ul class="filter-list">
-                    <li><b>All</b></li>
-                    <li>Hotel</li>
-                    <li>Restaurants & Clubs</li>
-                    <li>Finance & Leasing</li>
-                </ul>
-            </div>
-            <div class="client-logo-area">
-                <!-- <div class="client-logo-row"> -->
-
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/KFC.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-
-
-                <!-- </div> -->
-
-                <!-- <div class="client-logo-row"> -->
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <!-- </div> -->
-
-                <!-- <div class="client-logo-row"> -->
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <!-- </div> -->
-
-                 <!-- <div class="client-logo-row"> -->
-                 <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <!-- </div> -->
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <a href="#expertise" class="scroll-down-sub-btn" address="true"></a>
-</section>
 
 
 @endsection

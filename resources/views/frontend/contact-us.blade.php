@@ -78,11 +78,15 @@
             </a>
         </div>
     </div>
+    <a href="#get-in-touch" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
-<section class="full-height-area">
+<section id="get-in-touch" class="full-height-area">
+    <div class="contact-txt">
     <h1>Get In Touch</h1>
     <p class="orange-txt ">We'd love to hear form you</p>
+    </div>
+ 
     <form action="" class="contact-form">
         <div class="contact-form-row">
             <div class="input-wrapper">

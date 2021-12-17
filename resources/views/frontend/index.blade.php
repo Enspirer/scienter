@@ -20,12 +20,12 @@
 
 <section class="home-main full-height-section">
     <div class="home-main-text">
-        <h1 class="TT-Light">Specialty</h1>
+        <h1 class="main-title TT-Light">Specialty</h1>
         <p class="TT-ExtraLight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the
             industry's standard</p>
     </div>
-    <a href="#home-second" class="scroll-down">
+    <a href="#destiny-pms" class="scroll-down">
         <div class="mouse">
             <span></span>
         </div>
@@ -36,7 +36,7 @@
 </section>
 
 
-<section id="home-second" class="home-other-sections">
+<section id="destiny-pms" class="home-other-sections">
     <div class="home-box-pms-img-area"></div>
     <div class="home-content-box">
         <div class="home-content-text-wrapper">
@@ -48,7 +48,7 @@
         </div>
 
     </div>
-    <a href="#pos" class="scroll-down-sub-btn" address="true"></a>
+    <a href="#destiny-pos" class="scroll-down-sub-btn" address="true"></a>
 
 </section>
 
@@ -79,7 +79,7 @@
 </section> -->
 
 
-<section id="pos" class="home-other-sections right-side-img-section">
+<section id="destiny-pos" class="home-other-sections right-side-img-section">
     <div class="home-content-box left-side-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Destinity POS</h2>
@@ -90,10 +90,10 @@
         </div>
     </div>
     <div id="animate1" class="home-box-pos-img-area"></div>
-    <a href="#eFinancial" class="scroll-down-sub-btn" address="true"></a>
+    <a href="#efinancial" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
-<section id="eFinancial" class="home-other-sections">
+<section id="efinancial" class="home-other-sections">
     <div class="home-box-efinancial-img-area"></div>
     <div class="home-content-box">
         <div class="home-content-text-wrapper">
@@ -107,72 +107,6 @@
     <a href="#journey" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
-<!-- <section id="journey" class="home-tourism-section">
-    <div data-aos="zoom-in" data-aos-duration="1000" class="container">
-        <div class="row">
-            <div class="col-md-6 tourism-left-content">
-                <div class="tourism-topic-wrapper">
-                    <h2 class="TT-Light">The Journey of</h2>
-                    <div class="line-area">
-                        <span class="line-wrapper"><i class="fas fa-circle"></i><span class="grey-line"></span></span>
-                    </div>
-                    <h2>Decades</h2>
-                </div>
-
-                <img class="tourism-box-img" src="{{url('img/frontend/homepage/homepage-logo.png') }}"
-                    alt="tourism logo">
-
-
-            </div>
-            <div class="col-md-6">
-                <div class="home-bottom-side-wrapper">
-                    <!-- <div class="dotted-line-wrapper">
-                        
-                    </div> -->
-<!-- <div class="journey-box-wrapper">
-                        <div class="journey-box">
-                            <div class="topic-and-point-wrapper">
-                                <span class="topic-point">
-                                    <i class="fas fa-circle" aria-hidden="true"></i>
-                                </span>
-                                <h3 class="TT-Light">Overall Gold Award</h3>
-                            </div>
-                            <p class="TT-Medium">The Best Software Developed in the country and Best hotel management
-                                solution </p>
-                            <h4 class="TT-Light">NBQSA 2009</h4>
-                        </div>
-                        <div class="journey-box">
-                            <div class="topic-and-point-wrapper">
-                                <span class="topic-point active">
-                                    <i class="fas fa-circle" aria-hidden="true"></i>
-                                </span>
-                                <h3 class="TT-Light journey-active">Enabling Sri Lanka Tourism 2.0 and beyond'-2013
-                                    Winners</h3>
-                            </div>
-
-                            <p class="TT-Medium">with awards in the Enhance Revenue and Customer Experience category.
-                            </p>
-                            <h4 class="TT-Light">2013</h4>
-                        </div>
-                        <div class="journey-box">
-                            <div class="topic-and-point-wrapper">
-                                <span class="topic-point">
-                                    <i class="fas fa-circle" aria-hidden="true"></i>
-                                </span>
-                                <h3 class="TT-Light">Asia Pacific ICT Alliance Awards</h3>
-                            </div>
-
-                            <p class="TT-Medium">for the product Destinity under the Tourism and Hospitality Category
-                            </p>
-                            <h4 class="TT-Light">2013</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#clients" class="scroll-down-sub-btn" address="true"></a>
-</section> -->
 
 
 <section id="journey" class="journey-area home-other-sections">
@@ -186,36 +120,30 @@
                     </div>
                     <h2>Decades</h2>
                 </div>
-
-
-
-
+                <!-- Image Main -->
                 <img id="journey-img" class="tourism-box-img"
-                    src="{{url('img/frontend/homepage/journey-slides/image-one.png') }}" alt="tourism logo">
-
-                <!-- Swiper -->
-
-
-
+                    src="{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}" alt="tourism logo"> 
+                 
 
             </div>
+
             <div class="col-md-6">
                 <div class="swipper-wrapper journey-box-wrapper">
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <!-- slide one -->
-                            <div id="slideOne" class="slideOne swiper-slide">
+                            <div onscroll="journeyScroll()" id="slideOne" class="slideOne swiper-slide">
                                 <div class="journey-box">
                                     <div class="topic-and-point-wrapper">
                                         <span class="topic-point">
                                             <i class="fas fa-circle" aria-hidden="true"></i>
                                         </span>
-                                        <h3 class="TT-Light">Slide One</h3>
+                                        <h3 class="TT-Light">NBQSA</h3>
                                     </div>
-                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                        management
-                                        solution </p>
+                                    <p class="TT-Medium">Awarded the Overall Gold Award for the Best Software Developed
+                                        in the country. Also Awarded Gold Award for its hotel management solution under
+                                        the Tourism and Hospitality Category.</p>
                                     <h4 class="TT-Light">NBQSA 2009</h4>
                                 </div>
                             </div>
@@ -227,12 +155,11 @@
                                         <span class="topic-point">
                                             <i class="fas fa-circle" aria-hidden="true"></i>
                                         </span>
-                                        <h3 class="TT-Light">Slide 2</h3>
+                                        <h3 class="TT-Light">APICTA</h3>
                                     </div>
-                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                        management
-                                        solution </p>
-                                    <h4 class="TT-Light">NBQSA 2009</h4>
+                                    <p class="TT-Medium">Award winner at the Asia Pacific ICT Alliance awards for the
+                                        product Destinity under the Tourism and Hospitality Category</p>
+                                    <h4 class="TT-Light">APICTA 2009 (Melbourne)</h4>
                                 </div>
                             </div>
 
@@ -243,34 +170,13 @@
                                         <span class="topic-point">
                                             <i class="fas fa-circle" aria-hidden="true"></i>
                                         </span>
-                                        <h3 class="TT-Light">Slide Three</h3>
+                                        <h3 class="TT-Light">Tourism</h3>
                                     </div>
-                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                        management
-                                        solution </p>
-                                    <h4 class="TT-Light">NBQSA 2009</h4>
+                                    <p class="TT-Medium">Winners at the 'Enabling Sri Lanka Tourism 2.0 and beyond'-
+                                        2013, with awards in the Enhance Revenue and Customer Experience category.</p>
+                                    <h4 class="TT-Light">ENABLING SRI LANKA TOURISM 2.0 2013</h4>
                                 </div>
                             </div>
-
-                            <!-- slide two -->
-                            <div id="slide-four" class="slideFour swiper-slide">
-                                <div class="journey-box">
-                                    <div class="topic-and-point-wrapper">
-                                        <span class="topic-point">
-                                            <i class="fas fa-circle" aria-hidden="true"></i>
-                                        </span>
-                                        <h3 class="TT-Light">Slide Four</h3>
-                                    </div>
-                                    <p class="TT-Medium">The Best Software Developed in the country and Best hotel
-                                        management
-                                        solution </p>
-                                    <h4 class="TT-Light">NBQSA 2009</h4>
-                                </div>
-                            </div>
-
-
-
-
 
                         </div>
                         <div class="swiper-pagination"></div>
@@ -287,7 +193,7 @@
 
 
 <section id="clients" class="home-other-sections client-section">
-    <div data-aos="zoom-in" data-aos-duration="1000" class="container">
+    <div data-aos="zoom-in" data-aos-duration="1000" class="container client-container">
         <div class="client-topic-wrapper">
             <h2 class="TT-Light">Our Clients</h2>
             <div class="line-area">
@@ -296,153 +202,227 @@
         </div>
 
 
-        <div class="client-list">
-            <div class="filter-area">
-                <ul class="filter-list">
-                    <li><b>All</b></li>
-                    <li>Hotel</li>
-                    <li>Restaurants & Clubs</li>
-                    <li>Finance & Leasing</li>
-                </ul>
+
+
+        <!-- client categories -->
+        <div class="clients-wrapper">
+            <ul class="nav nav-tabs clients-navtab col-md-3" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active client-cat-btn" id="all-tab" data-bs-toggle="tab"
+                        data-bs-target="#all" type="button" role="tab" aria-controls="all"
+                        aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link client-cat-btn" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel"
+                        type="button" role="tab" aria-controls="hotel" aria-selected="false">Hotel</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link client-cat-btn" id="restaurants-tab" data-bs-toggle="tab"
+                        data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants"
+                        aria-selected="false">Restaurants</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link client-cat-btn" id="finance-tab" data-bs-toggle="tab"
+                        data-bs-target="#finance" type="button" role="tab" aria-controls="finance"
+                        aria-selected="false">Finance</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent client-tab-content col-md-9">
+                <!-- all  -->
+                <div class="tab-pane fade show active client-tab-pane" id="all" role="tabpanel"
+                    aria-labelledby="all-tab">
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+
+                    
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/restaurants/BK.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/restaurants/KFC.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/restaurants/Pizzahut.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+
+
+
+
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+
+
+                </div>
+                <!-- Hotel -->
+                <div class="tab-pane fade client-tab-pane" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/hotels/Yala.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/hotels/Casamara.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/hotels/J-Beach.png') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                </div>
+                <!-- Restaurants -->
+                <div class="tab-pane fade client-tab-pane" id="restaurants" role="tabpanel"
+                    aria-labelledby="restaurants-tab">
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/restaurants/BK.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/restaurants/KFC.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/restaurants/Pizzahut.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                </div>
+                <!-- Finance -->
+                <div class="tab-pane fade client-tab-pane" id="finance" role="tabpanel" aria-labelledby="finance-tab">
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/Arpico.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/capital.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                    <div class="client-logo-box">
+                        <div class="client-logo-inner-box"><img
+                                src="{{ url('img/frontend/clients/finance/richard.jpg') }}" alt="Arpico logo"
+                                class="client-logo-img"></div>
+                    </div>
+                </div>
             </div>
-            <div class="client-logo-area">
-                <!-- <div class="client-logo-row"> -->
 
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/KFC.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-
-
-                <!-- </div> -->
-
-                <!-- <div class="client-logo-row"> -->
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <!-- </div> -->
-
-                <!-- <div class="client-logo-row"> -->
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <!-- </div> -->
-
-                <!-- <div class="client-logo-row"> -->
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/J-Beach.png')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <div class="client-logo-box">
-                    <div class="client-logo-inner-box">
-                        <img class="client-logo-img" src="{{ url('img/frontend/homepage/logos/Anantaya.jpg')}}"
-                            alt="Anantaya logo">
-                    </div>
-                </div>
-                <!-- </div> -->
-
-            </div>
         </div>
+
+
+
+
     </div>
 
 
@@ -526,9 +506,7 @@
     </div>
 </section>
 
-<div class="expertise-container">
 
-</div>
 
 @endsection
 
@@ -551,6 +529,16 @@
 
 <!-- Initialize Swiper -->
 
+<!-- Journey scroll up catcher -->
+<script>
+
+    function journeyScroll() {
+        alert("You scrolling bro");
+    }
+    
+
+</script>
+
 
 
 <!-- Initialize Swiper -->
@@ -559,7 +547,9 @@ var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 3,
     spaceBetween: 1,
+    slidesPerGroup: 1,
     centeredSlides: true,
+    allowSlidePrev: false,
     loop: true,
     mousewheel: true,
     pagination: {
@@ -573,31 +563,39 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+var slideNum = 0;
+
+
 //slide change event catch to make image changer
 swiper.on('slideChange', function() {
 
+    slideNum = slideNum + 1;
+
+    console.log(slideNum);
+
+
+    var journeyImgUrl = "{{ url('img/frontend/homepage/journey-slides') }}";
+
     //image holder array 
-    const journeySlideImg = ["http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-one.png",
-        "http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-two.png",
-        "http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-three.png",
-        "http://127.0.0.1:8000/img/frontend/homepage/journey-slides/image-four.png"
+    const journeySlideImg = [journeyImgUrl + "/NBQSA.png", journeyImgUrl +
+        "/APICTA.png", journeyImgUrl +
+        "/tourism.png"
     ];
 
     //querySelectors
     const oneActive = document.querySelector('.slideOne.swiper-slide.swiper-slide-active');
     const twoActive = document.querySelector('.slideTwo.swiper-slide.swiper-slide-active');
     const threeActive = document.querySelector('.slideThree.swiper-slide.swiper-slide-active');
-    const fourActive = document.querySelector('.slideFour.swiper-slide.swiper-slide-active');
 
-    if (oneActive) {
-        document.getElementById("journey-img").src = journeySlideImg[1];
-    } else if (twoActive) {
-        document.getElementById("journey-img").src = journeySlideImg[2];
-    } else if (threeActive) {
-        document.getElementById("journey-img").src = journeySlideImg[3];
-    } else if (fourActive) {
-        document.getElementById("journey-img").src = journeySlideImg[0];
-    }
+    $(document).ready(function() {
+        if (oneActive) {
+            document.getElementById("journey-img").src = journeySlideImg[1];
+        } else if (twoActive) {
+            document.getElementById("journey-img").src = journeySlideImg[2];
+        } else if (threeActive) {
+            document.getElementById("journey-img").src = journeySlideImg[0];
+        }
+    })
 
 
 });
@@ -658,5 +656,5 @@ $(window).scroll(function() {
         });
     }
 });
-</script> 
+</script>
 @endpush

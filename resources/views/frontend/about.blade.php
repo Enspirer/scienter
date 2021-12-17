@@ -11,7 +11,7 @@
     <section class="full-height-section about-full-height-area">
         <div class="row">
             <div class="col-md-6 col-xs-12 main-text-box">
-                <h1 class="main-heading TT-Light">Our Story</h1>
+                <h1 class="main-title TT-Light">Our Story</h1>
                 <p class="TT-Light line-height-30">Since it’s inception in 1995, SCIENTER TECHNOLOGIES has provided Sri
                     Lankan and global industries with a multitude of comprehensive inte - grated software solutions.
                     Renowned for its ‘cutting edge’ in increasing efficiency, profitability and its modernity keeping in
@@ -22,24 +22,37 @@
                 <img class="half-img" src="{{ url('img/frontend/about/man.png') }}" alt="man">
             </div>
         </div>
+        <a href="#excellence" class="scroll-down">
+            <div class="mouse">
+                <span></span>
+            </div>
+            <div class="arrow">
+                <span></span>
+            </div>
+        </a>
     </section>
 
-    <section class="full-height-section excellence">
-        <div class="col-md-6 excellence-right">
-            <h3 class="TT-Light small-heading">Passion for</h3>
-            <h2 class="TT-Light">Excellence</h2>
-            <p class="TT-Light line-height-30">Our team comprises some of the most sought after and recognized
-                individuals in their chosen field of expertise who are passionate and committed to provide our clients
-                with cutting edge solutions. We are passionate about serving, and providing you with the best in what we
-                possess, leaving no stone unturned to carve out exactly what you require from us. We take pride in
-                ourselves in having been able to transcend the barrier of being a service provider, rather we are
-                trained to think in terms of ‘solutions’ and providing solutions to suit your business needs is our
-                passion. Our commitment to excellence is unparalleled, and our passion to perform is driven by our
-                desire to give out the best of what we possess.</p>
+    <section id="excellence" class="full-height-section excellence">
+        <div class="excellence-inner-wrapper">
+            <div class="col-md-6 excellence-right">
+                <h3 class="TT-Light small-heading">Passion for</h3>
+                <h2 class="TT-Light" style="font-size: 3rem;">Excellence</h2>
+                <p class="TT-Light line-height-30">Our team comprises some of the most sought after and recognized
+                    individuals in their chosen field of expertise who are passionate and committed to provide our clients
+                    with cutting edge solutions. We are passionate about serving, and providing you with the best in what we
+                    possess, leaving no stone unturned to carve out exactly what you require from us. We take pride in
+                    ourselves in having been able to transcend the barrier of being a service provider, rather we are
+                    trained to think in terms of ‘solutions’ and providing solutions to suit your business needs is our
+                    passion. Our commitment to excellence is unparalleled, and our passion to perform is driven by our
+                    desire to give out the best of what we possess.</p>
+                
+            </div>
         </div>
+        <a href="#vision-mission" class="scroll-down-sub-btn" address="true"></a>
+       
     </section>
 
-    <section class="full-height-section about-full-height-area">
+    <section id="vision-mission" class="full-height-section about-full-height-area">
         <div class="row vision-mission-area">
 
             <div class="col-md-6 col-xs-12">
@@ -64,7 +77,8 @@
                     </span>
                     <div class="vision-text-wrapper">
                         <h2 class="TT-Light">Our Vision</h2>
-                        <p class="grey-text TT-Light">To lead the industry as the preferred Information Technology partner.
+                        <p class="grey-text TT-Light">To lead the industry as the preferred Information Technology
+                            partner.
                         </p>
                     </div>
                 </div>
@@ -89,15 +103,17 @@
                     </span>
                     <div class="vision-text-wrapper">
                         <h2 class="TT-Light">Our Mission</h2>
-                        <p class="grey-text TT-Light">We empower organizations not just technology solutions. We Value our
+                        <p class="grey-text TT-Light">We empower organizations not just technology solutions. We Value
+                            our
                             team not just provide employment. We build relationships not just customer portfolio</p>
                     </div>
                 </div>
             </div>
         </div>
+        <a href="#milestone" class="scroll-down-sub-btn" address="true"></a>
     </section>
 
-    <section class="milestones about-full-height-area">
+    <section id="milestone" class="milestones about-full-height-area">
         <h1 class="sub-center-heading TT-Light">Our Story</h1>
         <div class="milestone-main-wrapper">
             <div class="yr-row top-row">
@@ -177,7 +193,7 @@
                             alt="milestone-one">
                     </div>
                 </div>
-                
+
 
             </div>
             <div class="grey-circle-wrapper">

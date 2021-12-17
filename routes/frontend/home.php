@@ -12,6 +12,7 @@ use App\Http\Controllers\Frontend\OurClientController;
 use App\Http\Controllers\Frontend\ContactUsController;
 use App\Http\Controllers\Frontend\SolutionsController;
 use App\Http\Controllers\Frontend\PortfolioController;
+use App\Http\Controllers\Frontend\TestController;
 /*
  * Frontend Controllers
  * All route names are prefixed with 'frontend.'.
@@ -20,10 +21,11 @@ use App\Http\Controllers\Frontend\PortfolioController;
 
 Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('news', [NewsController::class, 'index'])->name('news');
-Route::get('ourclient', [OurClientController::class, 'index'])->name('ourclient');
+Route::get('our-client', [OurClientController::class, 'index'])->name('our-client');
 Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
 Route::get('solutions', [SolutionsController::class, 'index'])->name('solutions');
 Route::get('portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+Route::get('test', [TestController::class, 'index'])->name('test');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');

@@ -1,13 +1,19 @@
 .excellence {
+    display: flex;
+    position: relative;
+    padding: 10vh;
+    height: 100vh;
+    align-items: center;
+}
+
+.excellence-inner-wrapper {
     background-image: url('../img/frontend/about/about-bg-one.png');
+    display: flex;
     justify-content: end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 10vh;
 }
 
 .excellence-right {
-    margin-right: 45px;
+    margin: 60px;
 }
 
 .excellence-right h2 {
@@ -25,7 +31,7 @@
 }
 
 .about-half-box {
-    width: 50%; 
+    width: 60%; 
     background: #fff;
     height: 250px;
     padding: 25px;
@@ -37,16 +43,19 @@
 
 .about-left-half-box {
     margin-left: auto;
+    margin-right: 45px;
 }
 
 .about-right-half-box {
     margin-right: auto;
+    margin-left: 45px;
 }
 
 
 .about-full-height-area {
     padding: 10vh;
     justify-content: center;
+    position: relative;
 }
 
 svg#mission,  span.box-top-logo{

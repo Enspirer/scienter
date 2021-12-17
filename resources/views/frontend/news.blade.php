@@ -24,8 +24,9 @@
             <p class="TT-Regular">Scelerisque eleifend donec pretium vulputate sapien. Mattis nunc sed blandit libero volutpat sed cras ornare. Ut placerat orci nulla pellentesque. Mi tempus imperdiet nulla malesuada pellentesque. Enim facilisis gra</p>
         </div>
     </div>
+    <a href="#latest-news" class="scroll-down-sub-btn" address="true"></a>
 </section>
-<section class="full-height-area">
+<section id="latest-news" class="full-height-area">
     <h2 class="mb-45">Latest News</h2>
     <div class="container">
         <div class="row news-box-row">

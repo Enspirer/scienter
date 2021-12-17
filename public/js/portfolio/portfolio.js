@@ -1,13 +1,11 @@
 // var imgMainUrl = "http://127.0.0.1:8000/img/frontend/portfolio/";
 
 //images array
-const img = [imgMainUrl + "/one.png", imgMainUrl + "/two.png", imgMainUrl +"/three.png", imgMainUrl +"/four.png", imgMainUrl +"/five.png" ];
+const img = [imgMainUrl + "/1-hotel-mgt.jpg", imgMainUrl + "/2-contact-center.jpg", imgMainUrl +"/3-restaurant-mgt.jpg", imgMainUrl +"/4-membership.jpg", imgMainUrl +"/5-banquet.jpg", imgMainUrl + "/6-micro-finance.jpg", imgMainUrl + "/7-higher-purchase.jpg", imgMainUrl + "/8-accounting.jpg", imgMainUrl + "/9-leasing.jpg", imgMainUrl + "/10-islamic-finance.jpg", imgMainUrl + "/11-fixed-deposit.jpg", imgMainUrl + "/12-saving.jpg", imgMainUrl + "/13-pawning.jpg", imgMainUrl + "/14-hr.jpg", imgMainUrl + "/15-broadcasting.jpg", imgMainUrl + "/16-container-yard-mgt.jpg"  ];
 
 
 //topic one array
-const topicOne = ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"];
-
-
+const topicOne = ["Hotel Management", "Contact Center", "Restaurant Management", "Membership", "Banquet", "Micro Finance", "Higher Purchase", "Accounting", "Leasing", "Islamic Finance", "Fixed Deposit", "Savings", "Pawning", "HR", "Broadcasting", "Container Yard <br> Management" ];
 
 
 var i = 0;
@@ -17,14 +15,37 @@ var i = 0;
    
 function nextSlide() {
 
+  var x;
+  var y;
+  
       
 
-      if(i<4) {
+      if(i<15) {
         i = i + 1;
+        x = i + 1;
+        y = i - 1;
       } else {
         i =0;
+        x = i + 1;
+        y = 15;
       }
-      console.log(i);
+
+      if(i == 15) {
+        x = 0;
+      }
+
+   
+
+
+    
+
+     
+
+      
+    document.getElementById('next-img').src = img[x];
+
+    //small image - prev
+    document.getElementById('prev-img').src = img[y];
 
       //----------left side content animation and everything 
       document.getElementById("portTitleOne").innerHTML = topicOne[i];
@@ -56,9 +77,9 @@ function nextSlide() {
 
     //-------  next button advanced (ghost button activation)------
     nextGhost = document.getElementById("next-ghost");
-    const nextghostMove = document.querySelector(".next-clone");
-    nextghostMove.style.animation = "";
-    setTimeout(() => nextghostMove.style.animation = "ghostAnimate 2s", 1);
+    // const nextghostMove = document.querySelector(".next-clone");
+    // nextghostMove.style.animation = "";
+    // setTimeout(() => nextghostMove.style.animation = "ghostAnimate 2s", 1);
     
     //animation for throwing prev button
     prevbtnthrow.style.animation = "";
@@ -68,6 +89,10 @@ function nextSlide() {
     const prevbtnIn = document.querySelector(".prebtnin");
     prevbtnIn.style.animation = "";
     setTimeout(() => prevbtnIn.style.animation = "prevIn 2s", 1);
+
+
+    prevCloneActivation = document.querySelector(".prev-clone");
+    prevCloneActivation.style.zIndex = 1;
   
 }
 
@@ -79,15 +104,37 @@ function nextSlide() {
 
 function prevSlide() {
 
+
+
+    var x;
+    var y;
+
     if(i>0) {
       i = i - 1;
+      x = i + 1;
+      y = i - 1;
     }
     else {
-      i =4;
+      i = 15;
+      x = 0;
+      y = 14;
     }
 
-    
+    if(i == 0) {
+      y =15;
+    }
 
+  console.log("i=" + i);
+  console.log("x=" + x);
+  console.log("y=" + y);
+  console.log("--------");
+
+
+    //small img next
+    document.getElementById('next-img').src = img[x];
+
+    //small image - prev
+    document.getElementById('prev-img').src = img[y];
 
 
   //----------left side content animation and everything 
@@ -114,9 +161,9 @@ const prevbtnoutmove = document.querySelector(".prevbtnoutmove");
 
      //-------  next button advanced (ghost button activation)------
      prevGhost = document.getElementById("prev-ghost");
-     const prevghostMove = document.querySelector(".prev-clone");
-     prevghostMove.style.animation = "";
-     setTimeout(() => prevghostMove.style.animation = "ghostAnimate 2s", 1);
+    //  const prevghostMove = document.querySelector(".prev-clone");
+    //  prevghostMove.style.animation = "";
+    //  setTimeout(() => prevghostMove.style.animation = "ghostAnimate 2s", 1);
 
      //animation for throwing next button
      nextbtnthrow.style.animation = "";
@@ -126,5 +173,8 @@ const prevbtnoutmove = document.querySelector(".prevbtnoutmove");
     const nextbtnIn = document.querySelector(".nextbtnin");
     nextbtnIn.style.animation = "";
     setTimeout(() => nextbtnIn.style.animation = "nextIn 2s", 1);
+
+    nextCloneActivation = document.querySelector(".next-clone");
+    nextCloneActivation.style.zIndex = 1;
 }
 

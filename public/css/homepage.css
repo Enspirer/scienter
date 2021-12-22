@@ -55,10 +55,10 @@
 }
 
 .home-box-expertise-img-area {
-    background-image: url(../img/frontend/homepage/expertise-bg.png);
-    background-size: cover;
-    height: 65vh;
-    width: 40%;
+    background-image: url(../img/frontend/homepage/expertise-man.png);
+    background-size: contain;
+    height: 75%;
+    width: 75%;
     background-repeat: no-repeat;
 }
 

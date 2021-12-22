@@ -242,6 +242,7 @@ footer {
 
 .footer-main {
     background-color: #565656;
+    margin-bottom: 60px;
 }
 
 .footer-main-container {
@@ -252,6 +253,7 @@ footer {
 
 .footer-main-container h3 {
     font-size: 1.2rem;
+    margin-bottom: 25px;
 }
 
 .footer-main-container p {
@@ -480,3 +482,7 @@ i.fas.fa-circle {
       transform: translateY(-5px);
     }
   }
+
+ul.footer-list li {
+    margin-bottom: 15px;
+}

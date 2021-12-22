@@ -5,15 +5,6 @@
 @push('after-styles')
 <link href="{{ url('css/ourclient.css') }}" rel="stylesheet">
 <link href="{{ url('css/homepage.css')}}" rel="stylesheet">
-<script src="{{ url('js/scrollmagic/highlight.pack.js')}}"></script>
-<script src="{{ url('js/scrollmagic/modernizr.custom.min.js')}}"></script>
-<script src="{{ url('js/scrollmagic/examples.js')}}"></script>
-
-<script src="{{ url('js/scrollmagic/gsap.min.js')}}"></script>
-<script src="{{ url('js/scrollmagic/ScrollMagic.js')}}"></script>
-<script src="{{ url('js/scrollmagic/animation.gsap.js')}}"></script>
-<script src="{{ url('js/scrollmagic/debug.addIndicators.js')}}"></script>
-
 @endpush
 
 @section('content')
@@ -37,20 +28,31 @@
 
 
 <section id="destiny-pms" class="home-other-sections">
-    <div class="home-box-pms-img-area"></div>
-    <div class="home-content-box">
+    <div class="home-box-pms-img-area">
+        <div class="image pms">
+            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pms.png') }}" alt="destiny pms" data-scroll-zoom >
+        </div>
+    </div>
+    <div class="home-content-box pms">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Destinity PMS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
-            <button class="btn home-btn">View Project</button>
+            <button class="btn home-btn pms-btn">View Project</button>
         </div>
 
     </div>
-    <a href="#destiny-pos" class="scroll-down-sub-btn" address="true"></a>
+    
+    <a href="#destiny-pos" class="scroll-down-sub-btn" address="true"></a>		
+
+    <div>
+        
 
 </section>
+
+
+
 
 <!-- <section>
 <div class="spacer"></div>
@@ -80,28 +82,36 @@
 
 
 <section id="destiny-pos" class="home-other-sections right-side-img-section">
-    <div class="home-content-box left-side-box">
+    <div class="home-content-box pos left-side-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Destinity POS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
-            <button class="btn home-btn">View Project</button>
+            <button class="btn home-btn pos-btn">View Project</button>
         </div>
     </div>
-    <div id="animate1" class="home-box-pos-img-area"></div>
+    <div class="home-box-pos-img-area">
+        <div class="image pos">
+            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pos.png') }}" alt="destiny pos" data-scroll-zoom >
+        </div>
+    </div>
     <a href="#efinancial" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
 <section id="efinancial" class="home-other-sections">
-    <div class="home-box-efinancial-img-area"></div>
-    <div class="home-content-box">
+    <div class="home-box-efinancial-img-area">
+        <div class="image efinance">
+            <img width="100%" src="{{ url('img/frontend/homepage/eFinancials.png') }}" alt="efinance" data-scroll-zoom >
+        </div>
+    </div>
+    <div class="home-content-box efinance">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">eFinancials</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
-            <button class="btn home-btn">View Project</button>
+            <button class="btn home-btn efinance-btn">View Project</button>
         </div>
     </div>
     <a href="#journey" class="scroll-down-sub-btn" address="true"></a>
@@ -601,6 +611,153 @@ swiper.on('slideChange', function() {
 });
 </script>
 
+<!-- text animation scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+<script type="text/javascript">
+
+		gsap.to(".home-content-box.pms", {
+			scrollTrigger:{
+				trigger: "button.btn.home-btn.pms-btn", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -150,
+            x: -100
+		})
+
+        gsap.to(".home-content-box.pos", {
+			scrollTrigger:{
+				trigger: "button.btn.home-btn.pos-btn", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -150,
+            x: 100
+		})
+
+        gsap.to(".home-content-box.efinance", {
+			scrollTrigger:{
+				trigger: "button.btn.home-btn.efinance-btn", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -150,
+            x: -100
+		})
+
+        /*image up down animation*/
+        gsap.to(".home-box-pms-img-area", {
+			scrollTrigger:{
+				trigger: ".image.pms", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -100,
+            x: 100
+		})
+
+        gsap.to(".home-box-pos-img-area", {
+			scrollTrigger:{
+				trigger: ".image.pos", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -100,
+            x: -100
+		})
+
+        gsap.to(".home-box-efinancial-img-area", {
+			scrollTrigger:{
+				trigger: ".image.efinance", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -100,
+            x: 100
+		})
+        
+</script>
+
+
+
+<!-- image zoom in zoom out scroll animation -->
+<script>
+// Higher number = more zoom
+let scaleAmount = 2;
+
+function scrollZoom() {
+  const images = document.querySelectorAll("[data-scroll-zoom]");
+  let scrollPosY = 0;
+  scaleAmount = scaleAmount / 100;
+
+  const observerConfig = {
+    rootMargin: "0% 0% 0% 0%",
+    threshold: 0
+  };
+
+  // Create separate IntersectionObservers and scroll event listeners for each image so that we can individually apply the scale only if the image is visible
+  images.forEach(image => {
+    let isVisible = false;
+    const observer = new IntersectionObserver((elements, self) => {
+      elements.forEach(element => {
+        isVisible = element.isIntersecting;
+      });
+    }, observerConfig);
+
+    observer.observe(image);
+
+    // Set initial image scale on page load
+    image.style.transform = `scale(${1 + scaleAmount * percentageSeen(image)})`;
+
+    // Only fires if IntersectionObserver is intersecting
+    window.addEventListener("scroll", () => {
+      if (isVisible) {
+        scrollPosY = window.pageYOffset;
+        image.style.transform = `scale(${1 +
+          scaleAmount * percentageSeen(image)})`;
+      }
+    });
+  });
+
+  // Calculates the "percentage seen" based on when the image first enters the screen until the moment it leaves
+  // Here, we get the parent node position/height instead of the image since it's in a container that has a border, but
+  // if your container has no extra height, you can simply get the image position/height
+  function percentageSeen(element) {
+    const parent = element.parentNode;
+    const viewportHeight = window.innerHeight;
+    const scrollY = window.scrollY;
+    const elPosY = parent.getBoundingClientRect().top + scrollY;
+    const borderHeight = parseFloat(getComputedStyle(parent).getPropertyValue('border-bottom-width')) + parseFloat(getComputedStyle(element).getPropertyValue('border-top-width'));
+    const elHeight = parent.offsetHeight + borderHeight;
+
+    if (elPosY > scrollY + viewportHeight) {
+      // If we haven't reached the image yet
+      return 0;
+    } else if (elPosY + elHeight < scrollY) {
+      // If we've completely scrolled past the image
+      return 100;
+    } else {
+      // When the image is in the viewport
+      const distance = scrollY + viewportHeight - elPosY;
+      let percentage = distance / ((viewportHeight + elHeight) / 100);
+      percentage = Math.round(percentage);
+
+      return percentage;
+    }
+  }
+}
+
+scrollZoom();
+
+</script>
 
 
 

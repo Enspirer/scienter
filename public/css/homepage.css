@@ -36,14 +36,12 @@
 
 
 .home-box-pms-img-area {
-    background-image: url(../img/frontend/homepage/destinity-pms.png);
     height: 65vh;
     width: 60%;
     background-repeat: no-repeat;
 }
 
 .home-box-pos-img-area {
-    background-image: url(../img/frontend/homepage/destinity-pos.png);
     height: 65vh;
     width: 60%;
     background-repeat: no-repeat;
@@ -492,3 +490,16 @@
     justify-content: center;
 }
 
+
+.image {
+    background: white;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+
+.image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

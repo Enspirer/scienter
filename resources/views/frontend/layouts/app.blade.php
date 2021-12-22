@@ -21,7 +21,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="{{ url('css/style.css') }}" rel="stylesheet">
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
   
     <!-- poppin font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     <!-- Otherwise apply the normal LTR layouts -->
     {{ style(mix('css/frontend.css')) }}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 
     @stack('after-styles')
     
@@ -57,9 +57,9 @@
 
     <!-- Scripts -->
     @stack('before-scripts')
-    {!! script(mix('js/manifest.js')) !!}
+    <!-- {!! script(mix('js/manifest.js')) !!} -->
     {!! script(mix('js/vendor.js')) !!}
-    {!! script(mix('js/frontend.js')) !!}
+    {!! script(mix('js/frontend.js')) !!} 
 
     <!-- external scripts -->
   
@@ -69,7 +69,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/aa4e69f91b.js" crossorigin="anonymous"></script>
-   <script src="{{ url('js/main.js') }}"></script>
+   <script src="{{ url('js/main.js') }}"></script> 
 
     @stack('after-scripts')
 

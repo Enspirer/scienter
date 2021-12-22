@@ -58,12 +58,12 @@
     background-image: url(../img/frontend/homepage/expertise-bg.png);
     background-size: cover;
     height: 65vh;
-    width: 50%;
+    width: 40%;
     background-repeat: no-repeat;
 }
 
 .expertise-content-box {
-    width: 50%;
+    width: 60%;
 }
 
 .home-other-sections {
@@ -118,7 +118,7 @@
 }
 
 .tourism-box-img {
-    width: 250px;
+    width: auto;
     position: absolute;
     right: 45px;
     background-color: #F1903C;
@@ -137,8 +137,7 @@
 }
 
 .tourism-left-content h2 {
-    text-transform: uppercase;
-    font-size: 52px;
+    font-size: 3rem;
 }
 
 .journey-area {
@@ -159,8 +158,8 @@
     content: "";
     position: absolute;
     left: 15px;
-    top: 0;
-    height: 82%;
+    top: 15px;
+    height: 69%;
     width: 3px;
     border-left: 2px dotted #000;
 }
@@ -201,10 +200,7 @@
 
 .journey-box {
     margin-bottom: 30px;
-}
-
-.expertise-section {
-    background-color: #f6faff;
+    padding-top: 15px;
 }
 
 /*expertise styles*/
@@ -377,7 +373,7 @@
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: #f6faff;
+  background: #fff;
   z-index: 3;
   border-radius: 50%;
 }
@@ -462,7 +458,6 @@
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    margin-left: 6%;
 }
 
   .swipper-wrapper {
@@ -502,4 +497,9 @@
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+section.social {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }

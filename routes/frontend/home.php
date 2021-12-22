@@ -21,7 +21,7 @@ use App\Http\Controllers\Frontend\TestController;
 
 Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('news', [NewsController::class, 'index'])->name('news');
-Route::get('our-client', [OurClientController::class, 'index'])->name('our-client');
+Route::get('our-clients', [OurClientController::class, 'index'])->name('our-clients');
 Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
 Route::get('solutions', [SolutionsController::class, 'index'])->name('solutions');
 Route::get('portfolio', [PortfolioController::class, 'index'])->name('portfolio');

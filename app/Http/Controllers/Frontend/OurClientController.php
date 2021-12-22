@@ -12,6 +12,6 @@ class OurClientController extends Controller
      */
     public function index()
     {
-        return view('frontend.our-client');
+        return view('frontend.our-clients');
     }
 }

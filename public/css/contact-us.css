@@ -1,9 +1,16 @@
 .contact-main-banner-wrapper {
     width: 100%;
     height: 100%;
-    background-image: url('../img/frontend/contact-us/banner-one.png');
+    /* background-image: url('../img/frontend/contact-us/banner-one.png'); */
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+img#contact-banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .blur {

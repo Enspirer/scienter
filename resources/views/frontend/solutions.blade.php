@@ -12,8 +12,8 @@
 <div class="container-fluid">
     <section class="full-height-area ">
         <div class="row">
-            <h1 class="main-heading TT-Light">What we Do</h1>
-            <p class="orange-txt">This is where tomorrow's solutions for businesses are being created.</p>
+            <h1 class="main-title TT-Light" style="margin-top:30px; margin-bottom:15px;">What We Do</h1>
+            <p class="orange-txt">This is Where Tomorrow's Solutions for Businesses are being Created.</p>
         </div>
         <div class="row">
             <div class="col-md-7 col-xs-12">

@@ -9,11 +9,11 @@
                 @elseif(\Request::is('about'))
                     About
                 @elseif(\Request::is('solutions'))
-                    Solution
+                    Solutions
                 @elseif(\Request::is('portfolio'))
                     Portfolio
-                @elseif(\Request::is('our-client'))
-                    Our Client
+                @elseif(\Request::is('our-clients'))
+                    Our Clients
                 @elseif(\Request::is('news'))
                     News
                 @elseif(\Request::is('contact-us'))
@@ -25,7 +25,7 @@
             </span>
         </div>
     </div>
-    <div class="side-middle">
+    <!-- <div class="side-middle">
         <span class="side-middle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="59"
                 viewBox="0 0 48 59">
                 <g id="Group_48" data-name="Group 48" transform="translate(-57 -511)">
@@ -46,7 +46,7 @@
                 </g>
             </svg>
         </span>
-    </div>
+    </div> -->
     <div class="side-bottom">
         <ul class="siderbar-list">
             <a href="#destiny-pms">

@@ -31,3 +31,11 @@ img.news-box-img {
     flex-direction: column;
     justify-content: center;
 }
+
+.news-title {
+    margin: 15px 0;
+}
+
+section#latest-news {
+    margin-bottom: 60px;
+}

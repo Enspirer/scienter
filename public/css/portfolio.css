@@ -240,13 +240,13 @@ section.portfolio-main {
         background-color: pink;
         
     }
-
+*/
     50% {
         opacity: 1;
-		transform: translate3d(16vh, 12vh, 0);
+		transform: translate3d(10vh, 5vh, 0);
         background-color: greenyellow;
     }
-
+/*
     62.5% {
         opacity: 1;
 		transform: translate3d(12vh, 10vh, 0);
@@ -299,7 +299,7 @@ section.portfolio-main {
 */
     50% {
         opacity: 0.5;
-		transform: translate3d(10vh, 5vh, 0);
+		transform: translate3d(10vh, 7vh, 0);
     }
     /*
     62.5% {
@@ -322,7 +322,7 @@ section.portfolio-main {
 
     100% {
         opacity: 0;
-		transform: translate3d(20vh, 10vh, 0);
+		transform: translate3d(20vh, 9vh, 0);
     }
 
 }
@@ -390,7 +390,7 @@ section.portfolio-main {
 
     0% {
         opacity: 0;
-        transform: translate3d(-8vh, -16vh, 0);
+        transform: translate3d(-8vh, -8vh, 0);
     }
 
     /* 12.5% {
@@ -413,7 +413,7 @@ section.portfolio-main {
 */
     50% {
         opacity: 0.5;
-		transform: translate3d(-4vh, -6vh, 0);
+		transform: translate3d(-4vh, -3vh, 0);
     }
 /*
     62.5% {
@@ -502,16 +502,16 @@ section.portfolio-main {
 
 .next-wrapper {
     position: absolute;
-    left: 15vh;
+    left: 13vh;
     width: max-content;
-    top: 5.5vh;
+    top: 5vh;
 }
 
 .prev-warapper {
     position: absolute;
     left: 13vh;
     width: max-content;
-    bottom: 5vh;
+    bottom: 6vh;
 }
 
 /* .next-to-next-wrapper {
@@ -651,6 +651,7 @@ canvas{
     border-radius: 4px;
     color: #fff;
     margin-right: 15px;
+    width: 100px;
 }
 
 .portfolio-sub-title {

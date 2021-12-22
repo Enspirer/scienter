@@ -36,7 +36,7 @@
         <h1 class="main-title">Portfolio</h1>
         <div class="portfolio-content-box">
             <div class="portfolio-content-inner-wrapper">
-                <p class="orange-txt" >We start with a get-things-done attitude</p>
+                <p class="orange-txt" >We Start with a Get-Things-Done Attitude</p>
                 <h2 id="portTitleOne" class="portfolio-sub-title">Hotel Management</h2>
                 <div class="portfolio-nav-wrapper">
                     <button class="portfolio-btn" onclick="prevSlide()">Previous</button>

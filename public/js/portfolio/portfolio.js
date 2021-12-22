@@ -34,13 +34,6 @@ function nextSlide() {
         x = 0;
       }
 
-   
-
-
-    
-
-     
-
       
     document.getElementById('next-img').src = img[x];
 

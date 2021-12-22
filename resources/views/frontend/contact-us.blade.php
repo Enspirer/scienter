@@ -12,7 +12,8 @@
 @section('content')
 
 <section class="full-height-area contact-main-section">
-    <div id="contact-banner" class="contact-main-banner-wrapper">
+    <div class="contact-main-banner-wrapper" style="position:relative;">
+        <img  id="contact-banner" width="100%" src="{{ url('img/frontend/contact-us/banner-one.png') }}" alt="contact banner">
         <div class="contact-banner-text-wrapper">
             <div class="blur"></div>
             <div class="text-area">
@@ -84,7 +85,7 @@
 <section id="get-in-touch" class="full-height-area">
     <div class="contact-txt">
     <h1>Get In Touch</h1>
-    <p class="orange-txt ">We'd love to hear form you</p>
+    <p class="orange-txt ">We'd Love to Hear from You</p>
     </div>
  
     <form action="" class="contact-form">
@@ -165,10 +166,12 @@ $('input').blur(function() {
 <!-- timeline script -->
 <script>
 //banner image holder
-const contactBanner = ["url(../img/frontend/contact-us/banner-one.png)",
-    "url(../img/frontend/contact-us/banner-two.png)", "url(../img/frontend/contact-us/banner-three.png)",
-    "url(../img/frontend/contact-us/banner-four.png)"
-];
+
+var contactImgUrl = "{{ url('/img/frontend/contact-us/') }}";
+
+
+
+const contactBanner = [contactImgUrl +  "/banner-one.png", contactImgUrl +  "/banner-two.png", contactImgUrl +  "/banner-three.png", contactImgUrl +  "/banner-four.png"];
 
 //banner location holder
 const contactLocation = ["Sri Lanka", "Yangon", "Dhaka", "Hotline"];
@@ -186,7 +189,7 @@ function contactSlideRight() {
     }
     console.log(i);
 
-    document.getElementById("contact-banner").style.backgroundImage = contactBanner[i];
+    document.getElementById("contact-banner").src = contactBanner[i];
     document.getElementById("contact-location").innerHTML = contactLocation[i];
     document.getElementById("contact-office").innerHTML = contactOffice[i];
 }
@@ -199,7 +202,7 @@ function contactSlideLeft() {
         i = 3;
     }
 
-    document.getElementById("contact-banner").style.backgroundImage = contactBanner[i];
+    document.getElementById("contact-banner").src = contactBanner[i];
     document.getElementById("contact-location").innerHTML = contactLocation[i];
     document.getElementById("contact-office").innerHTML = contactOffice[i];
 }

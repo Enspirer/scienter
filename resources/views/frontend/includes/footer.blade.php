@@ -1,5 +1,5 @@
 <footer>
-    <div class="container-fluid footer-top-logo-area">
+    <!-- <div class="container-fluid footer-top-logo-area">
         <div class="container">
             <div class="row">
                 <a href="{{ route('frontend.index') }}" class="navbar-brand">
@@ -10,13 +10,20 @@
             </div>
         </div>
     </div>
-   
+    -->
         
     <div class="footer-main">
         <div class="container footer-main-container">
             <div class="row">
             <div class="col-md-4 footer-main-text">
-                <p>Since it’s inception in 1995, SCIENTER TECHNOLOGIES has provided Sri Lankan and global industries with a multitude of comprehensive inte - grated software solutions. Renowned for its ‘cutting edge’ in increasing efficiency, profitability and its modernity keeping in line with continuous innovation witnessed and experienced technologically over the years, the company has become the solutions prefered provider for many corporate entities.</p>
+                <img width="75%" src="{{ url('img/frontend/scienter-dark.png') }}" alt="scienter logo">
+                <ul class="social-list">
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
             </div>
             <div class="col-md-3">
                 <h3>Customer Support</h3>
@@ -27,18 +34,17 @@
                 </ul>
             </div>
             <div class="col-md-2">
-                <h3>About</h3>
+                <h3>Site Information</h3>
                 <ul class="footer-list">
-                    <li>The Company</li>
-                    <li>Products</li>
-                    <li>What's New</li>
-                    <li>Contact Us</li>
-                    <li>Home Page</li>
+                    <li>Privacy</li>
+                    <li>Terms of Use</li>
+                    <li>Legal Disclouser</li>
+                    <li>Copyright</li>
+                    <li>Sitemap</li>
+                    <li>Cookie Policy</li>
                 </ul>
             </div>
             <div class="col-md-3">
-                <h3>Social Networking</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
                 <h3>Newsletter</h3>
                 <p>You can trust us. we only send promo offers, not a single spam.</p>
 

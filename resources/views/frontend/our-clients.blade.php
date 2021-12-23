@@ -13,7 +13,7 @@
 <section id="clients" class="home-other-sections client-section client-page-height">
     <div data-aos="zoom-in" data-aos-duration="1000" class="container client-container">
         <div class="client-topic-wrapper">
-            <h2 class="TT-Light">Our Clients</h2>
+            <h2 class="TT-Light subtitle">Our Clients</h2>
             <div class="line-area">
                 <span class="line-wrapper"><i class="fas fa-circle"></i><span class="topic-line"></span></span>
             </div>
@@ -244,7 +244,7 @@
     </div>
 
 
-
+<div class="clients-trigger"></div>
 </section>
 
 
@@ -256,6 +256,16 @@
 
 @push('after-scripts')
 <!-- timeline script -->
-
+<script>
+        gsap.to(".client-topic-wrapper", {
+			scrollTrigger:{
+				trigger: ".clients-trigger", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -100
+		})
+</script>
 
 @endpush

@@ -540,7 +540,7 @@
                                                 <img src="https://tallentor.com/theme_light/assets/footer/club.png" alt="" class="img-fluid">
                                             </div>
                                             <div class="col-9">
-                                                <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Tallentor Club</p>
+                                                <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Scienter Club</p>
                                             </div>
                                         </div>
                                     </div>
@@ -569,7 +569,7 @@
                                                 <img src="https://tallentor.com/theme_light/assets/footer/news.png" alt="" class="img-fluid">
                                             </div>
                                             <div class="col-9">
-                                                <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Latest at Tallentor</p>
+                                                <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Latest at Scienter</p>
                                             </div>
                                         </div>
                                     </div>
@@ -655,9 +655,9 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true
     },
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
 });
 
 
@@ -700,9 +700,7 @@ swiper.on('slideChange', function() {
 });
 </script>
 
-<!-- text animation scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
 
 <script type="text/javascript">
 
@@ -803,6 +801,7 @@ swiper.on('slideChange', function() {
 			},
 			y: -100
 		})
+
         
 </script>
 

@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-6 col-xs-12 main-text-box">
                 <h1 class="main-title TT-Light">Our Story</h1>
-                <p class="TT-Light line-height-30">Since it’s inception in 1995, SCIENTER TECHNOLOGIES has provided Sri
+                <p class="TT-Light line-height-30 main-p">Since it’s inception in 1995, SCIENTER TECHNOLOGIES has provided Sri
                     Lankan and global industries with a multitude of comprehensive inte - grated software solutions.
                     Renowned for its ‘cutting edge’ in increasing efficiency, profitability and its modernity keeping in
                     line with continuous innovation witnessed and experienced technologically over the years, the
@@ -110,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <a href="#milestone" class="scroll-down-sub-btn" address="true"></a>
+        <a href="#milestone" class="scroll-down-sub-btn milestone-btn" address="true"></a>
     </section>
 
     <section id="milestone" class="milestones about-full-height-area">
@@ -132,7 +132,7 @@
             </div>
             <div id="milestone-one" class="milestone-row">
                 <div class="milestone-left-wrapper">
-                    <div class="milestone-text-wrapper-left">
+                    <div class="milestone-text-wrapper-left txt-one">
                         <h5 class="TT-Regular about-blue-font">Dummy Text Here</h5>
                         <h3 class="TT-Regular about-blue-font">Dummy Title Here</h3>
                         <p class="TT-Light">Our team comprises some of the most sought after and recognized individuals
@@ -141,27 +141,31 @@
                 </div>
                 <div class="milestone-line-wrapper">
                     <div class="milestone-line"></div>
-                    <div class="milestone-line-animated one"></div>
+                    <div id="about-line-one" class="milestone-line-animated one"></div>
 
 
                 </div>
-                <div class="milestone-right-wrapper">
-                    <img class="milestone-img" src="{{ url('img/frontend/about/milestone-one.png') }}"
-                        alt="milestone-one">
+                <div class="milestone-right-wrapper img-one">
+                    <div class="image">
+                        <img class="milestone-img" src="{{ url('img/frontend/about/milestone-one.png') }}" data-scroll-zoom
+                            alt="milestone-one">
+                    </div>
                 </div>
             </div>
-            <div class="yr-row">1995</div>
+            <div class="yr-row yr-two">1995</div>
             <div id="milestone-two" class="milestone-row">
-                <div class="milestone-left-wrapper">
-                    <img class="milestone-img" src="{{ url('img/frontend/about/milestone-two.png') }}"
+                <div class="milestone-left-wrapper img-two"> 
+                    <div class="image">
+                        <img class="milestone-img" src="{{ url('img/frontend/about/milestone-two.png') }}" data-scroll-zoom
                         alt="milestone-two">
+                    </div>
                 </div>
                 <div class="milestone-line-wrapper">
                     <div class="milestone-line"></div>
-                    <div class="milestone-line-animated two"></div>
+                    <div id="about-line-two" class="milestone-line-animated two"></div>
                 </div>
                 <div class="milestone-right-wrapper">
-                    <div class="milestone-text-wrapper-right">
+                    <div class="milestone-text-wrapper-right txt-two">
                         <h5 class="TT-Regular about-blue-font">Dummy Text Here</h5>
                         <h3 class="TT-Regular about-blue-font">Dummy Title Here</h3>
                         <p class="TT-Light">Our team comprises some of the most sought after and recognized individuals
@@ -169,11 +173,11 @@
                     </div>
                 </div>
             </div>
-            <div class="yr-row">1995</div>
+            <div class="yr-row yr-three">1995</div>
             <div class="last-milestone-wrapper">
                 <div id="milestone-three" class="milestone-row">
                     <div class="milestone-left-wrapper">
-                        <div class="milestone-text-wrapper-left">
+                        <div class="milestone-text-wrapper-left txt-three">
                             <h5 class="TT-Regular about-blue-font">Dummy Text Here</h5>
                             <h3 class="TT-Regular about-blue-font">Dummy Title Here</h3>
                             <p class="TT-Light">Our team comprises some of the most sought after and recognized
@@ -183,14 +187,16 @@
                     </div>
                     <div class="milestone-line-wrapper">
                         <div class="milestone-line"></div>
-                        <div class="milestone-line-animated three"></div>
+                        <div id="about-line-three" class="milestone-line-animated three"></div>
 
                     </div>
 
 
-                    <div class="milestone-right-wrapper">
-                        <img class="milestone-img" src="{{ url('img/frontend/about/milestone-three.png') }}"
+                    <div class="milestone-right-wrapper img-three">
+                        <div class="image">
+                            <img class="milestone-img" src="{{ url('img/frontend/about/milestone-three.png') }}" data-scroll-zoom
                             alt="milestone-one">
+                        </div>
                     </div>
                 </div>
 
@@ -210,19 +216,221 @@
 
 
 @push('after-scripts')
+
+
+
+<!-- text amd image zoom animation -->
+<script type="text/javascript">
+    //main text
+    gsap.to("h1.main-title.TT-Light", {
+			scrollTrigger:{
+				trigger: "a.scroll-down", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -150
+		})
+   
+        gsap.to(".main-p", {
+			scrollTrigger:{
+				trigger: "a.scroll-down", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -150
+		})
+
+        //excellence
+        gsap.to(".excellence-right", {
+			scrollTrigger:{
+				trigger: "a.scroll-down-sub-btn", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -200
+		})
+
+           //vision mission
+           gsap.to(".vision-text-wrapper", {
+			scrollTrigger:{
+				trigger: ".milestone-btn", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+         //about animation area
+         gsap.to(".milestone-text-wrapper-left.txt-one", {
+			scrollTrigger:{
+				trigger: ".yr-two", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+        gsap.to(".milestone-right-wrapper.img-one", {
+			scrollTrigger:{
+				trigger: ".yr-two", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+
+
+        gsap.to(".milestone-left-wrapper.img-two", {
+			scrollTrigger:{
+				trigger: ".yr-three", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+        gsap.to(".milestone-text-wrapper-right.txt-two", {
+			scrollTrigger:{
+				trigger: ".yr-three", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+
+        gsap.to(".milestone-text-wrapper-left.txt-three", {
+			scrollTrigger:{
+				trigger: ".end-row", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+        gsap.to(".milestone-right-wrapper.img-three", {
+			scrollTrigger:{
+				trigger: ".end-row", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -60
+		})
+
+
+</script>
+
+<script>
+// Higher number = more zoom
+let scaleAmount = 0.4;
+
+function scrollZoom() {
+  const images = document.querySelectorAll("[data-scroll-zoom]");
+  let scrollPosY = 0;
+  scaleAmount = scaleAmount / 100;
+
+  const observerConfig = {
+    rootMargin: "0% 0% 0% 0%",
+    threshold: 0
+  };
+
+  // Create separate IntersectionObservers and scroll event listeners for each image so that we can individually apply the scale only if the image is visible
+  images.forEach(image => {
+    let isVisible = false;
+    const observer = new IntersectionObserver((elements, self) => {
+      elements.forEach(element => {
+        isVisible = element.isIntersecting;
+      });
+    }, observerConfig);
+
+    observer.observe(image);
+
+    // Set initial image scale on page load
+    image.style.transform = `scale(${1 + scaleAmount * percentageSeen(image)})`;
+
+    // Only fires if IntersectionObserver is intersecting
+    window.addEventListener("scroll", () => {
+      if (isVisible) {
+        scrollPosY = window.pageYOffset;
+        image.style.transform = `scale(${1 +
+          scaleAmount * percentageSeen(image)})`;
+      }
+    });
+  });
+
+  // Calculates the "percentage seen" based on when the image first enters the screen until the moment it leaves
+  // Here, we get the parent node position/height instead of the image since it's in a container that has a border, but
+  // if your container has no extra height, you can simply get the image position/height
+  function percentageSeen(element) {
+    const parent = element.parentNode;
+    const viewportHeight = window.innerHeight;
+    const scrollY = window.scrollY;
+    const elPosY = parent.getBoundingClientRect().top + scrollY;
+    const borderHeight = parseFloat(getComputedStyle(parent).getPropertyValue('border-bottom-width')) + parseFloat(getComputedStyle(element).getPropertyValue('border-top-width'));
+    const elHeight = parent.offsetHeight + borderHeight;
+
+    if (elPosY > scrollY + viewportHeight) {
+      // If we haven't reached the image yet
+      return 0;
+    } else if (elPosY + elHeight < scrollY) {
+      // If we've completely scrolled past the image
+      return 100;
+    } else {
+      // When the image is in the viewport
+      const distance = scrollY + viewportHeight - elPosY;
+      let percentage = distance / ((viewportHeight + elHeight) / 100);
+      percentage = Math.round(percentage);
+
+      return percentage;
+    }
+  }
+}
+
+scrollZoom();
+
+</script>
+
 <!-- timeline script -->
 <script>
 $("#milestone-one").mouseover(function() {
     $(".milestone-line-animated.one").addClass("firstanimation");
 })
 
-$("#milestone-two").mouseover(function() {
+// $("#milestone-two").mouseover(function() {
+//     $(".milestone-line-animated.two").addClass("firstanimation");
+// })
+
+// $(".last-milestone-wrapper").mouseover(function() {
+//     $(".milestone-line-animated.three").addClass("firstanimation");
+// })
+
+
+//catch animaton
+
+const firstLine = document.getElementById("about-line-one");
+const secondLine = document.getElementById("about-line-two");
+const thirdLine = document.getElementById("about-line-three");
+
+firstLine.addEventListener("animationend", () => {
     $(".milestone-line-animated.two").addClass("firstanimation");
 })
 
-$(".last-milestone-wrapper").mouseover(function() {
-    $(".milestone-line-animated.three").addClass("firstanimation");
+secondLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.three").addClass("firstanimation");
 })
+
+
 
 // $(".last-milestone-wrapper").mouseout(function() {
 //     $(".milestone-line-animated.three").addClass("secondanimation");

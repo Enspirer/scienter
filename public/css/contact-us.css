@@ -27,11 +27,11 @@ img#contact-banner {
 
 .text-area {
     position: absolute;
-    padding: 10% 10%;
+    padding: 5% 10%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: unset;
 }
 
 .contact-main-section {
@@ -42,7 +42,7 @@ img#contact-banner {
 .contact-main-banner-wrapper {
     display: flex;
     position: relative;
-    height: 65vh;
+    height: 70vh;
     justify-content: flex-end;
 }
 
@@ -53,11 +53,16 @@ img#contact-banner {
 }
 
 .contact-banner-text-wrapper h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
 .contact-banner-text-wrapper h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #646363;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .contact-banner-text-wrapper p {
@@ -120,7 +125,7 @@ span.location-wrapper {
     gap: 15px;
 }
 
-input[type="submit"] {
+.contact-submit {
     background: #000;
     color: #fff;
     padding: 10px 20px;

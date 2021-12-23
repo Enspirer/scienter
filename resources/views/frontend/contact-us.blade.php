@@ -127,7 +127,7 @@
                 <p>Acceptance *<br>
                     I would like to receive information & updates from Trace Solutions in relation to my enquiry. I understand that Trace will never share my information.</p>
                 <div class="submit-wrapper">
-                    <input type="submit" value="Send Message">
+                    <input type="submit" value="Send Message" class="contact-submit">
                 </div>
             </div>
            

@@ -59,17 +59,17 @@
 }
 
 svg#mission,  span.box-top-logo{
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: -20px;
+    top: -35px;
     display: block;
-    left: 50px;
+    left: 55px;
 }
 
 svg#Vission {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: -15px;
     display: block;

@@ -19,7 +19,7 @@
                     company has become the solutions prefered provider for many corporate entities.</p>
             </div>
             <div class="col-md-6 col-xs-12">
-                <img class="half-img" src="{{ url('img/frontend/about/man.png') }}" alt="man">
+                <img class="half-img about-main-img" src="{{ url('img/frontend/about/man.png') }}" alt="man">
             </div>
         </div>
         <a href="#excellence" class="scroll-down">
@@ -326,6 +326,16 @@
 				scrub: 1
 			},
 			y: -60
+		})
+
+        gsap.to(".about-main-img", {
+			scrollTrigger:{
+				trigger: "a.scroll-down", 
+				start: "top bottom", 
+				end: "bottom top", 
+				scrub: 1
+			},
+			y: -100
 		})
 
 

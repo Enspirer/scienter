@@ -779,7 +779,7 @@ swiper.on('slideChange', function() {
 				end: "bottom top", 
 				scrub: 1
 			},
-			y: -100
+			x: 100
 		})
 
         gsap.to(".client-topic-wrapper", {
@@ -789,7 +789,7 @@ swiper.on('slideChange', function() {
 				end: "bottom top", 
 				scrub: 1
 			},
-			y: -100
+			x: 100
 		})
 
         gsap.to(".expertise-topic-wrapper", {
@@ -799,7 +799,7 @@ swiper.on('slideChange', function() {
 				end: "bottom top", 
 				scrub: 1
 			},
-			y: -100
+			x: 100
 		})
 
         

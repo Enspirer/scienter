@@ -15,10 +15,10 @@
     <div class="footer-main">
         <div class="container footer-main-container">
             <div class="row footer-mobile-row">
-                <div class="col-md-4 footer-main-text">
-                    <img width="75%" src="{{ url('img/frontend/scienter-dark.png') }}" alt="scienter logo">
+                <div class="col-md-4 tab-20 footer-main-text">
+                    <img id="footer-logo" width="75%" src="{{ url('img/frontend/scienter-dark.png') }}" alt="scienter logo">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 tab-30">
                     <h3>Customer Support</h3>
                     <ul class="footer-list">
                         <li><span><i class="fas fa-phone-alt"></i></span>+94 112 598 555</li>
@@ -26,7 +26,7 @@
                         <li><span><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">302, Galle Road, Colombo 04,<br> Sri Lanka.</span></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 tab-25">
                     <h3>Site Information</h3>
                     <ul class="footer-list">
                         <li>Privacy</li>
@@ -37,7 +37,7 @@
                         <li>Cookie Policy</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 tab-25">
                     <ul class="social-list">
                         <div class="social-row">
                             <li><i class="fab fa-facebook-square"></i></li>

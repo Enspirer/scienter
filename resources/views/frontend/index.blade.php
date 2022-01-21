@@ -476,14 +476,19 @@
 
 
 <div class="clients-trigger"></div>
+<a href="#expertise" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
 <section id="expertise" class="home-other-sections expertise-section">
+    <h2 class="TT-Light subtitle visible-tab">Our Expertise</h2>
+    <div class="expertise-line-area visible-tab">
+                <span class="line-wrapper"><span class="topic-line tab-topic-line"></span><i class="fas fa-circle"></i></span>
+            </div>
     <div class="home-box-expertise-img-area"></div>
     <div data-aos="zoom-in" data-aos-duration="1000" class="expertise-content-box">
         <div class="expertise-topic-wrapper">
-            <h2 class="TT-Light subtitle">Our Expertise</h2>
-            <div class="expertise-line-area">
+            <h2 class="TT-Light subtitle hidden-tab">Our Expertise</h2>
+            <div class="expertise-line-area hidden-tab">
                 <span class="line-wrapper"><span class="topic-line"></span><i class="fas fa-circle"></i></span>
             </div>
         </div>
@@ -560,7 +565,7 @@
     <div class="container-fluid social-banner">
         <div class="container social">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 tab-50">
                     <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                         <div class="card" style="height: 27rem;">
                             <iframe
@@ -574,7 +579,7 @@
 
 
 
-                <div class="col-4">
+                <div class="col-4 tab-50">
                     <a href="https://tallentor.com/blog/Club" style="color:black">
                     </a>
                     <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/Club"
@@ -620,7 +625,7 @@
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 tab-50 tab-center-50">
                     <a href="https://tallentor.com/blog/News" style="color:black">
                     </a>
                     <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/News"
@@ -882,9 +887,9 @@ gsap.to(".expertise-topic-wrapper", {
 <!-- mobile journey script -->
 <script>
 //data arrays
-const mobileJoureyImgArray = ["{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}",
-    "{{url('img/frontend/homepage/journey-slides/APICTA.png') }}",
-    "{{url('img/frontend/homepage/journey-slides/tourism.png') }}"
+const mobileJoureyImgArray = ["{{url('img/frontend/homepage/journey-slides/NBQSA-mobile.png') }}",
+    "{{url('img/frontend/homepage/journey-slides/APICTA-mobile.png') }}",
+    "{{url('img/frontend/homepage/journey-slides/tourism-mobile.png') }}"
 ];
 
 const mobileJourneyMainTitleArray = ["NBQSA", "APICTA", "Tourism"];

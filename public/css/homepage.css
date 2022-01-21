@@ -709,6 +709,79 @@ img#journey-img {
 
 /*tab-portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
+    .home-content-box.pms, .home-box-pms-img-area, .home-content-box, .home-box-pos-img-area, .home-box-efinancial-img-area, .expertise-topic-wrapper, .tourism-topic-wrapper, .expertise-topic-wrapper, .client-topic-wrapper {
+        transform: unset !important;
+    }
+
+    .home-content-box h2 {
+        font-size: 3rem;
+    }
+
+    .home-other-sections {
+        padding: 15px;
+        height: unset;
+        margin-top: 30px;
+        padding-top: 100px;
+    }
+
+    .home-content-box {
+        width: 60%;
+        top: 110px;
+        right: 15px;
+        height: 280px;
+    }
+
+    .image img {
+        height: 300px;
+    }
+
+    .home-box-pms-img-area, .home-box-efinancial-img-area, .home-box-pos-img-area {
+        height: unset;
+    }
+
+    .left-side-box {
+        left: 15px;
+    }
+
+    .tourism-left-content h2 {
+        font-size: 2rem;
+    }
+
+    img#journey-img {
+        width: 300px;
+        object-fit: contain;
+    }
+
+    .tourism-left-content {
+        padding-right: 0;
+    }
+
+    .journey-box h4 {
+        font-size: 0.9rem;
+    }
+
+    .expertise-topic-wrapper {
+        text-align: left;
+        width: unset;
+    }
+
+    section#expertise {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .home-box-expertise-img-area {
+        height: 500px;
+        width: 58%;
+    }
+
+    section#clients {
+        height: 500px;
+    }
+
+    .tab-topic-line {
+        width: 250px;
+    }
 }
 
 

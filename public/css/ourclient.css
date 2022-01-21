@@ -162,3 +162,20 @@
     }
 }
 
+/*tab-portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .client-section {
+        padding: 15px !important;
+    }
+
+    .client-page-height {
+        height: 100%;
+        margin-top: 125px;
+    }
+
+    .client-topic-wrapper {
+        margin-bottom: 0;
+    }
+}
+
+

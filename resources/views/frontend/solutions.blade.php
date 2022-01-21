@@ -17,14 +17,14 @@
                 <p class="orange-txt">This is Where Tomorrow's Solutions for Businesses are being Created.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-7 col-xs-12">
+        <div class="row tab-align-center-row tab-mb-30">
+            <div class="col-md-7 col-xs-12 tab-50">
                 <div class="image">
                     <img width="100%" src="{{ url('/img/frontend/solution/solution-main.png') }}" alt="man" class="half-img" data-scroll-zoom>
                 </div>
                 
             </div> 
-            <div class="col-md-5 col-xs-12 main-text-box solution-one">
+            <div class="col-md-5 col-xs-12 tab-50 main-text-box solution-one ">
                 <div class="solutions-topic-wrapper">
                     <h6 class="TT-Light">Industry Tailored</h6>
                     <div class="solution-line-area">
@@ -43,8 +43,8 @@
     </section>
 
     <section id="software-development" class="full-height-area">
-        <div class="row">
-        <div class="col-md-5 col-xs-12 main-text-box solution-two">
+        <div class="row tab-align-center-row tab-mb-30">
+            <div class="col-md-5 col-xs-12 tab-50 main-text-box solution-two">
                 <div class="solutions-topic-wrapper">
                     <h6 class="TT-Light">Customer Software</h6>
                     <div class="solution-line-area">
@@ -58,7 +58,7 @@
                <p class="TT-Regular">Whether you have an idea for a custom software solution for your company, or you are engaged in software product development, Scienter is ready to provide full-cycle software development services at each stage of your project.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
-            <div class="col-md-7 col-xs-12">
+            <div class="col-md-7 col-xs-12 tab-50">
                 <div class="image">
                     <img width="100%" src="{{ url('/img/frontend/solution/solution-one.png') }}" alt="man" class="half-img" data-scroll-zoom>
                 </div>      
@@ -68,13 +68,13 @@
     </section>
 
     <section id="web-application" class="full-height-area ">
-        <div class="row">
-            <div class="col-md-7 col-xs-12">
+        <div class="row tab-align-center-row tab-mb-30">
+            <div class="col-md-7 col-xs-12 tab-50">
                 <div class="image">
                     <img width="100%" src="{{ url('/img/frontend/solution/solution-two.png') }}" alt="man" class="half-img" data-scroll-zoom>
                 </div>
             </div> 
-            <div class="col-md-5 col-xs-12 main-text-box solution-three">
+            <div class="col-md-5 col-xs-12 tab-50 main-text-box solution-three">
                 <div class="solutions-topic-wrapper">
                     <h6 class="TT-Light">Web Application</h6>
                     <div class="solution-line-area">
@@ -94,8 +94,8 @@
 
 
     <section id="mobie-application" class="full-height-area ">
-        <div class="row mobile-column-reverse-row">
-        <div class="col-md-5 col-xs-12 main-text-box solution-four">
+        <div class="row mobile-column-reverse-row tab-align-center-row tab-mb-30">
+        <div class="col-md-5 col-xs-12 tab-50 main-text-box solution-four">
                 <div class="solutions-topic-wrapper">
                     <h6 class="TT-Light">Mobile Application</h6>
                     <div class="solution-line-area">
@@ -109,7 +109,7 @@
                 <p class="TT-Regular">If you are in search of a mobile app development supplier, Scienter is your perfect match! Our app development company is a savvy Android developer that will help you get on the mobile bandwagon.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
-            <div class="col-md-7 col-xs-12">
+            <div class="col-md-7 col-xs-12 tab-50">
                 <div class="image">
                     <img width="100%" src="{{ url('/img/frontend/solution/solution-three.png') }}" alt="man" class="half-img" data-scroll-zoom >
                 </div>

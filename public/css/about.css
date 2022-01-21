@@ -452,7 +452,7 @@ span.vertical-line-animated {
         font-weight: bold;
     }
 
-    .excellence-right, .main-text-box h1, .main-text-box p, img.half-img.about-main-img {
+    .excellence-right, .main-text-box h1, .main-text-box p, img.half-img.about-main-img, .vision-text-wrapper {
         transform: unset !important;
     }
 
@@ -466,6 +466,22 @@ span.vertical-line-animated {
 
 /*tab-portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
+    .about-full-height-area {
+        padding: 15px;
+        margin-top: 85px;
+    }
+    h1.main-title, .main-p, img.half-img.about-main-img, .excellence-right, .vision-text-wrapper {
+        transform: unset !important;
+    }
+
+    .about-right-half-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-half-box {
+        width: 100%;
+    }
 }
 
 

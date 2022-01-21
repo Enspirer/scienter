@@ -561,6 +561,10 @@ ul.social-list {
 .visible-xs {
     display: none !important;
 }
+
+.visible-tab {
+    display: none !important;
+}
   
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -668,11 +672,128 @@ ul.social-list {
 
 /*tab-portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
+    .full-height-area {
+        height: 100%;
+        padding: 15px;
+    }
+    .tab-50 {
+        flex: 50% !important;
+        max-width: 50% !important;
+    }
+
+    .tab-12 {
+        flex: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .tab-align-center-row {
+        align-items: center;
+    }
+
+    .scroll-down-sub-btn {
+        opacity: 0;
+    }
+
+    .tab-mb-30 {
+        margin-bottom: 30px;
+    }
+
+    h1.main-title {
+        font-size: 2.5rem;
+    }
+
+    #navbarSupportedContent {
+        background: rgb(23, 129, 167);
+        color: #fff;
+        padding: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    a.nav-link.active::before {
+        left: 0;
+        width: 15%;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255 255 255) !important;
+    }
+
+    .full-height-section {
+        height: 500px;
+    }
+
+    .scroll-down {
+        opacity: 0;
+    }
+
+    .excellence {
+        padding: 15px !important;
+    }
+    
+    h2.subtitle {
+        font-size: 2rem;
+    }
+
+    .client-tab-pane {
+        height: 65vh;
+    }
+
+    .tab-20 {
+        flex: 20% !important;
+        max-width: 20% !important;
+    }
+
+    .tab-30 {
+        flex: 30% !important;
+        max-width: 30% !important;
+    }
+
+    .tab-25 {
+        flex: 25% !important;
+        max-width: 25% !important;
+    }
+
+    .footer-list li span {
+        margin-right: 10px;
+    }
+
+    #footer-logo {
+        width: 100% !important;
+    }
+
+    .col-md-4.footer-main-text {
+        padding-right: 0;
+    }
+
+    ul.social-list {
+        width: 100%;
+    }
+
+    .tab-center-50 {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .client-page-height {
+        margin-top: 0;
+    }
+
+    .visible-tab {
+        display: block !important;
+    }
+
+    .hidden-tab {
+        display: none !important;
+    }
 }
 
 
 
 /*large screen*/
 @media screen and (min-width: 1400px) {
-   
+    .client-tab-pane {
+        height: 70vh;
+    }
 }

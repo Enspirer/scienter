@@ -15,12 +15,12 @@
         <h1 class="main-title TT-Light" style="margin-top:30px; margin-bottom: 15px;">Top Story</h1>
     </div>
     <div class="row">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 tab-12">
             <div class="image">
                 <img width="100%" class="half-img" src="{{ url('img/frontend/news/news-img.png') }}" alt="man" data-scroll-zoom>
             </div>         
         </div>
-        <div class="col-md-6 col-xs-12 main-text-box">
+        <div class="col-md-6 col-xs-12 tab-12 main-text-box">
             <h2 class="TT-Bold news-subheading">Scienter - Wisdom Partnership</h2>
             <p class="TT-Regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p class="TT-Regular">Scelerisque eleifend donec pretium vulputate sapien. Mattis nunc sed blandit libero volutpat sed cras ornare. Ut placerat orci nulla pellentesque. Mi tempus imperdiet nulla malesuada pellentesque. Enim facilisis gra</p>
@@ -32,14 +32,14 @@
     <h2 class="mb-45">Latest News</h2>
     <div class="container">
         <div class="row news-box-row">
-            <div class="col-md-4 col-xs-12 news-box">
+            <div class="col-md-4 col-xs-12 tab-12 news-box tab-mb-30">
                 <div class="news-inner-box">
                     <img class="news-box-img" src="{{ url('img/frontend/news/wis.png') }}" alt="wiscom logo">
                     <h3 class="news-title">Scienter - Wisdom Partnership</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
             </div>
-            <div class="col-md-4 col-xs-12 news-box">
+            <div class="col-md-4 col-xs-12 tab-12 news-box tab-mb-30">
                 <div class="news-inner-box">
                     <img class="news-box-img" src="{{ url('img/frontend/news/GJC.png') }}" alt="gjc logo">
                     <h3 class="news-title">Gloria Jeen's Coffee</h3>
@@ -47,7 +47,7 @@
                 </div> 
             </div>
 
-            <div class="col-md-4 col-xs-12 news-box">
+            <div class="col-md-4 col-xs-12 tab-12 news-box tab-mb-30">
                 <div class="news-inner-box">
                     <img class="news-box-img" src="{{ url('img/frontend/news/GJC.png') }}" alt="gjc logo">
                     <h3 class="news-title">Gloria Jeen's Coffee</h3>

@@ -302,6 +302,13 @@ p#contact-office {
 
 /*tab-portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
+    section.full-height-area.contact-main-section {
+        height: unset;
+    }
+
+    form.contact-form {
+        margin-bottom: 30px;
+    }
 }
 
 

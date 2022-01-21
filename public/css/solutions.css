@@ -60,7 +60,18 @@ p {
 /*mobile-view*/
 @media screen and (max-width: 767px) {
     .solutions-topic-wrapper {
-        margin-top: 100px;
+        margin-top: 30px;
+    }
+    .main-text-box {
+        transform: unset !important;
+    }
+
+    section#mobie-application {
+        margin-bottom: 30px;
+    }
+
+    section#web-application {
+        margin-top: 30px;
     }
 }
 
@@ -68,6 +79,17 @@ p {
 
 /*tab-portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
+    .main-text-box {
+        transform: unset !important;
+    }
+
+    .full-height-area {
+        padding: 15px;
+    }
+    
+    h1.main-title {
+        margin-top: 60px !important;
+    }
 }
 
 

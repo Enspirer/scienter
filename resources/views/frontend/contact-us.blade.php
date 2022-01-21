@@ -13,24 +13,44 @@
 
 <section class="full-height-area contact-main-section">
     <div class="contact-main-banner-wrapper" style="position:relative;">
-        <img  id="contact-banner" width="100%" src="{{ url('img/frontend/contact-us/banner-one.png') }}" alt="contact banner">
-        <div class="contact-banner-text-wrapper">
+        <img id="contact-banner" width="100%" src="{{ url('img/frontend/contact-us/banner-one.png') }}"
+            alt="contact banner">
+        <div class="contact-banner-text-wrapper hidden-xs">
             <div class="blur"></div>
             <div class="text-area">
                 <h3>Contacts</h3>
                 <p>Get the support you need to keep our solution running at peak performance.</p>
-                <h4>Office Name:</h4>
-                <p>Cooperate Office</p>
-                <h4>Address:</h4>
-                <p>#302, Galle Road <br /> Colombo 04, Sri Lanka</p>
-                <h4>Phone:</h4>
-                <p>T| +94 112 598 555 <br /> F| +94 112 259 911</p>
-                <h4>Email</h4>
-                <p>E| info@scienter.lk</p>
+                <div id="hotline-hide-helper-desktop" class="hotline-hide-helper">
+                    <h4>Office Name:</h4>
+                    <p id="side-area-contact-office">Cooperate Office</p>
+                    <h4 id="addressHideDesktop">Address:</h4>
+                    <p id="side-area-contact-address">#302, Galle Road <br /> Colombo 04, Sri Lanka</p>
+                    <h4>Phone:</h4>
+                    <p id="side-area-contact-phone">T| +94 112 598 555 <br /> F| +94 112 259 911</p>
+                    <h4 id="emailHideDesktop">Email</h4>
+                    <p id="side-area-contact-email">E| info@scienter.lk</p>
+                </div>
+
+                <!--visible only for hotline -->
+                <div id="hotline-multiple-number-wrapper">
+                    <div class="hotline-number-row">
+                        <h4>Hotel Management Applications</h4>
+                        <p>T| +94 714 752 752</p>
+                    </div>
+                    <div class="hotline-number-row">
+                        <h4>Restuarant Management Applications</h4>
+                        <p>T| +94 714 751 751</p>
+                    </div>
+                    <div class="hotline-number-row">
+                        <h4>Financial Applications</h4>
+                        <p>T| +94 112 598 555</p>
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
+
     <div class="our-locations-wrapper">
         <div class="contact-left-btn">
             <a href="#" class="contact-area-btns" onclick="contactSlideLeft()">
@@ -79,15 +99,55 @@
             </a>
         </div>
     </div>
+
+    
+
+
+    <div class="contact-mobile-banner-text-wrapper visible-xs">
+            <div class="mobile-contact-txt">
+                <h3>Contacts</h3>
+                <p>Get the support you need to keep our solution running at peak performance.</p>
+                <div id="hotline-hide-helper-mobile" class="hotline-hide-helper">
+                    <h4>Office Name:</h4>
+                    <p id="mobile-contact-office">Cooperate Office</p>
+                    <h4 id="addressHideMobile">Address:</h4>
+                    <p id="mobile-contact-address">#302, Galle Road <br /> Colombo 04, Sri Lanka</p>
+                    <h4>Phone:</h4>
+                    <p id="mobile-contact-phone">T| +94 112 598 555 <br /> F| +94 112 259 911</p>
+                    <h4 id="emailHideMobile">Email</h4>
+                    <p id="mobile-contact-email">E| info@scienter.lk</p>
+                </div>
+               
+                  <!--visible only for hotline -->
+                  <div id="hotline-multiple-number-wrapper-mobile">
+                    <div class="hotline-number-row">
+                        <h4>Hotel Management Applications</h4>
+                        <p>T| +94 714 752 752</p>
+                    </div>
+                    <div class="hotline-number-row">
+                        <h4>Restuarant Management Applications</h4>
+                        <p>T| +94 714 751 751</p>
+                    </div>
+                    <div class="hotline-number-row">
+                        <h4>Financial Applications</h4>
+                        <p>T| +94 112 598 555</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     <a href="#get-in-touch" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
 <section id="get-in-touch" class="full-height-area">
     <div class="contact-txt">
-    <h1>Get In Touch</h1>
-    <p class="orange-txt ">We'd Love to Hear from You</p>
+        <div class="contact-heading-wrapper">
+            <h1 style="margin-bottom:0px;">Get In Touch</h1>
+            <p class="orange-txt ">We'd Love to Hear from You</p>
+        </div>
+
     </div>
- 
+
     <form action="" class="contact-form">
         <div class="contact-form-row">
             <div class="input-wrapper">
@@ -123,19 +183,25 @@
         <div class="contact-form-last-row">
             <h5>Consent</h5>
             <div class="last-row-content-wrapper">
+                <div class="accept-row">
                 <input type="checkbox" required>
                 <p>Acceptance *<br>
-                    I would like to receive information & updates from Trace Solutions in relation to my enquiry. I understand that Trace will never share my information.</p>
+                    I would like to receive information & updates from Trace Solutions in relation to my enquiry. I
+                    understand that Trace will never share my information.</p>
+                </div>
+         
+                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
                 <div class="submit-wrapper">
                     <input type="submit" value="Send Message" class="contact-submit">
                 </div>
             </div>
-           
+
         </div>
     </form>
 
 
-    
+
 </section>
 
 
@@ -146,21 +212,19 @@
 @push('after-scripts')
 <!-- form inputs script -->
 <script>
-    $('head').append('<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">');
+$('head').append(
+    '<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">');
 
 $('input').focus(function(event) {
-  $(this).closest('.float-label-field').addClass('float').addClass('focus');
+    $(this).closest('.float-label-field').addClass('float').addClass('focus');
 })
 
 $('input').blur(function() {
-  $(this).closest('.float-label-field').removeClass('focus');
-  if (!$(this).val()) {
-    $(this).closest('.float-label-field').removeClass('float');
-  }
+    $(this).closest('.float-label-field').removeClass('focus');
+    if (!$(this).val()) {
+        $(this).closest('.float-label-field').removeClass('float');
+    }
 });
-
-
-
 </script>
 
 <!-- timeline script -->
@@ -171,12 +235,20 @@ var contactImgUrl = "{{ url('/img/frontend/contact-us/') }}";
 
 
 
-const contactBanner = [contactImgUrl +  "/banner-one.png", contactImgUrl +  "/banner-two.png", contactImgUrl +  "/banner-three.png", contactImgUrl +  "/banner-four.png"];
+const contactBanner = [contactImgUrl + "/banner-one.png", contactImgUrl + "/banner-two.png", contactImgUrl +
+    "/banner-three.png", contactImgUrl + "/banner-four.png"
+];
 
 //banner location holder
 const contactLocation = ["Sri Lanka", "Yangon", "Dhaka", "Hotline"];
 
-const contactOffice = ["COOPERATE OFFICE", "REGIONAL OFFICE", "REGIONAL OFFICE", "REGIONAL OFFICE"];
+const contactOffice = ["cooperate office", "regional office", "regional office", "regional office"];
+
+const contactAddress = ["#302, Galle Road, <br> Colombo 04, Sri Lanka", "225/227, 11<sup>th</sup> floor, Olympic <br> Tower, Kyauktada Township,<br> Yangon, Myanmar", "Plot No 1361(4th Floor), <br> Avenue #10, Mirpur DOHS, Dhaka 1216, Bangladesh", " "];
+
+const contactPhone = ["T|+94 112 598 555 <br> F|+94 112 259 911", "T|+95 979 536 1165 <br> T|+95 942 171 9012", "T|+88 017 905 45411", " "];
+
+const contactEmail = ["E|info@scienter.lk", "E|sagarv@scienter.lk", "E| info@scienter.lk", " "];
 
 var i = 0;
 
@@ -187,11 +259,68 @@ function contactSlideRight() {
     } else {
         i = 0;
     }
-    console.log(i);
+ 
+    
 
     document.getElementById("contact-banner").src = contactBanner[i];
     document.getElementById("contact-location").innerHTML = contactLocation[i];
     document.getElementById("contact-office").innerHTML = contactOffice[i];
+
+
+    document.getElementById("side-area-contact-office").innerHTML = contactOffice[i];
+    document.getElementById("mobile-contact-office").innerHTML = contactOffice[i];
+
+   
+
+
+    document.getElementById("side-area-contact-address").innerHTML = contactAddress[i];
+    document.getElementById("mobile-contact-address").innerHTML = contactAddress[i];
+
+   
+
+    document.getElementById("side-area-contact-phone").innerHTML = contactPhone[i];
+   
+    document.getElementById("mobile-contact-phone").innerHTML = contactPhone[i];
+
+    
+
+    document.getElementById("side-area-contact-email").innerHTML = contactEmail[i];
+    document.getElementById("mobile-contact-email").innerHTML = contactEmail[i];
+
+    //Address hide when hotline
+    if(contactLocation[i] == "Hotline") {
+        document.getElementById("addressHideMobile").style.display = "none";
+        document.getElementById("addressHideDesktop").style.display = "none";
+        document.getElementById("emailHideMobile").style.display = "none";
+        document.getElementById("emailHideDesktop").style.display = "none";
+
+
+        //other details hide
+        document.getElementById("hotline-hide-helper-desktop").style.display = "none";
+        document.getElementById("hotline-hide-helper-mobile").style.display = "none";
+
+        //hotline multiple number show
+        document.getElementById("hotline-multiple-number-wrapper").style.display = "block";
+        document.getElementById("hotline-multiple-number-wrapper-mobile").style.display = "block";
+       
+       
+      
+
+    } else {
+        document.getElementById("addressHideMobile").style.display = "block";
+        document.getElementById("addressHideDesktop").style.display = "block";
+        document.getElementById("emailHideMobile").style.display = "block";
+        document.getElementById("emailHideDesktop").style.display = "block";
+
+        document.getElementById("hotline-hide-helper-desktop").style.display = "block";
+        document.getElementById("hotline-hide-helper-mobile").style.display = "block";
+
+        document.getElementById("hotline-multiple-number-wrapper").style.display = "none";
+        document.getElementById("hotline-multiple-number-wrapper-mobile").style.display = "none";
+      
+        
+    }
+    
 }
 
 function contactSlideLeft() {
@@ -202,9 +331,58 @@ function contactSlideLeft() {
         i = 3;
     }
 
+    
+ 
+
     document.getElementById("contact-banner").src = contactBanner[i];
     document.getElementById("contact-location").innerHTML = contactLocation[i];
     document.getElementById("contact-office").innerHTML = contactOffice[i];
+    document.getElementById("side-area-contact-office").innerHTML = contactOffice[i];
+    document.getElementById("mobile-contact-office").innerHTML = contactOffice[i];
+
+    document.getElementById("side-area-contact-address").innerHTML = contactAddress[i];
+    document.getElementById("mobile-contact-address").innerHTML = contactAddress[i];
+
+    document.getElementById("side-area-contact-phone").innerHTML = contactPhone[i];
+    document.getElementById("mobile-contact-phone").innerHTML = contactPhone[i];
+
+    document.getElementById("side-area-contact-email").innerHTML = contactEmail[i];
+    document.getElementById("mobile-contact-email").innerHTML = contactEmail[i];
+
+
+
+
+      //Address hide when hotline
+      if(contactLocation[i] == "Hotline") {
+        document.getElementById("addressHideMobile").style.display = "none";
+        document.getElementById("addressHideDesktop").style.display = "none";
+        document.getElementById("emailHideMobile").style.display = "none";
+        document.getElementById("emailHideDesktop").style.display = "none";
+
+
+        //other details hide
+        document.getElementById("hotline-hide-helper-desktop").style.display = "none";
+        document.getElementById("hotline-hide-helper-mobile").style.display = "none";
+
+        //hotline multiple number show
+        document.getElementById("hotline-multiple-number-wrapper").style.display = "block";
+        document.getElementById("hotline-multiple-number-wrapper-mobile").style.display = "block";
+        
+
+    } else {
+        document.getElementById("addressHideMobile").style.display = "block";
+        document.getElementById("addressHideDesktop").style.display = "block";
+        document.getElementById("emailHideMobile").style.display = "block";
+        document.getElementById("emailHideDesktop").style.display = "block";
+
+        document.getElementById("hotline-hide-helper-desktop").style.display = "block";
+        document.getElementById("hotline-hide-helper-mobile").style.display = "block";
+
+        document.getElementById("hotline-multiple-number-wrapper").style.display = "none";
+        document.getElementById("hotline-multiple-number-wrapper-mobile").style.display = "none";
+        
+        
+    }
 }
 </script>
 

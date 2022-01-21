@@ -14,48 +14,54 @@
         
     <div class="footer-main">
         <div class="container footer-main-container">
-            <div class="row">
-            <div class="col-md-4 footer-main-text">
-                <img width="75%" src="{{ url('img/frontend/scienter-dark.png') }}" alt="scienter logo">
-                <ul class="social-list">
-                    <li><i class="fab fa-facebook-square"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-youtube"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-linkedin"></i></li>
-                </ul>
+            <div class="row footer-mobile-row">
+                <div class="col-md-4 footer-main-text">
+                    <img width="75%" src="{{ url('img/frontend/scienter-dark.png') }}" alt="scienter logo">
+                </div>
+                <div class="col-md-3">
+                    <h3>Customer Support</h3>
+                    <ul class="footer-list">
+                        <li><span><i class="fas fa-phone-alt"></i></span>+94 112 598 555</li>
+                        <li><span><i class="fas fa-envelope"></i></span>info@scienstr.lk</li>
+                        <li><span><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">302, Galle Road, Colombo 04,<br> Sri Lanka.</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Site Information</h3>
+                    <ul class="footer-list">
+                        <li>Privacy</li>
+                        <li>Terms of Use</li>
+                        <li>Legal Disclouser</li>
+                        <li>Copyright</li>
+                        <li>Sitemap</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="social-list">
+                        <div class="social-row">
+                            <li><i class="fab fa-facebook-square"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                        </div>
+                        <div class="social-row">
+                            <li><i class="fab fa-instagram"></i></li>
+                            <li><i class="fab fa-linkedin"></i></li>
+                            <li><span style="display:block;"></span></li>
+                        </div>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h3>Customer Support</h3>
-                <ul class="footer-list">
-                    <li><span><i class="fas fa-phone-alt"></i></span>+94 112 598 555</li>
-                    <li><span><i class="fas fa-envelope"></i></span>info@scienstr.lk</li>
-                    <li><span><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">302, Galle Road, Colombo 04,<br> Sri Lanka.</span></li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <h3>Site Information</h3>
-                <ul class="footer-list">
-                    <li>Privacy</li>
-                    <li>Terms of Use</li>
-                    <li>Legal Disclouser</li>
-                    <li>Copyright</li>
-                    <li>Sitemap</li>
-                    <li>Cookie Policy</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>Newsletter</h3>
-                <p>You can trust us. we only send promo offers, not a single spam.</p>
-
-                <form class="footer-form" action="">
-                    <input class="footer-form-input" type="text" placeholder="Type your email"/>
-                    <input class="footer-form-submit" type="submit" value="submit"/>
-                </form>
-            </div>
-            </div>
+           
         </div>
           
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <p id="copyright-line">&copy; Scienter Technologies. All Rights Reserved.</p>
+            </div>
         </div>
     </div>
 </footer>

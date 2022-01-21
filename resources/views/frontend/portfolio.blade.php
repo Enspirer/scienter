@@ -74,6 +74,7 @@
             </div>
         
     </div>
+    <h1 class="main-title-mobile-only">Portfolio</h1>
 </section>
 </div>
 

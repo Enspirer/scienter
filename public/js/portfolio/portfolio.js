@@ -149,6 +149,7 @@ const prevbtnoutmove = document.querySelector(".prevbtnoutmove");
 
     prevmove.style.animation = "";
     setTimeout(() => prevmove.style.animation = "fadeUp 2s ease-in both", 1);
+    //prev small image in animation
     prevbtnoutmove.style.animation = "";
     setTimeout(() => prevbtnoutmove.style.animation = "movein 2s linear both", 10);
 

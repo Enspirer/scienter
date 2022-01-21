@@ -13,6 +13,14 @@ img#contact-banner {
     object-fit: cover;
 }
 
+path#Polygon_2-2 {
+    fill: #adadad !important;
+} 
+
+path#Polygon_1-2 {
+    fill:#FFA500	 !important;
+}
+
 .blur {
     background-color: rgba(255,255,255,0.5);
     background-size: cover;
@@ -122,7 +130,7 @@ span.location-wrapper {
 
 .last-row-content-wrapper {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
 }
 
 .contact-submit {
@@ -190,4 +198,115 @@ form.contact-form, .contact-txt {
 
 path#Polygon_2-2, path#Polygon_1-2 {
     fill: #eee;
+}
+
+.accept-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.g-recaptcha {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section#get-in-touch {
+    height: max-content;
+}
+
+p#side-area-contact-office, p#mobile-contact-office {
+    text-transform: capitalize;
+}
+
+p#contact-office {
+    text-transform: uppercase;
+}
+
+#hotline-multiple-number-wrapper {
+    display: none;
+}
+
+#hotline-hide-helper-desktop {
+    display: block;
+}
+
+/*mobile-view*/
+@media screen and (max-width: 767px) {
+
+    #hotline-hide-helper-mobile {
+        display: block;
+    }
+
+    div#hotline-multiple-number-wrapper-mobile h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    form.contact-form, .contact-txt {
+        width: 90vw;
+    }
+    .contact-form-row {
+        flex-direction: column;
+    }
+
+    .contact-form-last-row {
+        margin-bottom: 30px;
+    }
+
+    .contact-area-btns {
+        width: 50px;
+    }
+
+    .our-locations-wrapper {
+        gap: 0;
+    }
+
+    span.location-wrapper {
+        width: 150px;
+    }
+
+    .contact-area h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .contact-area {
+        padding-top: 20px;
+    }
+
+    img#contact-banner, .contact-main-banner-wrapper {
+        height: 200px;
+    }
+
+    .contact-main-section {
+        display: block;
+    }
+
+    .mobile-contact-txt h3 {
+        font-size: 1.5rem;
+    }
+
+    .mobile-contact-txt p {
+        font-size: 0.9rem;
+    }
+
+    .mobile-contact-txt {
+        padding: 15px;
+    }
+
+}
+
+
+
+
+/*tab-portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+
+/*large screen*/
+@media screen and (min-width: 1400px) {
+   
 }

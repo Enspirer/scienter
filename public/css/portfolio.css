@@ -64,7 +64,7 @@ section.portfolio-main {
 }
 
 .portfolio-content-box {
-    padding-top: 60px;
+    padding-top: 20vh;
     display: flex;
     justify-content: start;
     margin-left: 20vh;
@@ -88,7 +88,7 @@ section.portfolio-main {
 .myslider-wrapper {
     display: flex;
     flex-direction: column;
-    border: 3px solid #959191;
+    border: 3px solid rgba(178, 190, 181, 0.2);
     border-bottom-left-radius: 90vh;
     border-top-left-radius: 90vh;
     width: 45vh;
@@ -219,7 +219,7 @@ section.portfolio-main {
 @keyframes movein {
     0% {
         opacity: 1;
-		transform: translate3d(20vh, 8vh, 0);
+		transform: translate3d(18vh, 8.5vh, 0);
     }
 
     /* 12.5% {
@@ -243,7 +243,7 @@ section.portfolio-main {
 */
     50% {
         opacity: 1;
-		transform: translate3d(10vh, 5vh, 0);
+		transform: translate3d(9vh, 5.5vh, 0);
         background-color: greenyellow;
     }
 /*
@@ -470,7 +470,7 @@ section.portfolio-main {
 */
     50% {
         opacity: 0.5;
-		transform: translate3d(-4vh, 2vh, 0);
+		transform: translate3d(-2vh, 2vh, 0);
     }
 /*
     62.5% {
@@ -504,14 +504,17 @@ section.portfolio-main {
     position: absolute;
     left: 13vh;
     width: max-content;
-    top: 5vh;
+    /* top: 5vh; */
+    top: 6vh;
 }
 
 .prev-warapper {
     position: absolute;
-    left: 13vh;
+    /* left: 13vh; */
+    left: 12vh;
     width: max-content;
-    bottom: 6vh;
+    /* bottom: 6vh; */
+    bottom: 7vh;
 }
 
 /* .next-to-next-wrapper {
@@ -561,6 +564,7 @@ section.portfolio-main {
     right: 0px;
     display: block;
     top: 0;
+    top: 12px;
     z-index: -1;
 }
 
@@ -644,14 +648,18 @@ canvas{
   
 
 
-  button.portfolio-btn {
-    background: #f1663c;
-    border: 0;
+button.portfolio-btn {
+    background: transparent;
+    border: 1px solid #000;
     padding: 10px 20px;
-    border-radius: 4px;
-    color: #fff;
+    color: #000;
     margin-right: 15px;
     width: 100px;
+}
+
+button.portfolio-btn:hover {
+    color: #fff;
+    background-color: #000;
 }
 
 .portfolio-sub-title {
@@ -663,3 +671,229 @@ canvas{
     height: 100%;
     object-fit: cover;
 }
+
+.main-title-mobile-only  {
+    display: none;
+}
+
+/*mobile-view*/
+@media screen and (max-width: 767px) {
+    .portfolio-rightside-wrapper, .portfolio-leftside-wrapper {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+    }
+    
+    .portfolio-rightside-wrapper {
+        justify-content: center;
+    }
+
+    section.portfolio-main {
+        flex-direction: column-reverse;
+    }
+
+    #particles-js, .portfolio-main {
+        height: 100%;
+    }
+
+    .portfolio-content-box {
+        padding-top: 0;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+    .next-wrapper, .prev-warapper {
+        display: none;
+    }
+
+    .myslider-wrapper {
+        border: 0;
+        height: 100%;
+       
+        padding-bottom: 15px;
+    }
+
+    canvas.particles-js-canvas-el {
+        display: none;
+    }
+
+    .portfolio-sub-title {
+        font-size: 2rem;
+    }
+
+    p.orange-txt {
+        margin-bottom: 0;
+    }
+
+    h1.main-title {
+        display: none;
+    }
+
+    .main-title-mobile-only {
+        display: block;
+        padding-top: 10vh;
+        padding-left: 15px;
+    }
+
+    .circle-image-wrapper img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .active-wrapper {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: unset;
+    }
+   
+}
+
+
+
+/*tab-portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .portfolio-rightside-wrapper, .portfolio-leftside-wrapper {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+    }
+
+    section.portfolio-main {
+        flex-direction: column-reverse;
+    }
+
+    #particles-js, .portfolio-main {
+        height: 100%;
+    }
+
+    .portfolio-content-box {
+        padding-top: 0;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+    .next-wrapper, .prev-warapper {
+        display: none;
+    }
+
+    .myslider-wrapper {
+        border: 0;
+        height: 100%;
+       
+        padding-bottom: 15px;
+    }
+
+    canvas.particles-js-canvas-el {
+        display: none;
+    }
+
+    .portfolio-sub-title {
+        font-size: 2rem;
+    }
+
+    p.orange-txt {
+        margin-bottom: 0;
+    }
+
+    h1.main-title {
+        display: none;
+    }
+
+    .main-title-mobile-only {
+        display: block;
+        padding-top: 10vh;
+        padding-left: 15px;
+    }
+
+    .circle-image-wrapper img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .active-wrapper {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: unset;
+    }
+   
+    .myslider-wrapper {
+        width: 100%;
+    }
+
+    .sidenav {
+        display: none;
+    }
+}
+
+/*small laptop*/
+@media screen and (min-width: 992px) and (max-width:1100px) {
+    .portfolio-content-box {
+        margin-left: 0;
+    }
+    
+    h2#portTitleOne {
+        font-size: 2rem;
+    }
+
+    .next-wrapper {
+        top: 8vh;
+    }
+
+    .prev-warapper {
+        bottom: 9vh;
+    }
+
+    @keyframes movein {
+        0% {
+            transform: translate3d(18vh, 10vh, 0px);
+        }
+        50% {
+            transform: translate3d(9vh, 6vh, 0px);
+        }
+        
+    }
+
+    @keyframes nextThrow {
+        100% {
+            opacity: 0;
+            transform: translate3d(15vh, -9.5vh, 0px);
+        }
+    }
+}
+
+/*large screen*/
+@media screen and (min-width: 1400px) {
+    .next-wrapper {
+        top: 8vh;
+    }
+    .prev-warapper {
+        bottom: 9vh;
+    }
+    @keyframes movein {
+        0% {
+            transform: translate3d(18vh, 10vh, 0px);
+        }
+        50% {
+            transform: translate3d(9vh, 6vh, 0px);
+        }
+        
+    }
+
+    @keyframes nextThrow {
+        100% {
+            opacity: 0;
+            transform: translate3d(15vh, -9.5vh, 0px);
+        }
+    }
+
+
+}
+   

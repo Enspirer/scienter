@@ -123,3 +123,42 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+/*mobile-view*/
+@media screen and (max-width: 767px) {
+    .mobile-tab-height {
+        height: 360px;
+    }
+
+    .clients-wrapper {
+        flex-direction: column;
+    }
+
+    .client-section {
+        padding: 0 !important;
+    }
+
+    .clients-navtab li {
+        width: max-content;
+    }
+
+    .clients-navtab {
+        flex-direction: row;
+    }
+
+    .client-page-height {
+        height: 100%;
+        padding-top: 75px !important;
+    }
+
+    .client-topic-wrapper {
+        transform: unset !important;
+        margin-bottom: 0;
+    }
+
+    .client-logo-box {
+        width: 100px;
+        height: 100px;
+    }
+}
+

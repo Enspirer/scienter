@@ -45,7 +45,7 @@
                         aria-selected="false">Finance</button>
                 </li>
             </ul>
-            <div class="tab-content" id="myTabContent client-tab-content col-md-9">
+            <div class="tab-content mobile-tab-height" id="myTabContent client-tab-content col-md-9">
                 <!-- all  -->
                 <div class="tab-pane fade show active client-tab-pane" id="all" role="tabpanel"
                     aria-labelledby="all-tab">

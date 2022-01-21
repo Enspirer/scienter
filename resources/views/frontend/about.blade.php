@@ -113,8 +113,10 @@
         <a href="#milestone" class="scroll-down-sub-btn milestone-btn" address="true"></a>
     </section>
 
-    <section id="milestone" class="milestones about-full-height-area">
-        <h1 class="sub-center-heading TT-Light">Our Story</h1>
+
+    <!-- milestone desktop -->
+    <section id="milestone" class="milestones about-full-height-area hidden-xs">
+        <h1 class="sub-center-heading TT-Light">Milestones</h1>
         <div class="milestone-main-wrapper">
             <div class="yr-row top-row">
                 <div class="top-symbol-wrapper">
@@ -209,7 +211,98 @@
 
         </div>
     </section>
+
+    <!-- milestone mobile -->
+    <section id="milestone-mobile" class="milestones about-full-height-area visible-xs">
+        <h1 class="sub-center-heading TT-Light">Milestones</h1>
+        <div class="milestone-mobile-main-wrapper">
+           <div class="milestone-img-mobile-wrapper">
+                <img id="mobile-miles-img" class="milestone-img-mobile" src="{{ url('img/frontend/about/milestone-one.png') }}" data-scroll-zoom
+                                alt="milestone-one">
+           </div>
+           <div class="milestone-yr-indicator">
+               <p id="mobile-milestone-year">1995</p>
+           </div>
+           <div class="milestone-point-bar">
+           <div class="point-line-mobile"></div>
+               <div class="point-inner-wrapper">
+                    <span id="pointOne" onclick="mobileMilestoneOne()" class="milestone-point active-point-mobile"></span>
+               </div>
+               <div class="point-inner-wrapper">
+                    <span id="pointTwo" onclick="mobileMilestoneTwo()" class="milestone-point"></span>
+               </div>
+               <div class="point-inner-wrapper">
+                    <span id="pointThree" onclick="mobileMilestoneThree()" class="milestone-point"></span>
+               </div>
+                
+           </div>
+           <div class="milestone-txt-mobile-wrapper">
+                <h5 id="mobileMilestoneSubTitle" class="TT-Regular about-blue-font">Dummy Subtitle One Here</h5>
+                <h3 id="mobileMilestoneTitle" class="TT-Regular about-blue-font">Dummy Title One Here</h3>
+                <p id="mobileMilestoneTxt" class="TT-Light">(dummy txt one) Our team comprises some of the most sought after and recognized individuals
+                            in their chosen field of expertise who are passionate and committed to provide our </p>
+           </div>
+
+        </div>
+    </section>
 </div>
+
+<!-- mobile milestone script -->
+<script>
+
+    milestoneImg = document.getElementById("mobile-miles-img");
+    milestoneTitle = document.getElementById("mobileMilestoneTitle");
+    milestoneSubTitle = document.getElementById("mobileMilestoneSubTitle");
+    milestoneTxt = document.getElementById("mobileMilestoneTxt");
+    milestoneyr = document.getElementById("mobile-milestone-year");
+
+
+    //milestone points 
+    milestonepointOne = document.getElementById("pointOne");
+    milestonepointTwo = document.getElementById("pointTwo");
+    milestonepointThree = document.getElementById("pointThree");
+
+    function mobileMilestoneOne() {
+        milestoneImg.src = "{{ url('img/frontend/about/milestone-one.png') }}";
+        milestoneTitle.innerHTML = "Dummy Title One Here";
+        milestoneSubTitle.innerHTML = "Dummy Subtitle One Here";
+        milestoneTxt.innerHTML = "(dummy txt one)Our team comprises some of the most sought after and recognized individuals in their chosen field of expertise who are passionate and committed to provide our ";
+        milestoneyr.innerHTML = "1995";
+
+        //point active style
+        milestonepointOne.classList.add("active-point-mobile");
+        milestonepointTwo.classList.remove("active-point-mobile");
+        milestonepointThree.classList.remove("active-point-mobile");
+    }
+
+    function mobileMilestoneTwo() {
+        milestoneImg.src = "{{ url('img/frontend/about/milestone-two.png') }}";
+        milestoneTitle.innerHTML = "Dummy Title Two Here";
+        milestoneSubTitle.innerHTML = "Dummy Subtitle Two Here";
+        milestoneTxt.innerHTML = "(dummy txt two)Our team comprises some of the most sought after and recognized individuals in their chosen field of expertise who are passionate and committed to provide our ";
+        milestoneyr.innerHTML = "2000";
+        //point active style
+       //point active style
+        milestonepointOne.classList.remove("active-point-mobile");
+        milestonepointTwo.classList.add("active-point-mobile");
+        milestonepointThree.classList.remove("active-point-mobile");
+    }
+
+    function mobileMilestoneThree() {
+        milestoneImg.src = "{{ url('img/frontend/about/milestone-three.png') }}";
+        milestoneTitle.innerHTML = "Dummy Title Three Here";
+        milestoneSubTitle.innerHTML = "Dummy Subtitle Three Here";
+        milestoneTxt.innerHTML = "(dummy txt three)Our team comprises some of the most sought after and recognized individuals in their chosen field of expertise who are passionate and committed to provide our ";
+        milestoneyr.innerHTML = "2021";
+
+        //point active style
+        milestonepointOne.classList.remove("active-point-mobile");
+        milestonepointTwo.classList.remove("active-point-mobile");
+        milestonepointThree.classList.add("active-point-mobile");
+    }
+    
+
+</script>
 
 @endsection
 

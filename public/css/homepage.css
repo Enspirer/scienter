@@ -507,3 +507,215 @@ section.social {
 img#journey-img {
     margin-top: 50px;
 }
+
+.container.social a:hover {
+    text-decoration: none;
+}
+
+
+/*mobile-view*/
+@media screen and (max-width: 767px) {
+    h1.main-title {
+        font-size: 3rem;
+    }
+
+    .row.swipperr-row {
+        flex-direction: column;
+    } 
+
+    .mobile-journey-txt-wrapper {
+        padding-top: 15px;
+    }
+
+    .mobile-tourism-topic-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    button.mobile-journey-nav {
+        background: transparent;
+        border: 0;
+    }
+
+    .mobile-journey-txt-wrapper h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .mobile-journey-navigation-wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .mobile-journey-navigation-wrapper h2 {
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.2rem;
+    }
+
+    .mobile-journey-nav i {
+        font-size: 30px;
+    }
+
+    .mobile-journey-txt-wrapper p {
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .mobile-journey-txt-wrapper h4 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .home-main {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 60px;
+    }
+
+    .tourism-box-img-mobile {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+    }
+
+    .home-main-text {
+        width: 100%;
+    }
+
+    .full-height-section {
+        height: 500px;
+    }
+
+    .home-other-sections {
+        flex-direction: column;
+        padding: 15px;
+        height: unset;
+    }
+
+    .home-box-pms-img-area, .home-box-pos-img-area {
+        width: 100%;
+        height: max-content;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    
+    .home-content-box.pms, .home-box-pms-img-area, .home-content-box, .home-box-pos-img-area, .home-box-efinancial-img-area, .expertise-topic-wrapper, .tourism-topic-wrapper, .expertise-topic-wrapper, .client-topic-wrapper {
+        transform: unset !important;
+    }
+
+    .home-content-box {
+        width: 100%;
+        position: static;
+        padding: 0;
+    }
+
+    .home-content-text-wrapper h2 {
+        font-size: 2.5rem;
+    }
+
+    .tourism-left-content h2 {
+        font-size: 2rem;
+    }
+
+    .home-btn {
+        font-size: 0.8rem;
+    }
+
+    .scroll-down-sub-btn {
+        display: none;
+    }
+
+    .home-content-box p {
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .home-box-efinancial-img-area {
+        width: 90%;
+    }
+
+    .container.social .col-4 {
+        max-width: 100%;
+        flex: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container.footer-main-container {
+        padding-left: 30px;
+    }
+
+    ul.social-list {
+        margin-left: 0;
+    }
+
+    .footer-main-text img {
+        position: relative;
+        left: -15px;
+    }
+
+    .footer-main-container h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .client-section {
+        padding: 15px !important;
+    }
+
+    .clients-wrapper {
+        flex-direction: column;
+    }
+
+    section#destiny-pos {
+        flex-direction: column-reverse;
+    }
+
+    .home-box-efinancial-img-area {
+        height: 100%;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .expertise-box {
+        flex-direction: column;
+    }
+
+    .home-content-box {
+        height: 350px;
+    }
+
+    .container.social {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .expertise-topic-wrapper {
+        width: unset;
+        text-align: left;
+    }
+
+    section#expertise, section#journey-mobile {
+        margin-top: 60px;
+    }
+}
+
+
+
+/*tab-portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+
+/*large screen*/
+@media screen and (min-width: 1400px) {
+    .journey-box-wrapper:before {
+        top: 55px;
+    }
+}

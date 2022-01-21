@@ -12,8 +12,10 @@
 <div class="container-fluid">
     <section class="full-height-area ">
         <div class="row">
-            <h1 class="main-title TT-Light" style="margin-top:30px; margin-bottom:15px;">What We Do</h1>
-            <p class="orange-txt">This is Where Tomorrow's Solutions for Businesses are being Created.</p>
+            <div class="topic-wrapper">
+                <h1 class="main-title TT-Light" style="margin-top:30px; margin-bottom:0px;">What We Do</h1>
+                <p class="orange-txt">This is Where Tomorrow's Solutions for Businesses are being Created.</p>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-7 col-xs-12">
@@ -92,7 +94,7 @@
 
 
     <section id="mobie-application" class="full-height-area ">
-        <div class="row">
+        <div class="row mobile-column-reverse-row">
         <div class="col-md-5 col-xs-12 main-text-box solution-four">
                 <div class="solutions-topic-wrapper">
                     <h6 class="TT-Light">Mobile Application</h6>

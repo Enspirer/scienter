@@ -30,7 +30,8 @@
 <section id="destiny-pms" class="home-other-sections">
     <div class="home-box-pms-img-area">
         <div class="image pms">
-            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pms.png') }}" alt="destiny pms" data-scroll-zoom >
+            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pms.png') }}" alt="destiny pms"
+                data-scroll-zoom>
         </div>
     </div>
     <div class="home-content-box pms">
@@ -43,11 +44,11 @@
         </div>
 
     </div>
-    
-    <a href="#destiny-pos" class="scroll-down-sub-btn" address="true"></a>		
+
+    <a href="#destiny-pos" class="scroll-down-sub-btn" address="true"></a>
 
     <div>
-        
+
 
 </section>
 
@@ -93,7 +94,8 @@
     </div>
     <div class="home-box-pos-img-area">
         <div class="image pos">
-            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pos.png') }}" alt="destiny pos" data-scroll-zoom >
+            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pos.png') }}" alt="destiny pos"
+                data-scroll-zoom>
         </div>
     </div>
     <a href="#efinancial" class="scroll-down-sub-btn" address="true"></a>
@@ -102,7 +104,7 @@
 <section id="efinancial" class="home-other-sections">
     <div class="home-box-efinancial-img-area">
         <div class="image efinance">
-            <img width="100%" src="{{ url('img/frontend/homepage/eFinancials.png') }}" alt="efinance" data-scroll-zoom >
+            <img width="100%" src="{{ url('img/frontend/homepage/eFinancials.png') }}" alt="efinance" data-scroll-zoom>
         </div>
     </div>
     <div class="home-content-box efinance">
@@ -118,8 +120,7 @@
 </section>
 
 
-
-<section id="journey" class="journey-area home-other-sections">
+<section id="journey" class="journey-area home-other-sections hidden-xs">
     <div class="journey-section-wrapper">
         <div class="row swipperr-row">
             <div class="col-md-6 tourism-left-content">
@@ -132,8 +133,8 @@
                 </div>
                 <!-- Image Main -->
                 <img id="journey-img" class="tourism-box-img"
-                    src="{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}" alt="tourism logo"> 
-                 
+                    src="{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}" alt="tourism logo">
+
 
             </div>
 
@@ -201,9 +202,47 @@
 </section>
 
 
+<section id="journey-mobile" class="visible-xs">
+    <div class="container">
+        <div class="tourism-topic-wrapper mobile-tourism-topic-wrapper">
+            <h2 class="TT-Light subtitle">The Journey of</h2>
+            <div class="line-area">
+                <span class="line-wrapper"><i class="fas fa-circle"></i><span class="grey-line"></span></span>
+            </div>
+            <h2 class="subtitle">Decades</h2>
+        </div>
+        <img id="journey-mobile-img" class="tourism-box-img-mobile"
+            src="{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}" alt="tourism logo">
 
-<section id="clients" class="home-other-sections client-section">
-    <div class="container client-container">
+        <!-- mobile journey navigator -->
+        <div class="mobile-journey-navigation-wrapper">
+            <button class="mobile-journey-nav" onclick="mobileJourneyLeft()">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <h2 id="mobile-journey-main-title">NBQSA</h2>
+            <button class="mobile-journey-nav" onclick="mobileJourneyRight()">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- mobile only slider for journey details -->
+        <div class="mobile-journey-txt-wrapper">
+
+            <p id="mobile-journey-txt" class="TT-Medium">Awarded the Overall Gold Award for the Best Software Developed
+                in the country. Also Awarded Gold Award for its hotel management solution under
+                the Tourism and Hospitality Category.</p>
+            <h4 id="mobile-journey-bottom-txt" class="TT-Light">NBQSA 2009</h4>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section id="clients" class="home-other-sections client-section client-page-height">
+    <div data-aos="zoom-in" data-aos-duration="1000" class="container client-container">
         <div class="client-topic-wrapper">
             <h2 class="TT-Light subtitle">Our Clients</h2>
             <div class="line-area">
@@ -215,7 +254,7 @@
 
 
         <!-- client categories -->
-        <div class="clients-wrapper" data-aos="zoom-in" data-aos-duration="1000" >
+        <div class="clients-wrapper">
             <ul class="nav nav-tabs clients-navtab col-md-3" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active client-cat-btn" id="all-tab" data-bs-toggle="tab"
@@ -237,7 +276,7 @@
                         aria-selected="false">Finance</button>
                 </li>
             </ul>
-            <div class="tab-content" id="myTabContent client-tab-content col-md-9">
+            <div class="tab-content mobile-tab-height" id="myTabContent client-tab-content col-md-9">
                 <!-- all  -->
                 <div class="tab-pane fade show active client-tab-pane" id="all" role="tabpanel"
                     aria-labelledby="all-tab">
@@ -436,8 +475,7 @@
     </div>
 
 
-
-    <a href="#expertise" class="scroll-down-sub-btn" address="true"></a>
+<div class="clients-trigger"></div>
 </section>
 
 <section id="expertise" class="home-other-sections expertise-section">
@@ -514,84 +552,122 @@
             </div>
         </div>
     </div>
+
+    <a href="#social" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
-<section class="social">
-<div class="container-fluid social-banner">
-    <div class="container social">
-        <div class="row">
-            <div class="col-4">
-                <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
-                    <div class="card" style="height: 27rem;">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=4531192260303691" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                    </div>
-                </a>
-            </div>
+<section id="social" class="social">
+    <div class="container-fluid social-banner">
+        <div class="container social">
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
+                        <div class="card" style="height: 27rem;">
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=4531192260303691"
+                                width="100%" height="500" style="border:none;overflow:hidden" scrolling="no"
+                                frameborder="0" allowfullscreen="true"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </a>
+                </div>
 
 
-                                        
-             <div class="col-4">
-                        <a href="https://tallentor.com/blog/Club" style="color:black">
-                            </a><div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/Club" style="color:black">
-                                
-                                    <div class="px-4 py-2" style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
-                                        <div class="row align-items-center">
-                                            <div class="col-3 text-center">
-                                                <img src="https://tallentor.com/theme_light/assets/footer/club.png" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="col-9">
-                                                <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Scienter Club</p>
-                                            </div>
-                                        </div>
+
+                <div class="col-4">
+                    <a href="https://tallentor.com/blog/Club" style="color:black">
+                    </a>
+                    <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/Club"
+                            style="color:black">
+
+                            <div class="px-4 py-2"
+                                style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
+                                <div class="row align-items-center">
+                                    <div class="col-3 text-center">
+                                        <img src="https://tallentor.com/theme_light/assets/footer/club.png" alt=""
+                                            class="img-fluid">
                                     </div>
-                                
-                                <img src="https://tallentor.com/upload/blog/files/20211112131039.png" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
-                                </a><div class="card-body"><a href="https://tallentor.com/blog/Club" style="color:black">
-                                    <p class="card-text mb-1" style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">When you use an application on your mobile phone or smart devices the application connects to the Internet and sends data to a server. The server then retrieves that data, interprets it, performs the necessary actions and sends it back to your phone. The application then interprets that data and presents you with the information you wanted in a readable way. This is what an API is - all of this happens via API.</p>
-                                    
-                                    </a><div class="text-right mb-1"><a href="https://tallentor.com/blog/Club" style="color:black">
-                                                                                </a><div class="position-absolute read"><a href="https://tallentor.com/blog/Club" style="color:black">
-                                            </a><a href="https://tallentor.com/blog/Club" style="font-size: 1rem; color: #0033FF;">View More</a>
-                                        </div>
-                                                                            
+                                    <div class="col-9">
+                                        <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Scienter Club</p>
                                     </div>
                                 </div>
                             </div>
-                        
-                    </div>
-                            
-                    <div class="col-4">
-                        <a href="https://tallentor.com/blog/News" style="color:black">
-                            </a><div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/News" style="color:black">
-                                                                    <div class="px-4 py-2" style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
-                                        <div class="row align-items-center">
-                                            <div class="col-3 text-center">
-                                                <img src="https://tallentor.com/theme_light/assets/footer/news.png" alt="" class="img-fluid">
-                                            </div>
-                                            <div class="col-9">
-                                                <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Latest at Scienter</p>
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                
-                                <img src="https://tallentor.com/upload/blog/files/20211112150914.jpg" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
-                                </a><div class="card-body"><a href="https://tallentor.com/blog/News" style="color:black">
-                                    <p class="card-text mb-1" style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">Our team brought years of analytical and development experience together to bring Tallentor LMS to life. 
-Expandability and connectivity with third party systems are the key features of our LMS, and our team is working on further enhancements and will release new versions latest features.</p>
-                                    
-                                    </a><div class="text-right mb-1"><a href="https://tallentor.com/blog/News" style="color:black">
-                                                                                </a><div class="position-absolute read"><a href="https://tallentor.com/blog/News" style="color:black">
-                                            </a><a href="https://tallentor.com/blog/News" style="font-size: 1rem; color: #0033FF;">View More</a>
-                                        </div>
-                                                                            
+                            <img src="https://tallentor.com/upload/blog/files/20211112131039.png" class="card-img-top"
+                                alt="..." style="object-fit: cover; height: 13rem;">
+                        </a>
+                        <div class="card-body"><a href="https://tallentor.com/blog/Club" style="color:black">
+                                <p class="card-text mb-1"
+                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">
+                                    When you use an application on your mobile phone or smart devices the application
+                                    connects to the Internet and sends data to a server. The server then retrieves that
+                                    data, interprets it, performs the necessary actions and sends it back to your phone.
+                                    The application then interprets that data and presents you with the information you
+                                    wanted in a readable way. This is what an API is - all of this happens via API.</p>
+
+                            </a>
+                            <div class="text-right mb-1"><a href="https://tallentor.com/blog/Club" style="color:black">
+                                </a>
+                                <div class="position-absolute read"><a href="https://tallentor.com/blog/Club"
+                                        style="color:black">
+                                    </a><a href="https://tallentor.com/blog/Club"
+                                        style="font-size: 1rem; color: #0033FF;">View More</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+                    <a href="https://tallentor.com/blog/News" style="color:black">
+                    </a>
+                    <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/News"
+                            style="color:black">
+                            <div class="px-4 py-2"
+                                style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
+                                <div class="row align-items-center">
+                                    <div class="col-3 text-center">
+                                        <img src="https://tallentor.com/theme_light/assets/footer/news.png" alt=""
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Latest at Scienter
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        
+
+
+                            <img src="https://tallentor.com/upload/blog/files/20211112150914.jpg" class="card-img-top"
+                                alt="..." style="object-fit: cover; height: 13rem;">
+                        </a>
+                        <div class="card-body"><a href="https://tallentor.com/blog/News" style="color:black">
+                                <p class="card-text mb-1"
+                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">
+                                    Our team brought years of analytical and development experience together to bring
+                                    Tallentor LMS to life.
+                                    Expandability and connectivity with third party systems are the key features of our
+                                    LMS, and our team is working on further enhancements and will release new versions
+                                    latest features.</p>
+
+                            </a>
+                            <div class="text-right mb-1"><a href="https://tallentor.com/blog/News" style="color:black">
+                                </a>
+                                <div class="position-absolute read"><a href="https://tallentor.com/blog/News"
+                                        style="color:black">
+                                    </a><a href="https://tallentor.com/blog/News"
+                                        style="font-size: 1rem; color: #0033FF;">View More</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                            
-            <!-- <div class="col-3">
+
+                </div>
+
+                <!-- <div class="col-3">
                 <div class="card" style="height: 25rem;">
                     <img src="https://tallentor.com/theme_light/assets/footer/4.png" class="card-img-top" alt="..." style="object-fit: cover; height: 13rem;">
                     <div class="card-body">
@@ -603,9 +679,9 @@ Expandability and connectivity with third party systems are the key features of 
                     </div>
                 </div>
             </div> -->
+            </div>
         </div>
     </div>
-</div>
 </section>
 @endsection
 
@@ -626,16 +702,17 @@ Expandability and connectivity with third party systems are the key features of 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+
+<!-- mobile journey swiper -->
+
+
 <!-- Initialize Swiper -->
 
 <!-- Journey scroll up catcher -->
 <script>
-
-    function journeyScroll() {
-        alert("You scrolling bro");
-    }
-    
-
+function journeyScroll() {
+    alert("You scrolling bro");
+}
 </script>
 
 
@@ -703,106 +780,157 @@ swiper.on('slideChange', function() {
 
 
 <script type="text/javascript">
+gsap.to(".home-content-box.pms", {
+    scrollTrigger: {
+        trigger: "button.btn.home-btn.pms-btn",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -150,
+    x: -100
+})
 
-		gsap.to(".home-content-box.pms", {
-			scrollTrigger:{
-				trigger: "button.btn.home-btn.pms-btn", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			y: -150,
-            x: -100
-		})
+gsap.to(".home-content-box.pos", {
+    scrollTrigger: {
+        trigger: "button.btn.home-btn.pos-btn",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -150,
+    x: 100
+})
 
-        gsap.to(".home-content-box.pos", {
-			scrollTrigger:{
-				trigger: "button.btn.home-btn.pos-btn", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			y: -150,
-            x: 100
-		})
+gsap.to(".home-content-box.efinance", {
+    scrollTrigger: {
+        trigger: "button.btn.home-btn.efinance-btn",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -150,
+    x: -100
+})
 
-        gsap.to(".home-content-box.efinance", {
-			scrollTrigger:{
-				trigger: "button.btn.home-btn.efinance-btn", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			y: -150,
-            x: -100
-		})
+/*image up down animation*/
+gsap.to(".home-box-pms-img-area", {
+    scrollTrigger: {
+        trigger: ".image.pms",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -100,
+    x: 100
+})
 
-        /*image up down animation*/
-        gsap.to(".home-box-pms-img-area", {
-			scrollTrigger:{
-				trigger: ".image.pms", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			y: -100,
-            x: 100
-		})
+gsap.to(".home-box-pos-img-area", {
+    scrollTrigger: {
+        trigger: ".image.pos",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -100,
+    x: -100
+})
 
-        gsap.to(".home-box-pos-img-area", {
-			scrollTrigger:{
-				trigger: ".image.pos", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			y: -100,
-            x: -100
-		})
+gsap.to(".home-box-efinancial-img-area", {
+    scrollTrigger: {
+        trigger: ".image.efinance",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -100,
+    x: 100
+})
 
-        gsap.to(".home-box-efinancial-img-area", {
-			scrollTrigger:{
-				trigger: ".image.efinance", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			y: -100,
-            x: 100
-		})
+/*title animation*/
+gsap.to(".tourism-topic-wrapper", {
+    scrollTrigger: {
+        trigger: "img#journey-img",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    x: 100
+})
 
-        /*title animation*/
-        gsap.to(".tourism-topic-wrapper", {
-			scrollTrigger:{
-				trigger: "img#journey-img", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			x: 100
-		})
+gsap.to(".client-topic-wrapper", {
+    scrollTrigger: {
+        trigger: ".clients-wrapper",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    x: 100
+})
 
-        gsap.to(".client-topic-wrapper", {
-			scrollTrigger:{
-				trigger: ".clients-wrapper", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			x: 100
-		})
+gsap.to(".expertise-topic-wrapper", {
+    scrollTrigger: {
+        trigger: ".expertise-topic-wrapper",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    x: 100
+})
+</script>
 
-        gsap.to(".expertise-topic-wrapper", {
-			scrollTrigger:{
-				trigger: ".expertise-topic-wrapper", 
-				start: "top bottom", 
-				end: "bottom top", 
-				scrub: 1
-			},
-			x: 100
-		})
+<!-- mobile journey script -->
+<script>
+//data arrays
+const mobileJoureyImgArray = ["{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}",
+    "{{url('img/frontend/homepage/journey-slides/APICTA.png') }}",
+    "{{url('img/frontend/homepage/journey-slides/tourism.png') }}"
+];
 
-        
+const mobileJourneyMainTitleArray = ["NBQSA", "APICTA", "Tourism"];
+
+const mobileJourneyTxtArray = ["Awarded the Overall Gold Award for the Best Software Developed in the country. Also Awarded Gold Award for its hotel management solution under the Tourism and Hospitality Category.", "Award winner at the Asia Pacific ICT Alliance awards for the product Destinity under the Tourism and Hospitality Category", "Winners at the 'Enabling Sri Lanka Tourism 2.0 and beyond'- 2013, with awards in the Enhance Revenue and Customer Experience category."];
+
+const mobileJourneyBottomTxtArray = ["NBQSA 2009", "APICTA 2009 (Melbourne)", "ENABLING SRI LANKA TOURISM 2.0 2013"];
+
+
+//get things by id        
+mobileJourneyImg = document.getElementById("journey-mobile-img");
+mobileJourneyMainTitle = document.getElementById("mobile-journey-main-title");
+mobileJourneyTxt = document.getElementById("mobile-journey-txt");
+mobileJourneyBottomTxt = document.getElementById("mobile-journey-bottom-txt");
+
+
+var i = 0;
+
+function mobileJourneyLeft() {
+
+    if (i > 0) {
+        i = i - 1;
+    } else {
+        i = 2;
+    }
+
+    mobileJourneyImg.src = mobileJoureyImgArray[i];
+    mobileJourneyMainTitle.innerHTML = mobileJourneyMainTitleArray[i];
+    mobileJourneyTxt.innerHTML = mobileJourneyTxtArray[i];
+    mobileJourneyBottomTxt.innerHTML = mobileJourneyBottomTxtArray[i];
+}
+
+function mobileJourneyRight() {
+    if (i < 2) {
+        i = i + 1;
+    } else {
+        i = 0;
+    }
+
+    mobileJourneyImg.src = mobileJoureyImgArray[i];
+    mobileJourneyMainTitle.innerHTML = mobileJourneyMainTitleArray[i];
+    mobileJourneyTxt.innerHTML = mobileJourneyTxtArray[i];
+    mobileJourneyBottomTxt.innerHTML = mobileJourneyBottomTxtArray[i];
+}
+
+
 </script>
 
 
@@ -813,69 +941,69 @@ swiper.on('slideChange', function() {
 let scaleAmount = 2;
 
 function scrollZoom() {
-  const images = document.querySelectorAll("[data-scroll-zoom]");
-  let scrollPosY = 0;
-  scaleAmount = scaleAmount / 100;
+    const images = document.querySelectorAll("[data-scroll-zoom]");
+    let scrollPosY = 0;
+    scaleAmount = scaleAmount / 100;
 
-  const observerConfig = {
-    rootMargin: "0% 0% 0% 0%",
-    threshold: 0
-  };
+    const observerConfig = {
+        rootMargin: "0% 0% 0% 0%",
+        threshold: 0
+    };
 
-  // Create separate IntersectionObservers and scroll event listeners for each image so that we can individually apply the scale only if the image is visible
-  images.forEach(image => {
-    let isVisible = false;
-    const observer = new IntersectionObserver((elements, self) => {
-      elements.forEach(element => {
-        isVisible = element.isIntersecting;
-      });
-    }, observerConfig);
+    // Create separate IntersectionObservers and scroll event listeners for each image so that we can individually apply the scale only if the image is visible
+    images.forEach(image => {
+        let isVisible = false;
+        const observer = new IntersectionObserver((elements, self) => {
+            elements.forEach(element => {
+                isVisible = element.isIntersecting;
+            });
+        }, observerConfig);
 
-    observer.observe(image);
+        observer.observe(image);
 
-    // Set initial image scale on page load
-    image.style.transform = `scale(${1 + scaleAmount * percentageSeen(image)})`;
+        // Set initial image scale on page load
+        image.style.transform = `scale(${1 + scaleAmount * percentageSeen(image)})`;
 
-    // Only fires if IntersectionObserver is intersecting
-    window.addEventListener("scroll", () => {
-      if (isVisible) {
-        scrollPosY = window.pageYOffset;
-        image.style.transform = `scale(${1 +
+        // Only fires if IntersectionObserver is intersecting
+        window.addEventListener("scroll", () => {
+            if (isVisible) {
+                scrollPosY = window.pageYOffset;
+                image.style.transform = `scale(${1 +
           scaleAmount * percentageSeen(image)})`;
-      }
+            }
+        });
     });
-  });
 
-  // Calculates the "percentage seen" based on when the image first enters the screen until the moment it leaves
-  // Here, we get the parent node position/height instead of the image since it's in a container that has a border, but
-  // if your container has no extra height, you can simply get the image position/height
-  function percentageSeen(element) {
-    const parent = element.parentNode;
-    const viewportHeight = window.innerHeight;
-    const scrollY = window.scrollY;
-    const elPosY = parent.getBoundingClientRect().top + scrollY;
-    const borderHeight = parseFloat(getComputedStyle(parent).getPropertyValue('border-bottom-width')) + parseFloat(getComputedStyle(element).getPropertyValue('border-top-width'));
-    const elHeight = parent.offsetHeight + borderHeight;
+    // Calculates the "percentage seen" based on when the image first enters the screen until the moment it leaves
+    // Here, we get the parent node position/height instead of the image since it's in a container that has a border, but
+    // if your container has no extra height, you can simply get the image position/height
+    function percentageSeen(element) {
+        const parent = element.parentNode;
+        const viewportHeight = window.innerHeight;
+        const scrollY = window.scrollY;
+        const elPosY = parent.getBoundingClientRect().top + scrollY;
+        const borderHeight = parseFloat(getComputedStyle(parent).getPropertyValue('border-bottom-width')) + parseFloat(
+            getComputedStyle(element).getPropertyValue('border-top-width'));
+        const elHeight = parent.offsetHeight + borderHeight;
 
-    if (elPosY > scrollY + viewportHeight) {
-      // If we haven't reached the image yet
-      return 0;
-    } else if (elPosY + elHeight < scrollY) {
-      // If we've completely scrolled past the image
-      return 100;
-    } else {
-      // When the image is in the viewport
-      const distance = scrollY + viewportHeight - elPosY;
-      let percentage = distance / ((viewportHeight + elHeight) / 100);
-      percentage = Math.round(percentage);
+        if (elPosY > scrollY + viewportHeight) {
+            // If we haven't reached the image yet
+            return 0;
+        } else if (elPosY + elHeight < scrollY) {
+            // If we've completely scrolled past the image
+            return 100;
+        } else {
+            // When the image is in the viewport
+            const distance = scrollY + viewportHeight - elPosY;
+            let percentage = distance / ((viewportHeight + elHeight) / 100);
+            percentage = Math.round(percentage);
 
-      return percentage;
+            return percentage;
+        }
     }
-  }
 }
 
 scrollZoom();
-
 </script>
 
 

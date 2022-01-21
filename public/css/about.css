@@ -10,10 +10,15 @@
     background-image: url('../img/frontend/about/about-bg-one.png');
     display: flex;
     justify-content: end;
+    background-size: cover;
+    height: 100%;
 }
 
 .excellence-right {
     margin: 60px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .excellence-right h2 {
@@ -339,4 +344,133 @@ span.vertical-line-animated {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+.yr-row.end-row {
+    font-size: 3.2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/*mobile-view*/
+@media screen and (max-width: 767px) {
+    .about-full-height-area {
+        padding: 0;
+        padding-top: 80px;
+        margin-bottom: 75px;
+    }
+
+    .excellence {
+        padding: 15px;
+    }
+
+    .full-height-section {
+        height: 100%;
+    }
+
+    .about-half-box {
+        width: 80%;
+        margin-top: 60px;
+    }
+
+    .about-left-half-box, .about-right-half-box {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    img.half-img.about-main-img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1.main-title {
+        margin-bottom: 30px;
+    }
+
+    .excellence-right {
+        margin: 30px 15px;
+    }
+    
+    /*mobile milestone area*/
+    img.milestone-img-mobile {
+        transform: unset !important;
+        width: 100%;
+    }
+
+    .milestone-point {
+        width: 20px;
+        height: 20px;
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+        border-radius: 50%;
+        z-index: 100;
+        border: 4px solid #eee;
+        background-color: #fff;
+    }
+
+    span.milestone-point.active-point-mobile {
+        border: 4px solid #f26a40;
+    }
+
+    .milestone-point-bar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    .milestone-yr-indicator {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .milestone-txt-mobile-wrapper {
+        padding-top: 15px;
+    }
+
+    .point-line-mobile {
+        background-color: #1a84aa;
+        position: absolute;
+        width: 70%;
+        height: 2px;
+        z-index: -1;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .point-inner-wrapper {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+    }
+
+    p#mobile-milestone-year {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    .excellence-right, .main-text-box h1, .main-text-box p, img.half-img.about-main-img {
+        transform: unset !important;
+    }
+
+    .excellence {
+        height: 100%;
+    }
+
+}
+
+
+
+/*tab-portrait*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+
+/*large screen*/
+@media screen and (min-width: 1400px) {
+   
 }

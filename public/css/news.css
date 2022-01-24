@@ -65,11 +65,16 @@ h1.main-title, section#latest-news h2 {
     .news-inner-box {
         padding: 15px;
     }
+
+    .main-text-box, .news-box {
+        transform: unset !important;
+        margin-top: 15px;
+    }
 } 
 
 /*tab-portrait*/
 @media (min-width: 768px) and (max-width: 991px) {
-    .main-text-box, .news-box {
+    .main-text-box, .news-box, .main-text-box {
         transform: unset !important;
     }
     .row.news-box-row {

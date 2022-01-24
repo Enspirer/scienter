@@ -94,7 +94,7 @@
 
 <script>
     // Higher number = more zoom
-let scaleAmount = 0.4;
+let scaleAmount = 0.2;
 
 function scrollZoom() {
   const images = document.querySelectorAll("[data-scroll-zoom]");

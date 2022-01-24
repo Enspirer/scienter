@@ -23,7 +23,7 @@
                     <ul class="footer-list">
                         <li><span><i class="fas fa-phone-alt"></i></span>+94 112 598 555</li>
                         <li><span><i class="fas fa-envelope"></i></span>info@scienstr.lk</li>
-                        <li><span><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">302, Galle Road, Colombo 04,<br> Sri Lanka.</span></li>
+                        <li class="address-area"><span><i class="fas fa-map-marker-alt"></i></span><span class="contact-text">302, Galle Road, Colombo 04,<br class="hidden-br"> Sri Lanka.</span></li>
                     </ul>
                 </div>
                 <div class="col-md-2 tab-25">

@@ -212,7 +212,7 @@
             <h2 class="subtitle">Decades</h2>
         </div>
         <img id="journey-mobile-img" class="tourism-box-img-mobile"
-            src="{{url('img/frontend/homepage/journey-slides/NBQSA.png') }}" alt="tourism logo">
+            src="{{url('img/frontend/homepage/journey-slides/NBQSA-mobile.png') }}" alt="tourism logo">
 
         <!-- mobile journey navigator -->
         <div class="mobile-journey-navigation-wrapper">
@@ -256,21 +256,21 @@
         <!-- client categories -->
         <div class="clients-wrapper">
             <ul class="nav nav-tabs clients-navtab col-md-3" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
+                <li class="nav-item client-nav-item" role="presentation">
                     <button class="nav-link active client-cat-btn" id="all-tab" data-bs-toggle="tab"
                         data-bs-target="#all" type="button" role="tab" aria-controls="all"
                         aria-selected="true">All</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item client-nav-item" role="presentation">
                     <button class="nav-link client-cat-btn" id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel"
                         type="button" role="tab" aria-controls="hotel" aria-selected="false">Hotel</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item client-nav-item" role="presentation">
                     <button class="nav-link client-cat-btn" id="restaurants-tab" data-bs-toggle="tab"
                         data-bs-target="#restaurants" type="button" role="tab" aria-controls="restaurants"
                         aria-selected="false">Restaurants</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item client-nav-item" role="presentation">
                     <button class="nav-link client-cat-btn" id="finance-tab" data-bs-toggle="tab"
                         data-bs-target="#finance" type="button" role="tab" aria-controls="finance"
                         aria-selected="false">Finance</button>
@@ -759,8 +759,8 @@ swiper.on('slideChange', function() {
 
     //image holder array 
     const journeySlideImg = [journeyImgUrl + "/NBQSA.png", journeyImgUrl +
-        "/APICTA.png", journeyImgUrl +
-        "/tourism.png"
+        "/APICTA-mobile.png", journeyImgUrl +
+        "/tourism-mobile.png"
     ];
 
     //querySelectors

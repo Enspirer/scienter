@@ -56,7 +56,7 @@
         <div class="row vision-mission-area">
 
             <div class="col-md-6 col-xs-12">
-                <div class="about-half-box about-left-half-box">
+                <div id="vision-card" class="about-half-box about-left-half-box">
                     <span class="box-top-logo">
                         <svg id="mission" xmlns="http://www.w3.org/2000/svg" width="117.16" height="118.07"
                             viewBox="0 0 117.16 118.07">

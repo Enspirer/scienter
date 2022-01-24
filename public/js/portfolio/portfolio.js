@@ -5,7 +5,7 @@ const img = [imgMainUrl + "/1-hotel-mgt.jpg", imgMainUrl + "/2-contact-center.jp
 
 
 //topic one array
-const topicOne = ["Hotel Management", "Contact Center", "Restaurant Management", "Membership", "Banquet", "Micro Finance", "Higher Purchase", "Accounting", "Leasing", "Islamic Finance", "Fixed Deposit", "Savings", "Pawning", "HR", "Broadcasting", "Container Yard <br> Management" ];
+const topicOne = ["Hotel Management", "Contact Center", "Restaurant Management", "Membership", "Banquet", "Micro Finance", "Higher Purchase", "Accounting", "Leasing", "Islamic Finance", "Fixed Deposit", "Savings", "Pawning", "HR", "Broadcasting", "Container Yard Management" ];
 
 
 var i = 0;
@@ -63,25 +63,25 @@ function nextSlide() {
     //----- next button basic ------
     // animation for image
     nextmymove.style.animation = "";
-    setTimeout(() => nextmymove.style.animation = "fadeDown 2s ease-in both", 1);
+    setTimeout(() => nextmymove.style.animation = "fadeDown 1s ease-in both", 1);
     //animation for dot
     nextbtnoutmove.style.animation = "";
-    setTimeout(() => nextbtnoutmove.style.animation = "moveout 2s linear both", 1);
+    setTimeout(() => nextbtnoutmove.style.animation = "moveout 1s linear both", 1);
 
     //-------  next button advanced (ghost button activation)------
     nextGhost = document.getElementById("next-ghost");
     // const nextghostMove = document.querySelector(".next-clone");
     // nextghostMove.style.animation = "";
-    // setTimeout(() => nextghostMove.style.animation = "ghostAnimate 2s", 1);
+    // setTimeout(() => nextghostMove.style.animation = "ghostAnimate 1s", 1);
     
     //animation for throwing prev button
     prevbtnthrow.style.animation = "";
-    setTimeout(() => prevbtnthrow.style.animation = "prevThrow 2s linear both", 1);
+    setTimeout(() => prevbtnthrow.style.animation = "prevThrow 1s linear both", 1);
 
     //animation for prev button in
     const prevbtnIn = document.querySelector(".prebtnin");
     prevbtnIn.style.animation = "";
-    setTimeout(() => prevbtnIn.style.animation = "prevIn 2s", 1);
+    setTimeout(() => prevbtnIn.style.animation = "prevIn 1s", 1);
 
 
     prevCloneActivation = document.querySelector(".prev-clone");
@@ -148,25 +148,25 @@ const prevbtnoutmove = document.querySelector(".prevbtnoutmove");
 
 
     prevmove.style.animation = "";
-    setTimeout(() => prevmove.style.animation = "fadeUp 2s ease-in both", 1);
+    setTimeout(() => prevmove.style.animation = "fadeUp 1s ease-in both", 1);
     //prev small image in animation
     prevbtnoutmove.style.animation = "";
-    setTimeout(() => prevbtnoutmove.style.animation = "movein 2s linear both", 10);
+    setTimeout(() => prevbtnoutmove.style.animation = "movein 1s linear both", 10);
 
      //-------  next button advanced (ghost button activation)------
      prevGhost = document.getElementById("prev-ghost");
     //  const prevghostMove = document.querySelector(".prev-clone");
     //  prevghostMove.style.animation = "";
-    //  setTimeout(() => prevghostMove.style.animation = "ghostAnimate 2s", 1);
+    //  setTimeout(() => prevghostMove.style.animation = "ghostAnimate 1s", 1);
 
      //animation for throwing next button
      nextbtnthrow.style.animation = "";
-    setTimeout(() => nextbtnthrow.style.animation = "nextThrow 2s linear both", 1);
+    setTimeout(() => nextbtnthrow.style.animation = "nextThrow 1s linear both", 1);
 
     //animation for next button in
     const nextbtnIn = document.querySelector(".nextbtnin");
     nextbtnIn.style.animation = "";
-    setTimeout(() => nextbtnIn.style.animation = "nextIn 2s", 1);
+    setTimeout(() => nextbtnIn.style.animation = "nextIn 1s", 1);
 
     nextCloneActivation = document.querySelector(".next-clone");
     nextCloneActivation.style.zIndex = 1;

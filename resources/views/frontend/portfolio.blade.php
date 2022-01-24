@@ -32,50 +32,50 @@
 
     <section class="portfolio-main">
     <!-- portfolio leftside -->
-    <div class="portfolio-leftside-wrapper">
-        <h1 class="main-title">Portfolio</h1>
-        <div class="portfolio-content-box">
-            <div class="portfolio-content-inner-wrapper">
-                <p class="orange-txt" >We Start with a Get-Things-Done Attitude</p>
-                <h2 id="portTitleOne" class="portfolio-sub-title">Hotel Management</h2>
-                <div class="portfolio-nav-wrapper">
-                    <button class="portfolio-btn" onclick="prevSlide()">Previous</button>
-                    <button class="portfolio-btn" onclick="nextSlide()">Next</button>
+        <div class="portfolio-leftside-wrapper">
+            <h1 class="main-title">Portfolio</h1>
+            <div class="portfolio-content-box">
+                <div class="portfolio-content-inner-wrapper">
+                    <p class="orange-txt" >We Start with a Get-Things-Done Attitude</p>
+                    <h2 id="portTitleOne" class="portfolio-sub-title">Hotel Management</h2>
+                    <div class="portfolio-nav-wrapper">
+                        <button class="portfolio-btn" onclick="prevSlide()">Previous</button>
+                        <button class="portfolio-btn" onclick="nextSlide()">Next</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- portfolio rightside -->
-    <div class="portfolio-rightside-wrapper">
-    <div class="myslider-wrapper">
-                <!-- <div class="next-to-next-wrapper">
-                    <button class="far-dot-btn"></button>
-                </div> -->
-                <div class="next-wrapper ">
-                    <button id="next" onclick="nextSlide()" class="dot-btn nextbtnin nextbtnoutmove" >
-                        <img id="next-img" class="btn-img" src="{{  url('img/frontend/portfolio/2-contact-center.jpg')}}" alt="">
-                    </button>
-                    <button id="next-ghost" class="next-clone nextbtnThrow"></button>
-                </div>
-                <div class="active-wrapper nextmove prevmove">
-                    <div class="circle-image-wrapper">
-                        <img id="active-port-img" src="{{  url('img/frontend/portfolio/1-hotel-mgt.jpg')}}" alt="">
+        <!-- portfolio rightside -->
+        <div class="portfolio-rightside-wrapper">
+        <div class="myslider-wrapper">
+                    <!-- <div class="next-to-next-wrapper">
+                        <button class="far-dot-btn"></button>
+                    </div> -->
+                    <div class="next-wrapper ">
+                        <button id="next" onclick="nextSlide()" class="dot-btn nextbtnin nextbtnoutmove" >
+                            <img id="next-img" class="btn-img" src="{{  url('img/frontend/portfolio/2-contact-center.jpg')}}" alt="">
+                        </button>
+                        <button id="next-ghost" class="next-clone nextbtnThrow"></button>
                     </div>
+                    <div class="active-wrapper nextmove prevmove">
+                        <div class="circle-image-wrapper">
+                            <img id="active-port-img" src="{{  url('img/frontend/portfolio/1-hotel-mgt.jpg')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="prev-warapper">
+                        <button id="prev" onclick="prevSlide()" class="dot-btn prebtnin prevbtnoutmove" >
+                            <img id="prev-img" class="btn-img" src="{{  url('img/frontend/portfolio/16-container-yard-mgt.jpg')}}" alt="">
+                        </button>
+                        <button id="prev-ghost" class="prev-clone prevbtnThrow"></button>
+                    </div>
+                    <!-- <div class="prev-to-prev-wrapper">
+                        <button class="far-dot-btn"></button>
+                    </div> -->
                 </div>
-                <div class="prev-warapper">
-                    <button id="prev" onclick="prevSlide()" class="dot-btn prebtnin prevbtnoutmove" >
-                        <img id="prev-img" class="btn-img" src="{{  url('img/frontend/portfolio/16-container-yard-mgt.jpg')}}" alt="">
-                    </button>
-                    <button id="prev-ghost" class="prev-clone prevbtnThrow"></button>
-                </div>
-                <!-- <div class="prev-to-prev-wrapper">
-                    <button class="far-dot-btn"></button>
-                </div> -->
-            </div>
-        
-    </div>
-    <h1 class="main-title-mobile-only">Portfolio</h1>
-</section>
+            
+        </div>
+        <h1 class="main-title-mobile-only">Portfolio</h1>
+    </section>
 </div>
 
 

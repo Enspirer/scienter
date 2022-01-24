@@ -21,29 +21,29 @@
                 <h3>Contacts</h3>
                 <p>Get the support you need to keep our solution running at peak performance.</p>
                 <div id="hotline-hide-helper-desktop" class="hotline-hide-helper">
-                    <h4>Office Name:</h4>
+                    <h4>Office Name :</h4>
                     <p id="side-area-contact-office">Cooperate Office</p>
                     <h4 id="addressHideDesktop">Address:</h4>
                     <p id="side-area-contact-address">#302, Galle Road <br /> Colombo 04, Sri Lanka</p>
-                    <h4>Phone:</h4>
-                    <p id="side-area-contact-phone">T| +94 112 598 555 <br /> F| +94 112 259 911</p>
+                    <h4>Phone :</h4>
+                    <p id="side-area-contact-phone">T : +94 112 598 555 <br /> F : +94 112 259 911</p>
                     <h4 id="emailHideDesktop">Email</h4>
-                    <p id="side-area-contact-email">E| info@scienter.lk</p>
+                    <p id="side-area-contact-email">E : info@scienter.lk</p>
                 </div>
 
                 <!--visible only for hotline -->
                 <div id="hotline-multiple-number-wrapper">
                     <div class="hotline-number-row">
                         <h4>Hotel Management Applications</h4>
-                        <p>T| +94 714 752 752</p>
+                        <p>T : +94 714 752 752</p>
                     </div>
                     <div class="hotline-number-row">
                         <h4>Restuarant Management Applications</h4>
-                        <p>T| +94 714 751 751</p>
+                        <p>T : +94 714 751 751</p>
                     </div>
                     <div class="hotline-number-row">
                         <h4>Financial Applications</h4>
-                        <p>T| +94 112 598 555</p>
+                        <p>T : +94 112 598 555</p>
                     </div>
                 </div>
             </div>
@@ -108,29 +108,29 @@
                 <h3>Contacts</h3>
                 <p>Get the support you need to keep our solution running at peak performance.</p>
                 <div id="hotline-hide-helper-mobile" class="hotline-hide-helper">
-                    <h4>Office Name:</h4>
+                    <h4>Office Name :</h4>
                     <p id="mobile-contact-office">Cooperate Office</p>
                     <h4 id="addressHideMobile">Address:</h4>
                     <p id="mobile-contact-address">#302, Galle Road <br /> Colombo 04, Sri Lanka</p>
-                    <h4>Phone:</h4>
-                    <p id="mobile-contact-phone">T| +94 112 598 555 <br /> F| +94 112 259 911</p>
+                    <h4>Phone :</h4>
+                    <p id="mobile-contact-phone">T : +94 112 598 555 <br /> F : +94 112 259 911</p>
                     <h4 id="emailHideMobile">Email</h4>
-                    <p id="mobile-contact-email">E| info@scienter.lk</p>
+                    <p id="mobile-contact-email">E : info@scienter.lk</p>
                 </div>
                
                   <!--visible only for hotline -->
                   <div id="hotline-multiple-number-wrapper-mobile">
                     <div class="hotline-number-row">
                         <h4>Hotel Management Applications</h4>
-                        <p>T| +94 714 752 752</p>
+                        <p>T : +94 714 752 752</p>
                     </div>
                     <div class="hotline-number-row">
                         <h4>Restuarant Management Applications</h4>
-                        <p>T| +94 714 751 751</p>
+                        <p>T : +94 714 751 751</p>
                     </div>
                     <div class="hotline-number-row">
                         <h4>Financial Applications</h4>
-                        <p>T| +94 112 598 555</p>
+                        <p>T : +94 112 598 555</p>
                     </div>
                 </div>
             </div>
@@ -246,9 +246,9 @@ const contactOffice = ["cooperate office", "regional office", "regional office",
 
 const contactAddress = ["#302, Galle Road, <br> Colombo 04, Sri Lanka", "225/227, 11<sup>th</sup> floor, Olympic <br> Tower, Kyauktada Township,<br> Yangon, Myanmar", "Plot No 1361(4th Floor), <br> Avenue #10, Mirpur DOHS, Dhaka 1216, Bangladesh", " "];
 
-const contactPhone = ["T|+94 112 598 555 <br> F|+94 112 259 911", "T|+95 979 536 1165 <br> T|+95 942 171 9012", "T|+88 017 905 45411", " "];
+const contactPhone = ["T : +94 112 598 555 <br> F : +94 112 259 911", "T : +95 979 536 1165 <br> T : +95 942 171 9012", "T : +88 017 905 45411", " "];
 
-const contactEmail = ["E|info@scienter.lk", "E|sagarv@scienter.lk", "E| info@scienter.lk", " "];
+const contactEmail = ["E : info@scienter.lk", "E : sagarv@scienter.lk", "E : info@scienter.lk", " "];
 
 var i = 0;
 

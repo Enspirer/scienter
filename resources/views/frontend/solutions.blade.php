@@ -58,7 +58,7 @@
                <p class="TT-Regular">Whether you have an idea for a custom software solution for your company, or you are engaged in software product development, Scienter is ready to provide full-cycle software development services at each stage of your project.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
-            <div class="col-md-7 col-xs-12 tab-50">
+            <div class="col-md-7 col-xs-12 tab-50 mobile-mt-30">
                 <div class="image">
                     <img width="100%" src="{{ url('/img/frontend/solution/solution-one.png') }}" alt="man" class="half-img" data-scroll-zoom>
                 </div>      

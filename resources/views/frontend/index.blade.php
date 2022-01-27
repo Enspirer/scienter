@@ -36,7 +36,7 @@
     </div>
     <div class="home-content-box pms">
         <div class="home-content-text-wrapper">
-            <h2 class="TT-Light">Destinity PMS</h2>
+            <h2 class="TT-Light">For Hotels & Resorts</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
@@ -85,7 +85,7 @@
 <section id="destiny-pos" class="home-other-sections right-side-img-section">
     <div class="home-content-box pos left-side-box">
         <div class="home-content-text-wrapper">
-            <h2 class="TT-Light">Destinity POS</h2>
+            <h2 class="TT-Light">For Restaurants</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
@@ -109,16 +109,53 @@
     </div>
     <div class="home-content-box efinance">
         <div class="home-content-text-wrapper">
-            <h2 class="TT-Light">eFinancials</h2>
+            <h2 class="TT-Light">For Banking & Finance</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.</p>
             <button class="btn home-btn efinance-btn">View Project</button>
         </div>
     </div>
-    <a href="#journey" class="scroll-down-sub-btn" address="true"></a>
+    <a href="#membership-club" class="scroll-down-sub-btn" address="true"></a>
 </section>
 
+
+<section id="membership-club" class="home-other-sections right-side-img-section">
+    <div class="home-content-box membership left-side-box">
+        <div class="home-content-text-wrapper">
+            <h2 class="TT-Light">For Membership Clubs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+            <button class="btn home-btn membership-btn">View Project</button>
+        </div>
+    </div>
+    <div class="home-box-membership-img-area">
+        <div class="image membership">
+            <img width="100%" src="{{ url('img/frontend/homepage/destinity-pos.png') }}" alt="destiny pos"
+                data-scroll-zoom>
+        </div>
+    </div>
+    <a href="#other-business" class="scroll-down-sub-btn" address="true"></a>
+</section>
+
+<section id="other-business" class="home-other-sections">
+    <div class="home-box-other-business-img-area">
+        <div class="image other-business">
+            <img width="100%" src="{{ url('img/frontend/homepage/eFinancials.png') }}" alt="other business" data-scroll-zoom>
+        </div>
+    </div>
+    <div class="home-content-box other-business">
+        <div class="home-content-text-wrapper">
+            <h2 class="TT-Light">Other Business Solutions</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+            <button class="btn home-btn other-business-btn">View Project</button>
+        </div>
+    </div>
+    <a href="#journey" class="scroll-down-sub-btn" address="true"></a>
+</section>
 
 <section id="journey" class="journey-area home-other-sections hidden-xs">
     <div class="journey-section-wrapper">
@@ -851,6 +888,54 @@ gsap.to(".home-box-efinancial-img-area", {
     y: -100,
     x: 100
 })
+
+
+/*membership*/
+gsap.to(".home-content-box.membership", {
+    scrollTrigger: {
+        trigger: "button.btn.home-btn.membership-btn",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -150,
+    x: 100
+})
+gsap.to(".home-box-membership-img-area", {
+    scrollTrigger: {
+        trigger: ".image.membership",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -100,
+    x: -100
+})
+
+
+/*other products*/
+gsap.to(".home-box-other-business-img-area", {
+    scrollTrigger: {
+        trigger: ".image.other-business",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -100,
+    x: 100
+})
+
+gsap.to(".home-content-box.other-business", {
+    scrollTrigger: {
+        trigger: "button.btn.home-btn.other-business-btn",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1
+    },
+    y: -150,
+    x: -100
+})
+
 
 /*title animation*/
 gsap.to(".tourism-topic-wrapper", {

@@ -10,8 +10,8 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\NewsController;
 use App\Http\Controllers\Frontend\OurClientController;
 use App\Http\Controllers\Frontend\ContactUsController;
-use App\Http\Controllers\Frontend\SolutionsController;
-use App\Http\Controllers\Frontend\PortfolioController;
+use App\Http\Controllers\Frontend\ServicesController;
+use App\Http\Controllers\Frontend\OurSolutionsController;
 use App\Http\Controllers\Frontend\TestController;
 /*
  * Frontend Controllers
@@ -23,8 +23,8 @@ Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('news', [NewsController::class, 'index'])->name('news');
 Route::get('our-clients', [OurClientController::class, 'index'])->name('our-clients');
 Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact-us');
-Route::get('solutions', [SolutionsController::class, 'index'])->name('solutions');
-Route::get('portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+Route::get('services', [ServicesController::class, 'index'])->name('services');
+Route::get('our-solutions', [OurSolutionsController::class, 'index'])->name('our-solutions');
 Route::get('test', [TestController::class, 'index'])->name('test');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');

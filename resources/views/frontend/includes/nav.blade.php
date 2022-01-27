@@ -19,10 +19,10 @@
                     class="nav-link {{ active_class(Route::is('frontend.index')) }}">Home</a></li>
             <li class="nav-item"><a href="{{route('frontend.about')}}"
                     class="nav-link {{ active_class(Route::is('frontend.about')) }}">About</a></li>
-            <li class="nav-item"><a href="{{route('frontend.solutions')}}"
-                    class="nav-link {{ active_class(Route::is('frontend.solutions')) }}">Solutions</a></li>
-            <li class="nav-item"><a href="{{route('frontend.portfolio')}}"
-                    class="nav-link {{ active_class(Route::is('frontend.portfolio')) }}">Portfolio</a></li>
+            <li class="nav-item"><a href="{{route('frontend.services')}}"
+                    class="nav-link {{ active_class(Route::is('frontend.services')) }}">Services</a></li>
+            <li class="nav-item"><a href="{{route('frontend.our-solutions')}}"
+                    class="nav-link {{ active_class(Route::is('frontend.our-solutions')) }}">Our Solutions</a></li>
             <li class="nav-item"><a href="{{route('frontend.our-clients')}}"
                     class="nav-link {{ active_class(Route::is('frontend.our-clients')) }}">Clients</a></li>
             <li class="nav-item"><a href="{{route('frontend.news')}}"

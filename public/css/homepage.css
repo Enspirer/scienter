@@ -41,13 +41,13 @@
     background-repeat: no-repeat;
 }
 
-.home-box-pos-img-area {
+.home-box-pos-img-area, .home-box-membership-img-area {
     height: 65vh;
     width: 60%;
     background-repeat: no-repeat;
 }
 
-.home-box-efinancial-img-area {
+.home-box-efinancial-img-area, .home-box-other-business-img-area {
     background-image: url(../img/frontend/homepage/eFinancials.png);
     height: 65vh;
     width: 60%;
@@ -98,7 +98,7 @@
 }
 
 .home-content-box h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .right-side-img-section {

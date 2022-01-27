@@ -8,10 +8,10 @@
                     Home
                 @elseif(\Request::is('about'))
                     About
-                @elseif(\Request::is('solutions'))
-                    Solutions
-                @elseif(\Request::is('portfolio'))
-                    Portfolio
+                @elseif(\Request::is('services'))
+                    Services
+                @elseif(\Request::is('our-solutions'))
+                    Our Solutions
                 @elseif(\Request::is('our-clients'))
                     Our Clients
                 @elseif(\Request::is('news'))

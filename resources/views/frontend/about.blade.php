@@ -11,12 +11,8 @@
     <section class="full-height-section about-full-height-area">
         <div class="row">
             <div class="col-md-6 col-xs-12 main-text-box">
-                <h1 class="main-title TT-Light">Our Story</h1>
-                <p class="TT-Light line-height-30 main-p">Since it’s inception in 1995, SCIENTER TECHNOLOGIES has provided Sri
-                    Lankan and global industries with a multitude of comprehensive inte - grated software solutions.
-                    Renowned for its ‘cutting edge’ in increasing efficiency, profitability and its modernity keeping in
-                    line with continuous innovation witnessed and experienced technologically over the years, the
-                    company has become the solutions prefered provider for many corporate entities.</p>
+                <h1 class="main-title TT-Light">Scienter Story</h1>
+                <p class="TT-Light line-height-30 main-p">Scienter Technologies is an industry-defining intelligent solutions provider since its innovative initiation in 1995. Introducing many digital avenues to various industries in Sri Lanka, the organization excelled in providing highly sophisticated, bespoke digital solutions. With cutting edge research and a highly skilled workforce, Scienter has developed Multiple Web & Mobile Intelligent Solutions with effective results tested and proven in markets worldwide. We empower businesses to thrive.</p>
             </div>
             <div class="col-md-6 col-xs-12">
                 <img class="half-img about-main-img" src="{{ url('img/frontend/about/man.png') }}" alt="man">
@@ -35,17 +31,12 @@
     <section id="excellence" class="full-height-section excellence">
         <div class="excellence-inner-wrapper">
             <div class="col-md-6 excellence-right">
-                <h3 class="TT-Light small-heading">Passion for</h3>
+                <h3 class="TT-Light small-heading">Sailing to</h3>
                 <h2 class="TT-Light" style="font-size: 3rem;">Excellence</h2>
-                <p class="TT-Light line-height-30">Our team comprises some of the most sought after and recognized
-                    individuals in their chosen field of expertise who are passionate and committed to provide our clients
-                    with cutting edge solutions. We are passionate about serving, and providing you with the best in what we
-                    possess, leaving no stone unturned to carve out exactly what you require from us. We take pride in
-                    ourselves in having been able to transcend the barrier of being a service provider, rather we are
-                    trained to think in terms of ‘solutions’ and providing solutions to suit your business needs is our
-                    passion. Our commitment to excellence is unparalleled, and our passion to perform is driven by our
-                    desire to give out the best of what we possess.</p>
-                
+                <p class="TT-Light line-height-30">Our Legacy is the synergy of our team. We comprise the nation's most experienced, talented and highly skilled workforce.</p>
+                <p class="TT-Light line-height-30">Scienter believes in continuous progress achieved through passionate focus.
+                Our team idealizes a progressive work culture that encourages pragmatic, reliable solutions in output objectives. We have contributed to multiple industries and businesses globally. At Scienter, our service goes beyond the solutions we provide. Our clientele has expanded through reliable recommendations & resonance of success.</p>                
+                <p class="TT-Light line-height-30">We were awarded multiple prestigious awards in celebrating our technical innovation and achievement on a global standard. We believe our full resilience is merely ahead of our journey.</p>                
             </div>
         </div>
         <a href="#vision-mission" class="scroll-down-sub-btn" address="true"></a>
@@ -135,10 +126,9 @@
             <div id="milestone-one" class="milestone-row">
                 <div class="milestone-left-wrapper">
                     <div class="milestone-text-wrapper-left txt-one">
-                        <h5 class="TT-Regular about-blue-font">Dummy Text Here</h5>
-                        <h3 class="TT-Regular about-blue-font">Dummy Title Here</h3>
-                        <p class="TT-Light">Our team comprises some of the most sought after and recognized individuals
-                            in their chosen field of expertise who are passionate and committed to provide our </p>
+                        <h5 class="TT-Regular about-blue-font">Inception of</h5>
+                        <h3 class="TT-Regular about-blue-font">Scienter</h3>
+                        <p class="TT-Light">With Humble beginnings pursuing greatness, Scienter is a product of passion by a handful of talented, renowned engineers and innovators.</p>
                     </div>
                 </div>
                 <div class="milestone-line-wrapper">
@@ -154,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <div class="yr-row yr-two">1995</div>
+            <div class="yr-row yr-two">2005</div>
             <div id="milestone-two" class="milestone-row">
                 <div class="milestone-left-wrapper img-two"> 
                     <div class="image">
@@ -168,23 +158,20 @@
                 </div>
                 <div class="milestone-right-wrapper">
                     <div class="milestone-text-wrapper-right txt-two">
-                        <h5 class="TT-Regular about-blue-font">Dummy Text Here</h5>
-                        <h3 class="TT-Regular about-blue-font">Dummy Title Here</h3>
-                        <p class="TT-Light">Our team comprises some of the most sought after and recognized individuals
-                            in their chosen field of expertise who are passionate and committed to provide our </p>
+                        <h5 class="TT-Regular about-blue-font">A Decade of</h5>
+                        <h3 class="TT-Regular about-blue-font">Excellence</h3>
+                        <p class="TT-Light">Through the drive, determination and philanthropic practice, Scienter becomes a flagship in the digital industry of Sri Lanka.</p>
                     </div>
                 </div>
             </div>
-            <div class="yr-row yr-three">1995</div>
+            <div class="yr-row yr-three">2009</div>
             <div class="last-milestone-wrapper">
                 <div id="milestone-three" class="milestone-row">
                     <div class="milestone-left-wrapper">
                         <div class="milestone-text-wrapper-left txt-three">
-                            <h5 class="TT-Regular about-blue-font">Dummy Text Here</h5>
-                            <h3 class="TT-Regular about-blue-font">Dummy Title Here</h3>
-                            <p class="TT-Light">Our team comprises some of the most sought after and recognized
-                                individuals in their chosen field of expertise who are passionate and committed to
-                                provide our </p>
+                            <h5 class="TT-Regular about-blue-font">Winner at</h5>
+                            <h3 class="TT-Regular about-blue-font">The Asia Pacific ICT Alliance Awards</h3>
+                            <p class="TT-Light">We Won for Our product Destiny under the Tourism and Hospitality Category APICTA.</p>
                         </div>
                     </div>
                     <div class="milestone-line-wrapper">

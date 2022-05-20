@@ -13,8 +13,8 @@
     <section class="full-height-area ">
         <div class="row">
             <div class="topic-wrapper">
-                <h1 class="main-title TT-Light" style="margin-top:30px; margin-bottom:0px;">What We Do</h1>
-                <p class="orange-txt">This is Where Tomorrow's Solutions for Businesses are being Created.</p>
+                <h1 class="main-title TT-Light" style="margin-top:30px; margin-bottom:0px;">WHAT WE DO</h1>
+                <p class="orange-txt">We pursue Innovative Information Service excellence. Our Skill and our Legacy go hand in hand.</p>
             </div>
         </div>
         <div class="row tab-align-center-row tab-mb-30">
@@ -35,7 +35,7 @@
                     </div>
                     <h2 class="TT-Light">Solutions</h2>
                 </div>           
-                <p class="TT-Regular">We start with a get-things-done attitude. We employ modern software delivery methods such as lean requirements, rapid prototyping and Dual-track Scrum to meet deadlines others would call impossible. We know you needed this tomorrow, so we got it done yesterday.</p>
+                <p class="TT-Regular">We have created and sustained multiple industry-standard data and information infrastructures that facilitate various businesses globally. Masses trust our sustenance and skill in delivering beyond what they aspire.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
         </div>
@@ -55,7 +55,7 @@
                     </div>
                     <h2 class="TT-Light">Development</h2>
                 </div>           
-               <p class="TT-Regular">Whether you have an idea for a custom software solution for your company, or you are engaged in software product development, Scienter is ready to provide full-cycle software development services at each stage of your project.</p>
+               <p class="TT-Regular">We know that every business is different & We celebrate that. Our custom software development capability is our bragging right. We have the moulded ability to understand your requirement and provide synergetic functions.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
             <div class="col-md-7 col-xs-12 tab-50 mobile-mt-30">
@@ -85,7 +85,7 @@
                     </div>
                     <h2 class="TT-Light">Development</h2>
                 </div>           
-                <p class="TT-Regular">Scienter web app developers will morph your great ideas into workable web solutions. With top-talent web application development skills on board, our company will craft compelling web apps and jump-start your business.</p>
+                <p class="TT-Regular">We make Your Ideas Come to Life in Cyberspace. Our skills can challenge your imagination in Function and Design. We give you cutting edge solutions determined solely for efficient and aesthetic improvements of your web application system.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
         </div>
@@ -106,7 +106,7 @@
                     </div>
                     <h2 class="TT-Light">Development</h2>
                 </div>           
-                <p class="TT-Regular">If you are in search of a mobile app development supplier, Scienter is your perfect match! Our app development company is a savvy Android developer that will help you get on the mobile bandwagon.</p>
+                <p class="TT-Regular">We create Mobile Apps. Our team is eager to test its capacity against new ideas that You bring to the table. Our mobile applications are tried and tested across multiple platforms, cultures and geographies. Find Out How We Can Make Your Ideas Fruitful & Functional.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
             <div class="col-md-7 col-xs-12 tab-50">

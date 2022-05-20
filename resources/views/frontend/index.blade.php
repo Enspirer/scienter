@@ -11,10 +11,8 @@
 
 <section class="home-main full-height-section">
     <div class="home-main-text">
-        <h1 class="main-title TT-Light">Specialty</h1>
-        <p class="TT-ExtraLight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the
-            industry's standard</p>
+        <h1 class="main-title TT-Light">Innovation Dominant</h1>
+        <p class="TT-ExtraLight">Scienter Believes in Forging Innovative, Intelligent Digital Solutions For All Forms of Industry.</p>
     </div>
     <a href="#destiny-pms" class="scroll-down">
         <div class="mouse">
@@ -37,9 +35,7 @@
     <div class="home-content-box pms">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">For Hotels & Resorts</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.</p>
+            <p>Designed Exclusively For Hotels & Holiday Establishments to Generate Innovative Efficiency.</p>
             <button class="btn home-btn pms-btn">View Project</button>
         </div>
 
@@ -86,9 +82,7 @@
     <div class="home-content-box pos left-side-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">For Restaurants</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.</p>
+            <p>Manage, Monitor, Control Multiple Restaurants & Dineries Across Various Locations Effectively.</p>
             <button class="btn home-btn pos-btn">View Project</button>
         </div>
     </div>
@@ -110,9 +104,7 @@
     <div class="home-content-box efinance">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">For Banking & Finance</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.</p>
+            <p>Built to Evolve Commerce, Finance & Banking Industry.</p>
             <button class="btn home-btn efinance-btn">View Project</button>
         </div>
     </div>
@@ -124,9 +116,7 @@
     <div class="home-content-box membership left-side-box">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">For Membership Clubs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.</p>
+            <p>Fully Fledged Member Management System Designed for Any Club or Establishment.</p>
             <button class="btn home-btn membership-btn">View Project</button>
         </div>
     </div>
@@ -148,9 +138,7 @@
     <div class="home-content-box other-business">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Other Business Solutions</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.</p>
+            <p>Flagship Industry Solutions, Bespoke Software Development, Web App, Mobile App Development & Many More.</p>
             <button class="btn home-btn other-business-btn">View Project</button>
         </div>
     </div>

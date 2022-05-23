@@ -608,9 +608,7 @@
 
 
                 <div class="col-4 tab-50 news-card">
-                    <a href="https://tallentor.com/blog/Club" style="color:black">
-                    </a>
-                    <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/Club"
+                    <div class="card position-relative" style="height: 27rem;"><a href="{{url('news')}}"
                             style="color:black">
 
                             <div class="px-4 py-2"
@@ -626,12 +624,12 @@
                                 </div>
                             </div>
 
-                            <img src="https://tallentor.com/upload/blog/files/20211112131039.png" class="card-img-top"
+                            <img src="{{url('img/frontend/about/milestone-one.png')}}" class="card-img-top"
                                 alt="..." style="object-fit: cover; height: 13rem;">
                         </a>
-                        <div class="card-body"><a href="https://tallentor.com/blog/Club" style="color:black">
+                        <div class="card-body"><a href="{{url('news')}}" style="color:black">
                                 <p class="card-text mb-1"
-                                    style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;  -webkit-box-orient: vertical;">
+                                    style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;  -webkit-box-orient: vertical;">
                                     When you use an application on your mobile phone or smart devices the application
                                     connects to the Internet and sends data to a server. The server then retrieves that
                                     data, interprets it, performs the necessary actions and sends it back to your phone.
@@ -639,11 +637,11 @@
                                     wanted in a readable way. This is what an API is - all of this happens via API.</p>
 
                             </a>
-                            <div class="text-right mb-1"><a href="https://tallentor.com/blog/Club" style="color:black">
+                            <div class="text-right mb-1"><a href="{{url('news')}}" style="color:black">
                                 </a>
-                                <div class="position-absolute read"><a href="https://tallentor.com/blog/Club"
+                                <div class="position-absolute read"><a href="{{url('news')}}"
                                         style="color:black">
-                                    </a><a href="https://tallentor.com/blog/Club"
+                                    </a><a href="{{url('news')}}"
                                         style="font-size: 1rem; color: #0033FF;">View More</a>
                                 </div>
 
@@ -654,9 +652,7 @@
                 </div>
 
                 <div class="col-4 tab-50 news-card tab-center-50">
-                    <a href="https://tallentor.com/blog/News" style="color:black">
-                    </a>
-                    <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/News"
+                    <div class="card position-relative" style="height: 27rem;"><a href="{{url('news')}}"
                             style="color:black">
                             <div class="px-4 py-2"
                                 style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
@@ -673,12 +669,12 @@
                             </div>
 
 
-                            <img src="https://tallentor.com/upload/blog/files/20211112150914.jpg" class="card-img-top"
+                            <img src="{{url('img/frontend/about/milestone-two.png')}}" class="card-img-top"
                                 alt="..." style="object-fit: cover; height: 13rem;">
                         </a>
-                        <div class="card-body"><a href="https://tallentor.com/blog/News" style="color:black">
+                        <div class="card-body"><a href="{{url('news')}}" style="color:black">
                                 <p class="card-text mb-1"
-                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
+                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">
                                     Our team brought years of analytical and development experience together to bring
                                     Tallentor LMS to life.
                                     Expandability and connectivity with third party systems are the key features of our
@@ -686,11 +682,11 @@
                                     latest features.</p>
 
                             </a>
-                            <div class="text-right mb-1"><a href="https://tallentor.com/blog/News" style="color:black">
+                            <div class="text-right mb-1"><a href="{{url('news')}}" style="color:black">
                                 </a>
-                                <div class="position-absolute read"><a href="https://tallentor.com/blog/News"
+                                <div class="position-absolute read"><a href="{{url('news')}}"
                                         style="color:black">
-                                    </a><a href="https://tallentor.com/blog/News"
+                                    </a><a href="{{url('news')}}"
                                         style="font-size: 1rem; color: #0033FF;">View More</a>
                                 </div>
 

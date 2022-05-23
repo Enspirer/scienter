@@ -589,9 +589,9 @@
 <section id="social" class="social">
     <div class="container-fluid social-banner">
         <div class="container social">
-            <div class="row">
-                <div class="col-4 tab-50">
-                    <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
+            <div class="row news-card-wrapper">
+                <div class="col-4 tab-50 news-card">
+                    <!-- <a href="https://www.facebook.com/tallentor" style="color:black" target="_blank" id="stack_panel">
                         <div class="card" style="height: 27rem;">
                             <iframe
                                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftallentor%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId=4531192260303691"
@@ -599,12 +599,15 @@
                                 frameborder="0" allowfullscreen="true"
                                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
-                    </a>
+                    </a> -->
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="UBiuJPPr"></script>
+                        <div class="fb-page" data-href="https://www.facebook.com/scienterlk/" data-tabs="timeline" data-width="" data-height="430" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/scienterlk/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/scienterlk/">Scienter Technologies PTE</a></blockquote></div>
                 </div>
 
 
 
-                <div class="col-4 tab-50">
+                <div class="col-4 tab-50 news-card">
                     <a href="https://tallentor.com/blog/Club" style="color:black">
                     </a>
                     <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/Club"
@@ -613,11 +616,11 @@
                             <div class="px-4 py-2"
                                 style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
                                 <div class="row align-items-center">
-                                    <div class="col-3 text-center">
+                                    <!-- <div class="col-3 text-center">
                                         <img src="https://tallentor.com/theme_light/assets/footer/club.png" alt=""
                                             class="img-fluid">
-                                    </div>
-                                    <div class="col-9">
+                                    </div> -->
+                                    <div class="col-12 text-center">
                                         <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Scienter Club</p>
                                     </div>
                                 </div>
@@ -628,7 +631,7 @@
                         </a>
                         <div class="card-body"><a href="https://tallentor.com/blog/Club" style="color:black">
                                 <p class="card-text mb-1"
-                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">
+                                    style=" overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;  -webkit-box-orient: vertical;">
                                     When you use an application on your mobile phone or smart devices the application
                                     connects to the Internet and sends data to a server. The server then retrieves that
                                     data, interprets it, performs the necessary actions and sends it back to your phone.
@@ -650,7 +653,7 @@
 
                 </div>
 
-                <div class="col-4 tab-50 tab-center-50">
+                <div class="col-4 tab-50 news-card tab-center-50">
                     <a href="https://tallentor.com/blog/News" style="color:black">
                     </a>
                     <div class="card position-relative" style="height: 27rem;"><a href="https://tallentor.com/blog/News"
@@ -658,11 +661,11 @@
                             <div class="px-4 py-2"
                                 style="-webkit-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); -moz-box-shadow: inset 0.5px 14px -8px rgba(0,0,0,0.75); box-shadow: inset 0px 0.5px 14px -8px rgba(0,0,0,0.75);">
                                 <div class="row align-items-center">
-                                    <div class="col-3 text-center">
+                                    <!-- <div class="col-3 text-center">
                                         <img src="https://tallentor.com/theme_light/assets/footer/news.png" alt=""
                                             class="img-fluid">
-                                    </div>
-                                    <div class="col-9">
+                                    </div> -->
+                                    <div class="col-12 text-center">
                                         <p class="mb-0" style="color: #065A31; font-size: 1.6rem;">Latest at Scienter
                                         </p>
                                     </div>
@@ -675,7 +678,7 @@
                         </a>
                         <div class="card-body"><a href="https://tallentor.com/blog/News" style="color:black">
                                 <p class="card-text mb-1"
-                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2; /* number of lines to show */-webkit-box-orient: vertical;height: 80px;">
+                                    style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 10;-webkit-box-orient: vertical;">
                                     Our team brought years of analytical and development experience together to bring
                                     Tallentor LMS to life.
                                     Expandability and connectivity with third party systems are the key features of our

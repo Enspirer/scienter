@@ -37,7 +37,8 @@
             <div class="portfolio-content-box">
                 <div class="portfolio-content-inner-wrapper">
                     <p class="orange-txt" >We Start with a Get-Things-Done Attitude</p>
-                    <h2 id="portTitleOne" class="portfolio-sub-title">Hotel Management</h2>
+                    <h2 id="portTitleOne" class="portfolio-sub-title">Destinity Property Management System</h2>
+                    <div id="portText" class="text">Destinity is a flagship Creation by Scienter that has culminated various avenues in providing a complete information system. Destinity addresses multiple scopes such as reservations, front office, Revenue Management, Point of Sale, Food Costing, Menu Engineering, Payroll with time & attendance, Banquet Management, Accounting and a fully flexed booking engine. The system incorporates a front desk app, mobile order tracking app, and housekeeping app & includes a channel manager, interfaces of IP TV, Wifi, and Doorlock integration. The Destinity Property Management System is useful for many levels of system users throughout the property. </div>
                     <div class="portfolio-nav-wrapper">
                         <button class="portfolio-btn" onclick="prevSlide()">Previous</button>
                         <button class="portfolio-btn" onclick="nextSlide()">Next</button>

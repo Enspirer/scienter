@@ -22,8 +22,7 @@
         </div>
         <div class="col-md-6 col-xs-12 tab-12 main-text-box">
             <h2 class="TT-Bold news-subheading">Scienter - Wisdom Partnership</h2>
-            <p class="TT-Regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p class="TT-Regular">Scelerisque eleifend donec pretium vulputate sapien. Mattis nunc sed blandit libero volutpat sed cras ornare. Ut placerat orci nulla pellentesque. Mi tempus imperdiet nulla malesuada pellentesque. Enim facilisis gra</p>
+            <p class="TT-Regular">Scienter Technologies undertook a long-term partnership with Ethiopian IT expert WISCOM Technology PLC to provide hospitality solutions for Ethiopia. Unlike most countries, Ethiopia has a mandatory requirement by the government for the use of fiscal printers, that directly send all transactions to the Inland Revenue Authority. As a result, Scienter Technologies undertook the integration development and received the certification from the government body; enabling the sale and distribution of the Destinity PMS. Currently a tremendous growth in tourism and development is underway in Ethiopia. Both Scienter Technologies and WISCOM are in a strategically strong position to meet this demand with expectations to be the market leader by 2022 in Ethiopia.</p>
         </div>
     </div>
     <a href="#latest-news" class="scroll-down-sub-btn" address="true"></a>
@@ -36,22 +35,22 @@
                 <div class="news-inner-box">
                     <img class="news-box-img" src="{{ url('img/frontend/news/wis.png') }}" alt="wiscom logo">
                     <h3 class="news-title">Scienter - Wisdom Partnership</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Scienter Technologies undertook a long-term partnership with Ethiopian IT expert WISCOM Technology PLC to provide hospitality solutions for Ethiopia. Unlike most countries, Ethiopia has a mandatory requirement by the government for the use of fiscal printers, that directly send all transactions to the Inland Revenue Authority. As a result, Scienter Technologies undertook the integration development and received the certification from the government body; enabling the sale and distribution of the Destinity PMS. Currently a tremendous growth in tourism and development is underway in Ethiopia. Both Scienter Technologies and WISCOM are in a strategically strong position to meet this demand with expectations to be the market leader by 2022 in Ethiopia.</p>
                 </div>
             </div>
             <div class="col-md-4 col-xs-12 tab-12 news-box tab-mb-30">
                 <div class="news-inner-box">
                     <img class="news-box-img" src="{{ url('img/frontend/news/GJC.png') }}" alt="gjc logo">
                     <h3 class="news-title">Gloria Jeen's Coffee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <p>Gloria Jean’s Coffee is a global retail coffee house chain that is owned by Retail Food Group and it operates in 39 countries. In 2020, Scienter Technologies (Pte) Ltd undertook installation, implementation and training of Destinity at the Gloria Jean’s chain at Timor-Leste. Scienter Technologies offers the complete centralized restaurant management solution of Destinity POS that covers both the front-end and back-end operations. This helped the chain reach operational efficiency by streamlining their activities and serve their growing demand with ease</p>
                 </div> 
             </div>
 
             <div class="col-md-4 col-xs-12 tab-12 news-box tab-mb-30">
                 <div class="news-inner-box">
-                    <img class="news-box-img" src="{{ url('img/frontend/news/GJC.png') }}" alt="gjc logo">
-                    <h3 class="news-title">Gloria Jeen's Coffee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                    <img class="news-box-img" src="{{ url('img/frontend/news/Orient.jpg') }}" alt="gjc logo">
+                    <h3 class="news-title">Orient Finance PLC</h3>
+                    <p>Orient Finance PLC partnered with Scienter for the "eFinancials" software solution which respected and permitted them to uphold the company values of timeliness and total excellence in customer service,  reliability and respect for everyone, ultimate satisfaction to all stakeholders,  sense of integrity, honesty & social responsibility,  transparency in all dealings while providing an infallible service to it's customers</p>
                 </div>               
             </div>
         </div>

@@ -55,7 +55,7 @@
                     </div>
                     <h2 class="TT-Light">Development</h2>
                 </div>           
-               <p class="TT-Regular">We know that every business is different & We celebrate that. Our custom software development capability is our bragging right. We have the moulded ability to understand your requirement and provide synergetic functions.</p>
+               <p class="TT-Regular">We believe that every business is unique & We welcome that. Our custom software development capability is our bragging right. We have the moulded ability to understand your requirement and provide synergetic functions.</p>
                 <button class="btn solutions-btn TT-Regular">Inquire Now</button>
             </div>
             <div class="col-md-7 col-xs-12 tab-50 mobile-mt-30">

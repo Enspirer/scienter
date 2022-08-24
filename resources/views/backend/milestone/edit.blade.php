@@ -32,7 +32,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <label>Image <span class="text-danger">*<span></label>
+                            <label>Image</label>
                             <div class="input-group" data-toggle="aizuploader" data-type="image">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text bg-soft-secondary font-weight-medium">Browse</div>

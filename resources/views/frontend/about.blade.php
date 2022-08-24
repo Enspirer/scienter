@@ -32,10 +32,9 @@
         <div class="excellence-inner-wrapper">
             <div class="col-md-6 excellence-right">
                 <h3 class="TT-Light small-heading">Sailing to</h3>
-                <h2 class="TT-Light" style="font-size: 3rem;">Excellence</h2>
+                <h2 class="TT-Light" style="font-size: 3rem;">SUCCESS</h2>
                 <p class="TT-Light line-height-30">Our Legacy is the synergy of our team. We comprise the nation's most experienced, talented and highly skilled workforce.</p>
-                <p class="TT-Light line-height-30">Scienter believes in continuous progress achieved through passionate focus.
-                Our team idealizes a progressive work culture that encourages pragmatic, reliable solutions in output objectives. We have contributed to multiple industries and businesses globally. At Scienter, our service goes beyond the solutions we provide. Our clientele has expanded through reliable recommendations & resonance of success.</p>                
+                <p class="TT-Light line-height-30">Scienter believes in continuous progress achieved through passionate focus. Our team idealizes a progressive work culture that encourages pragmatic, reliable solutions in output objectives. We have contributed to multiple industries and businesses globally. At Scienter, our service goes beyond the solutions we provide. Our clientele has expanded through reliable recommendations & resonance of success.</p>                
                 <p class="TT-Light line-height-30">We were awarded multiple prestigious awards in celebrating our technical innovation and achievement on a global standard. We believe our full resilience is merely ahead of our journey.</p>                
             </div>
         </div>
@@ -121,79 +120,76 @@
                     </div>
 
                 </div>
-                1995
             </div>
-            <div id="milestone-one" class="milestone-row">
-                <div class="milestone-left-wrapper">
-                    <div class="milestone-text-wrapper-left txt-one">
-                        <h5 class="TT-Regular about-blue-font">Inception of</h5>
-                        <h3 class="TT-Regular about-blue-font">Scienter</h3>
-                        <p class="TT-Light">With Humble beginnings pursuing greatness, Scienter is a product of passion by a handful of talented, renowned engineers and innovators.</p>
-                    </div>
-                </div>
-                <div class="milestone-line-wrapper">
-                    <div class="milestone-line"></div>
-                    <div id="about-line-one" class="milestone-line-animated one"></div>
+
+            @if(count(App\Models\Milestone::where('status','Enabled')->get()) != 0)
+
+            @php
+                $numbermappings = array("zero", "one","two","three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen");
+            @endphp
+                @foreach(App\Models\Milestone::where('status','Enabled')->get() as $milestone)
+                    @if($milestone->order % 2 == 0)
+                        <div class="yr-row yr-{{$numbermappings[$milestone->order]}}">{{$milestone->year}}</div>
+                        <div id="milestone-{{$numbermappings[$milestone->order]}}" class="milestone-row">
+                            <div class="milestone-left-wrapper">
+                                <div class="milestone-text-wrapper-left txt-{{$numbermappings[$milestone->order]}}">
+                                    <h5 class="TT-Regular about-blue-font">{{$milestone->sub_title}}</h5>
+                                    <h3 class="TT-Regular about-blue-font">{{$milestone->title}}</h3>
+                                    <p class="TT-Light">{{$milestone->description}}</p>
+                                </div>
+                            </div>
+                            <div class="milestone-line-wrapper">
+                                <div class="milestone-line"></div>
+                                <div id="about-line-{{$numbermappings[$milestone->order]}}" class="milestone-line-animated {{$numbermappings[$milestone->order]}}"></div>
 
 
-                </div>
-                <div class="milestone-right-wrapper img-one">
-                    <div class="image">
-                        <img class="milestone-img" src="{{ url('img/frontend/about/milestone-one.png') }}" data-scroll-zoom
-                            alt="milestone-one">
-                    </div>
-                </div>
-            </div>
-            <div class="yr-row yr-two">2005</div>
-            <div id="milestone-two" class="milestone-row">
-                <div class="milestone-left-wrapper img-two"> 
-                    <div class="image">
-                        <img class="milestone-img" src="{{ url('img/frontend/about/milestone-two.png') }}" data-scroll-zoom
-                        alt="milestone-two">
-                    </div>
-                </div>
-                <div class="milestone-line-wrapper">
-                    <div class="milestone-line"></div>
-                    <div id="about-line-two" class="milestone-line-animated two"></div>
-                </div>
-                <div class="milestone-right-wrapper">
-                    <div class="milestone-text-wrapper-right txt-two">
-                        <h5 class="TT-Regular about-blue-font">A Decade of</h5>
-                        <h3 class="TT-Regular about-blue-font">Excellence</h3>
-                        <p class="TT-Light">Through the drive, determination and philanthropic practice, Scienter becomes a flagship in the digital industry of Sri Lanka.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="yr-row yr-three">2009</div>
-            <div class="last-milestone-wrapper">
-                <div id="milestone-three" class="milestone-row">
-                    <div class="milestone-left-wrapper">
-                        <div class="milestone-text-wrapper-left txt-three">
-                            <h5 class="TT-Regular about-blue-font">Winner at</h5>
-                            <h3 class="TT-Regular about-blue-font">The Asia Pacific ICT Alliance Awards</h3>
-                            <p class="TT-Light">We Won for Our product Destiny under the Tourism and Hospitality Category APICTA.</p>
+                            </div>
+                            <div class="milestone-right-wrapper img-one">
+                                <div class="image">
+                                    @if($milestone->image == null)
+                                        <img class="milestone-img" src="{{ url('img/no_image.png') }}" data-scroll-zoom
+                                        alt="milestone-one">
+                                    @else
+                                        <img class="milestone-img" src="{{ uploaded_asset($milestone->image) }}" data-scroll-zoom
+                                        alt="milestone-one">   
+                                    @endif
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="milestone-line-wrapper">
-                        <div class="milestone-line"></div>
-                        <div id="about-line-three" class="milestone-line-animated three"></div>
-
-                    </div>
-
-
-                    <div class="milestone-right-wrapper img-three">
-                        <div class="image">
-                            <img class="milestone-img" src="{{ url('img/frontend/about/milestone-three.png') }}" data-scroll-zoom
-                            alt="milestone-one">
+                    @else
+                        <div class="yr-row yr-{{$numbermappings[$milestone->order]}}">{{$milestone->year}}</div>
+                        <div id="milestone-{{$numbermappings[$milestone->order]}}" class="milestone-row">
+                            <div class="milestone-left-wrapper img-{{$numbermappings[$milestone->order]}}"> 
+                                <div class="image">
+                                    @if($milestone->image == null)
+                                        <img class="milestone-img" src="{{ url('img/no_image.png') }}" data-scroll-zoom
+                                        alt="milestone-one">
+                                    @else
+                                        <img class="milestone-img" src="{{ uploaded_asset($milestone->image) }}" data-scroll-zoom
+                                        alt="milestone-one">   
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="milestone-line-wrapper">
+                                <div class="milestone-line"></div>
+                                <div id="about-line-{{$numbermappings[$milestone->order]}}" class="milestone-line-animated {{$numbermappings[$milestone->order]}}"></div>
+                            </div>
+                            <div class="milestone-right-wrapper">
+                                <div class="milestone-text-wrapper-right txt-two">
+                                    <h5 class="TT-Regular about-blue-font">{{$milestone->sub_title}}</h5>
+                                    <h3 class="TT-Regular about-blue-font">{{$milestone->title}}</h3>
+                                    <p class="TT-Light">{{$milestone->description}}</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    @endif               
 
-
-            </div>
+                @endforeach
+            @endif
+                        
             <div class="grey-circle-wrapper">
                 <div class="grey-circle"></div>
-                <div class="yr-row end-row">2021</div>
+                <div class="yr-row end-row">2022</div>
             </div>
 
         </div>
@@ -511,6 +507,18 @@ $("#milestone-one").mouseover(function() {
 const firstLine = document.getElementById("about-line-one");
 const secondLine = document.getElementById("about-line-two");
 const thirdLine = document.getElementById("about-line-three");
+const fouthLine = document.getElementById("about-line-four");
+const fifthLine = document.getElementById("about-line-five");
+const sixthLine = document.getElementById("about-line-six");
+const seventhLine = document.getElementById("about-line-seven");
+const eightLine = document.getElementById("about-line-eight");
+const nineLine = document.getElementById("about-line-nine");
+const tenLine = document.getElementById("about-line-ten");
+const elevenLine = document.getElementById("about-line-eleven");
+const twelveLine = document.getElementById("about-line-twelve");
+const thirteenLine = document.getElementById("about-line-thirteen");
+const fourteenLine = document.getElementById("about-line-fourteen");
+const fifteenLine = document.getElementById("about-line-fifteen");
 
 firstLine.addEventListener("animationend", () => {
     $(".milestone-line-animated.two").addClass("firstanimation");
@@ -518,6 +526,58 @@ firstLine.addEventListener("animationend", () => {
 
 secondLine.addEventListener("animationend", () => {
    $(".milestone-line-animated.three").addClass("firstanimation");
+})
+
+thirdLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.four").addClass("firstanimation");
+})
+
+fouthLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.five").addClass("firstanimation");
+})
+
+fifthLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.six").addClass("firstanimation");
+})
+
+sixthLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.seven").addClass("firstanimation");
+})
+
+seventhLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.eight").addClass("firstanimation");
+})
+
+eightLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.nine").addClass("firstanimation");
+})
+
+nineLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.ten").addClass("firstanimation");
+})
+
+tenLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.eleven").addClass("firstanimation");
+})
+
+elevenLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.twelve").addClass("firstanimation");
+})
+
+twelveLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.thirteen").addClass("firstanimation");
+})
+
+thirteenLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.fourteen").addClass("firstanimation");
+})
+
+fourteenLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.four").addClass("firstanimation");
+})
+
+fifteenLine.addEventListener("animationend", () => {
+   $(".milestone-line-animated.fifteen").addClass("firstanimation");
 })
 
 

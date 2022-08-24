@@ -35,7 +35,11 @@ class MilestoneController extends Controller
                     return $status;
                 })
                 ->addColumn('image', function($data){
-                    $img = '<img src="'.uploaded_asset($data->image).'" style="width: 60%">';                 
+                    if($data->image != null){
+                        $img = '<img src="'.uploaded_asset($data->image).'" style="width: 60%">';
+                    }else{
+                        $img = '<img src="'.url('img/no_image.png').'" style="width: 60%">';
+                    }                                                  
                     return $img;
                 })
                 ->addColumn('action', function($data){
@@ -50,26 +54,21 @@ class MilestoneController extends Controller
     }
 
     public function store(Request $request)
-    {
-        
-        if($request->image == null){
-            return back()->withErrors('Please Add An Image');
-        }else{              
+    {                    
                
-            $add = new Milestone;
+        $add = new Milestone;
 
-            $add->year=$request->year;        
-            $add->title=$request->title;        
-            $add->sub_title=$request->sub_title;        
-            $add->description=$request->description;       
-            $add->image=$request->image;
-            $add->order=$request->order;
-            $add->status=$request->status;
-            $add->save();
+        $add->year=$request->year;        
+        $add->title=$request->title;        
+        $add->sub_title=$request->sub_title;        
+        $add->description=$request->description;       
+        $add->image=$request->image;
+        $add->order=$request->order;
+        $add->status=$request->status;
+        $add->save();
 
-            return redirect()->route('admin.milestone.index')->withFlashSuccess('Added Successfully');              
-            
-        }
+        return redirect()->route('admin.milestone.index')->withFlashSuccess('Added Successfully');              
+        
     }
 
     public function edit($id)
@@ -84,25 +83,20 @@ class MilestoneController extends Controller
     public function update(Request $request)
     {
 
-        if($request->image == null){
-            return back()->withErrors('Please Add An Image');
-        }else{              
-               
-            $update = new Milestone;
+        $update = new Milestone;
 
-            $update->year=$request->year;        
-            $update->title=$request->title;        
-            $update->sub_title=$request->sub_title;      
-            $update->description=$request->description;       
-            $update->image=$request->image;
-            $update->order=$request->order;
-            $update->status=$request->status;
+        $update->year=$request->year;        
+        $update->title=$request->title;        
+        $update->sub_title=$request->sub_title;      
+        $update->description=$request->description;       
+        $update->image=$request->image;
+        $update->order=$request->order;
+        $update->status=$request->status;
 
-            Milestone::whereId($request->hidden_id)->update($update->toArray());
+        Milestone::whereId($request->hidden_id)->update($update->toArray());
 
-            return redirect()->route('admin.milestone.index')->withFlashSuccess('Updated Successfully');              
-            
-        }
+        return redirect()->route('admin.milestone.index')->withFlashSuccess('Updated Successfully');              
+          
     }
 
     public function destroy($id)

@@ -18,9 +18,12 @@
                     News
                 @elseif(\Request::is('contact-us'))
                     Contact Us
+                @elseif(\Request::is('login'))
+                    Login Page
                 @else
                     Page Not Found    
                 @endif
+                
 
             </span>
         </div>

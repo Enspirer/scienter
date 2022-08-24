@@ -18,8 +18,8 @@
         <div class="contact-banner-text-wrapper hidden-xs">
             <div class="blur"></div>
             <div class="text-area">
-                <h3>Contacts</h3>
-                <p>Get the support you need to keep our solution running at peak performance.</p>
+                <h3>Contact Us</h3>
+                <p>Get In Touch to Find Out an Adaptive IT Solution For Your Business.</p>
                 <div id="hotline-hide-helper-desktop" class="hotline-hide-helper">
                     <h4>Office Name :</h4>
                     <p id="side-area-contact-office">Cooperate Office</p>

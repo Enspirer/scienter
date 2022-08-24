@@ -138,7 +138,7 @@
     <div class="home-content-box other-business">
         <div class="home-content-text-wrapper">
             <h2 class="TT-Light">Other Business Solutions</h2>
-            <p>Flagship Industry Solutions, Bespoke Software Development, Web App, Mobile App Development & Many More.</p>
+            <p>Unique Industry Solutions, Bespoke Software Development, Web App, Mobile App Development & Many More.</p>
             <button class="btn home-btn other-business-btn">View Project</button>
         </div>
     </div>

@@ -22,23 +22,27 @@ const img = [
 
 //topic one array
 const topicOne = [
-    "Destinity Property Management System",
-    "Destinity Restaurant Management System ",
-    "Destinity Club Management Solution",
+    "Destinity Property Management",
+    "Destinity Restaurant Management",
+    "Destinity Club Management",
     "Human Resource Management",
-    "Core Product",
-    "Mobile Apps / Systems to Support Digitalization",
+    "eFinancials - Core Banking ",
+    "Mobile Apps / Systems to Support Digitalization ",
     "Other Supporting Solutions",
+    "Integration",
+    "Other Business Solutions",
 ];
 
 const portText = [
-    "Destinity is a flagship Creation by Scienter that has culminated various avenues in providing a complete information system. Destinity addresses multiple scopes such as reservations, front office, Revenue Management, Point of Sale, Food Costing, Menu Engineering, Payroll with time & attendance, Banquet Management, Accounting and a fully flexed booking engine. The system incorporates a front desk app, mobile order tracking app, and housekeeping app & includes a channel manager, interfaces of IP TV, Wifi, and Doorlock integration. The Destinity Property Management System is useful for many levels of system users throughout the property.",
-    "Destinity Restaurant Management System specializes in controlling a sophisticated eatery or dining experience. From the point of sale, online ordering, inventory management, commissary and inventory management, the Destinity Restaurant Management system provides KDS integration. This includes online ordering, digital menu, food costing, menu management, delivery app(driver/rider), loyalty management, accounting and finance with contact centre management. ",
-    "Destinity Club Management Solution is designed specifically for clubs such as gyms, libraries, fitness centres, and facility organizations. The system incorporates a membership management function, facility booking, member portal, restaurant management, inventory management, accounting and finance, mobile order taking, fixed assets management and payroll. The system is inclusive of the Fixed Assets Management and Payroll with time & attendance.",
-    "The HR Management System by Scienter is a comprehensive IT - HR solution that provides various modules such as employee profiles, recruitment, commitments, appraisals, evaluations and promotions. Also; leave application, training, benefits and termination, grievance handling, disciplinary actions, and letter generation are included in the Human Resource Management platform. The system provides a user-friendly Employee desk that enables centralized, efficient and easy management ability,",
-    "eFinancials by Scienter is a complete Information system designed solely for Banking & Similar Financial Institutions. This is a centralized module that supports a wide array of Information. eFinancials in leasing, Loan origination, revolving loan, recovery, impairment, credit risk rating, scorecard, recovery call centre and yard management too. Also, the system enables comprehensive Fixed deposits, savings, microfinance, treasury management gold loans, Forex, Factoring, Accounting & Finance. This includes general ledger, accounts payable, accounts receivables and fixed assets too.",
-    "The eFinancials System is incorporated into mobile applications operating on Andriod & IOS platforms. eWallet, Loan Origination, Recovery, Internet Banking, Slipless Banking, and Audit & Digital Customer Onboarding are a few of its functions.",
-    "eFinancials System further extends to Lead Management, Central CRIB Management & even Anti-Money Laundering (AML) Functions."
+    "Destinity Property Management is a web-based information system that enables organizations comprehensive controllability over their stakeholders. Destinity is a complete solution that provides real-time information and control elements, customizable to suit different stages of the management hierarchy. The system is developed with significant oversight and influence by the industry leaders, where a sophisticated dashboard provides valuable information. Destinity is an acclaimed information system due to its incredible reliability and multiple substantiated modules that provide managers with vital information that enables effective decision-making.",
+    "Destinity Restaurant Management System is a refined information system that enables swift and effective management of restaurants, cafes and diners. The system provides highly detailed and sophisticated information facilities that enhance the quality of service. This system can manage restaurants of any calibre. Also, the system specializes in communicating with the kitchen and operational staff with impactful guidance. From the initial impression of the customer, the system enables comprehensive control over all relevant indicators.",
+    "Destinity Club Management Solution is a comprehensive Membership Club Management system that enables unparalleled efficiency in managing and controlling members and other relevant deliverables. This system incorporates customizability at its core. Hence, the Destinity Club Management Solution can be curated to cover any form of club or society with incredible ease. The Member Portal, Member costing identification, Member Face Recognition, and Property Booking are a few of the facilities of this modernized product.",
+    "The HR Management System by Scienter is a comprehensive IT - HR solution that provides various modules such as employee profiles, recruitment, commitments, appraisals, evaluations and promotions. Also, leave application, training, benefits and termination, grievance handling, disciplinary actions, and letter generation are mm, included in the Human Resource Management platform. The system provides a user-friendly Employee desk that enables centralized, efficient and easy management.",
+    "Core Product<br> eFinancials by Scienter is a Complete Banking System designed to provide a quick and reliable system for banking institutions. eFinancials is a decentralized system that provides a wide array of uses. The system supports leasing, Loans, recovery management, impairment, credit risk rating, scorecard, recovery call centre and yard management. This system enables all forms of data processing functions that are critical for any banking or financial institute.",
+    "Scienter eFinancials System is a phenomenally evolved system customizable to highly-specific requirements. This system possesses superior technology, evolving with the innovations of the industry.",
+    "eFinancials System further extends to Lead Management, Central CRIB Management & even Anti-Money Laundering (AML) Functions.",
+    "The Scienter eFinancials Core-Banking systems integration with third-party services such ATM Integration, CEFT Integration, and SLIPS Integration.",
+    "Browse Our arsenal of IT solutions suitable for any organization. We strive to provide a customizable, effective and efficient solution to all our stakeholders."
 ]
 
 
@@ -54,17 +58,17 @@ function nextSlide() {
 
 
 
-    if (i < 6) {
+    if (i < 8) {
         i = i + 1;
         x = i + 1;
         y = i - 1;
     } else {
         i = 0;
         x = i + 1;
-        y = 6;
+        y = 8;
     }
 
-    if (i == 6) {
+    if (i == 8) {
         x = 0;
     }
 
@@ -76,6 +80,7 @@ function nextSlide() {
 
     //----------left side content animation and everything 
     document.getElementById("portTitleOne").innerHTML = topicOne[i];
+    document.getElementById("portTextOne").innerHTML = portText[i];
 
 
 
@@ -141,13 +146,13 @@ function prevSlide() {
         x = i + 1;
         y = i - 1;
     } else {
-        i = 6;
+        i = 8;
         x = 0;
         y = 5;
     }
 
     if (i == 0) {
-        y = 6;
+        y = 8;
     }
 
     console.log("i=" + i);
@@ -165,6 +170,7 @@ function prevSlide() {
 
     //----------left side content animation and everything 
     document.getElementById("portTitleOne").innerHTML = topicOne[i];
+    document.getElementById("portTextOne").innerHTML = portText[i];
 
 
 

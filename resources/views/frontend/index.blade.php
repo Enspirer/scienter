@@ -275,7 +275,7 @@
             </div>
         </div>
 
-
+        <h5 class="mb-5 TT-Light line-height-30 text-center">Our Clientele has progressed through broader horizons and outstanding success throughout the Years.</h5>
 
 
         <!-- client categories -->
